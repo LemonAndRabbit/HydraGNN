@@ -22,6 +22,7 @@ import socket
 from datetime import timedelta
 import time
 import subprocess
+from mpi4py import MPI
 
 
 def find_ifname(myaddr):
@@ -81,6 +82,16 @@ def init_comm_size_and_rank():
     world_size = None
     world_rank = 0
 
+    try:
+        comm = MPI.COMM_WORLD
+        world_size = comm.Get_size()
+        world_rank = comm.Get_rank()
+        os.environ['OMPI_COMM_WORLD_SIZE'] = str(world_size)
+        os.environ['OMPI_COMM_WORLD_RANK'] = str(world_rank)
+        os.environ['OMPI_COMM_WORLD_LOCAL_RANK'] = str(world_rank)
+    except Exception as e:
+        print("Error in init_comm_size_and_rank", e)
+        pass
     if os.getenv("OMPI_COMM_WORLD_SIZE") and os.getenv("OMPI_COMM_WORLD_RANK"):
         ## Summit
         world_size = int(os.environ["OMPI_COMM_WORLD_SIZE"])

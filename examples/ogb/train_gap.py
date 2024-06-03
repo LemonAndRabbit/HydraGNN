@@ -11,6 +11,7 @@ from mpi4py import MPI
 from itertools import chain
 import argparse
 import time
+import math
 
 import hydragnn
 from hydragnn.preprocess.load_data import split_dataset
@@ -91,9 +92,12 @@ def smiles_to_graph(datadir, files_list):
         df = pandas.read_csv(os.path.join(datadir, filename))
         rx = list(nsplit(range(len(df)), comm_size))[rank]
 
-        for smile_id in range(len(df))[rx.start : rx.stop]:
+        for smile_id in tqdm(range(len(df))[rx.start : rx.stop]):
             ## get atomic positions and numbers
             dfrow = df.iloc[smile_id]
+
+            if math.isnan(float(dfrow[-1])):
+                continue
 
             smilestr = dfrow[0]
             ytarget = (
@@ -103,14 +107,18 @@ def smiles_to_graph(datadir, files_list):
                 .to(torch.float32)
             )  # HL gap
 
-            data = generate_graphdata_from_smilestr(
-                smilestr,
-                ytarget,
-                ogb_node_types,
-                var_config,
-            )
+            try:
+                data = generate_graphdata_from_smilestr(
+                    smilestr,
+                    ytarget,
+                    ogb_node_types,
+                    var_config,
+                )
 
-            subset.append(data)
+                subset.append(data)
+            except KeyError:
+                print("KeyError: ", smilestr)
+                continue
 
     return subset
 
@@ -460,6 +468,11 @@ if __name__ == "__main__":
     hydragnn.utils.save_model(model, optimizer, log_name)
     hydragnn.utils.print_timers(verbosity)
 
+    peak_mem = torch.cuda.max_memory_allocated() / 1024 ** 3
+    print_distributed(3, "Peak memory usage: {:.4f} GB".format(peak_mem))
+    if writer is not None:
+        writer.add_scalar("Peak memory usage", peak_mem)
+
     if args.mae:
         ##################################################################################################################
         fig, axs = plt.subplots(1, 3, figsize=(18, 6))
@@ -479,7 +492,13 @@ if __name__ == "__main__":
             ax = axs[isub]
             error_mae = np.mean(np.abs(head_pred - head_true))
             error_rmse = np.sqrt(np.mean(np.abs(head_pred - head_true) ** 2))
-            print(varname, ": ev, mae=", error_mae, ", rmse= ", error_rmse)
+            # print(varname, ": ev, mae=", error_mae, ", rmse= ", error_rmse)
+            print_distributed(
+                1, setname, varname, " : ev, mae=", error_mae, ", rmse= ", error_rmse
+            )
+
+            if writer is not None:
+                writer.add_scalar(setname + "/" + varname + "/MAE", error_mae)
 
             ax.scatter(
                 head_true,
