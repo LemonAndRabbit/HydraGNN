@@ -6,8 +6,8 @@
         "Architecture": {
             "model_type": "PNA",
             "max_neighbours": 20,
-            "hidden_dim": 55,
-            "num_conv_layers": 6,
+            "hidden_dim": 512,
+            "num_conv_layers": 18,
             "output_heads": {
                 "graph":{
                     "num_sharedlayers": 1,

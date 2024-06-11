@@ -377,6 +377,7 @@ if __name__ == "__main__":
             adwriter.add("trainset", trainset)
             adwriter.add("valset", valset)
             adwriter.add("testset", testset)
+            adwriter.add_global("pna_deg", deg)
             adwriter.save()
 
         sys.exit(0)
@@ -388,9 +389,9 @@ if __name__ == "__main__":
         if args.shmem:
             opt = {"preload": False, "shmem": True}
         fname = os.path.join(os.path.dirname(__file__), "dataset", "ogb_gap.bp")
-        trainset = AdiosDataset(fname, "trainset", comm, opt)
-        valset = AdiosDataset(fname, "valset", comm, opt)
-        testset = AdiosDataset(fname, "testset", comm, opt)
+        trainset = AdiosDataset(fname, "trainset", comm, **opt)
+        valset = AdiosDataset(fname, "valset", comm, **opt)
+        testset = AdiosDataset(fname, "testset", comm, **opt)
     elif args.format == "csv":
         fname = os.path.join(os.path.dirname(__file__), "dataset", "pcqm4m_gap.csv")
         fact = OGBRawDatasetFactory(
