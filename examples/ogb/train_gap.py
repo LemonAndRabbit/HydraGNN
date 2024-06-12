@@ -267,6 +267,12 @@ if __name__ == "__main__":
     group.add_argument(
         "--csv", help="CSV dataset", action="store_const", dest="format", const="csv"
     )
+    parser.add_argument(
+        "--log_postfix", 
+        type=str, 
+        help="postfix for log", 
+        default=""
+    )
     parser.set_defaults(format="adios")
     args = parser.parse_args()
 
@@ -308,7 +314,7 @@ if __name__ == "__main__":
         datefmt="%H:%M:%S",
     )
 
-    log_name = "ogb_" + inputfilesubstr
+    log_name = "ogb_" + inputfilesubstr + args.log_postfix
     hydragnn.utils.setup_log(log_name)
     writer = hydragnn.utils.get_summary_writer(log_name)
     hydragnn.utils.save_config(config, log_name)
