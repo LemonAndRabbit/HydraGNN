@@ -26,7 +26,7 @@
         },
         "Training": {
             "num_epoch": 100,
-            "batch_size": 128,
+            "batch_size": 256,
             "continue": 0,
             "startfrom": "existing_model",
             "Optimizer": {
