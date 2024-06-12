@@ -234,6 +234,12 @@ def get_device(use_gpu=True, rank_per_model=1, verbosity_level=0):
     name = get_device_name(use_gpu, rank_per_model, verbosity_level)
     return get_device_from_name(name)
 
+def get_last_device(use_gpu=True, rank_per_model=1, verbosity_level=0):
+    name = get_device_name(use_gpu, rank_per_model, verbosity_level)
+    if "cuda" in name:
+        num_gpus = torch.cuda.device_count()
+        name = f"cuda:{num_gpus - 1}"
+    return get_device_from_name(name)
 
 def is_model_distributed(model):
     return isinstance(model, torch.nn.parallel.distributed.DistributedDataParallel)

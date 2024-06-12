@@ -122,6 +122,108 @@ def smiles_to_graph(datadir, files_list):
 
     return subset
 
+'''
+# Example usage
+num_layers = 18
+num_stages = 4
+result = layers_assignment(num_layers, num_stages)
+print(result)  # Output: [4, 5, 5, 4]
+'''
+def layers_assignment(num_layers, num_stages):
+    # Basic division
+    base_layers_per_stage = num_layers // num_stages
+    remainder_layers = num_layers % num_stages
+    
+    # Create a list with base layers for each stage
+    layers_per_stage = [base_layers_per_stage] * num_stages
+    
+    # Distribute the remainder layers, prioritizing the center stages
+    start_idx = (num_stages - remainder_layers) // 2
+    for i in range(remainder_layers):
+        layers_per_stage[start_idx + i] += 1
+    
+    return layers_per_stage
+
+def workload_to_idx(workload):
+    start_idx = []
+    end_idx = []
+    
+    current_start = 0
+    for work in workload:
+        start_idx.append(current_start)
+        current_start += work
+        end_idx.append(current_start)
+    
+    return start_idx, end_idx
+
+# A naive implementation of spliting the multiple layers within the same model into different stages on different gpus
+from torch_geometric.nn import global_mean_pool
+def model_parallel(layers, num_stages=4):
+    # The conversion process is highly coupled with the Base model defination
+    assert num_stages==4, "Hardcoded 4 stages (4 GPUs) for now"
+    ## split graph_convs and feature_layers
+    assert len(layers.graph_convs) == len(layers.feature_layers), "Number of blocks in graph_convs and feature_layers should be equal"
+    stages_workload = layers_assignment(len(layers.graph_convs), num_stages)
+    start_layer_idx, end_layer_idx = workload_to_idx(stages_workload)
+    ### Assign graph_convs and feature_layers to different GPUs
+    for i in range(num_stages):
+        layers.graph_convs[start_layer_idx[i]:end_layer_idx[i]].to(f"cuda:{i}")
+        layers.feature_layers[start_layer_idx[i]:end_layer_idx[i]].to(f"cuda:{i}")
+    
+    ### Assign decoder part to the last GPU
+    layers.heads_NN.to(f"cuda:{num_stages-1}")
+    layers.graph_shared.to(f"cuda:{num_stages-1}")
+
+    ## Replace forward function
+    def model_parallel_forward(self, data):
+        x = data.x
+        pos = data.pos
+        ### encoder part ####
+        conv_args = self._conv_args(data)
+        layer_idx = 0
+        gpu_idx = 0
+        for conv, feat_layer in zip(self.graph_convs, self.feature_layers):
+            if (layer_idx in start_layer_idx):
+                x = x.to(f"cuda:{gpu_idx}")
+                if pos is not None:
+                    pos = pos.to(f"cuda:{gpu_idx}")
+                conv_args["edge_index"] = conv_args["edge_index"].to(f"cuda:{gpu_idx}")
+                if self.use_edge_attr:
+                    conv_args["edge_attr"] = conv_args["edge_attr"].to(f"cuda:{gpu_idx}")
+                gpu_idx += 1
+            c, pos = conv(x=x, pos=pos, **conv_args)
+            x = self.activation_function(feat_layer(c))
+            layer_idx += 1
+
+        #### multi-head decoder part####
+        # shared dense layers for graph level output
+        if data.batch is None:
+            x_graph = x.mean(dim=0, keepdim=True)
+        else:
+            x_graph = global_mean_pool(x, data.batch.to(x.device))
+        outputs = []
+        for head_dim, headloc, type_head in zip(
+            self.head_dims, self.heads_NN, self.head_type
+        ):
+            if type_head == "graph":
+                x_graph_head = self.graph_shared(x_graph)
+                outputs.append(headloc(x_graph_head))
+            else:
+                if self.node_NN_type == "conv":
+                    for conv, batch_norm in zip(headloc[0::2], headloc[1::2]):
+                        c, pos = conv(x=x, pos=pos, **conv_args)
+                        c = batch_norm(c)
+                        x = self.activation_function(c)
+                    x_node = x
+                else:
+                    x_node = headloc(x=x, batch=data.batch)
+                outputs.append(x_node)
+        return outputs
+
+    layers.forward = model_parallel_forward.__get__(layers, layers.__class__)
+
+    return layers
+    
 
 class OGBDataset(AbstractBaseDataset):
     """OGBDataset dataset class"""
@@ -440,7 +542,9 @@ if __name__ == "__main__":
         config=config["NeuralNetwork"],
         verbosity=verbosity,
     )
-    model = hydragnn.utils.get_distributed_model(model, verbosity)
+    # Use model parallel instead of the original data parallel
+    # model = hydragnn.utils.get_distributed_model(model, verbosity)
+    model = model_parallel(layers=model, num_stages=torch.cuda.device_count())
 
     if rank == 0:
         print_model(model)
@@ -458,7 +562,7 @@ if __name__ == "__main__":
 
     ##################################################################################################################
 
-    hydragnn.train.train_validate_test(
+    hydragnn.train.train_validate_test_model_parallel(
         model,
         optimizer,
         train_loader,
@@ -486,7 +590,7 @@ if __name__ == "__main__":
         for isub, (loader, setname) in enumerate(
             zip([train_loader, val_loader, test_loader], ["train", "val", "test"])
         ):
-            error, rmse_task, true_values, predicted_values = hydragnn.train.test(
+            error, rmse_task, true_values, predicted_values = hydragnn.train.test_model_parallel(
                 loader, model, verbosity
             )
             ihead = 0
