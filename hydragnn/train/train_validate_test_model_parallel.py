@@ -440,6 +440,12 @@ def train_model_parallel(
     tr.start("dataload")
     if use_ddstore:
         loader.dataset.ddstore.epoch_begin()
+
+    data_queue = []
+    head_index_queue = []
+    stage_inputs = [{"x": None, "pos": None, "conv_args": None} for _ in range(torch.cuda.device_count())]
+    stage_outputs = [{"x": None, "pos": None, "conv_args": None} for _ in range(torch.cuda.device_count())]
+
     for ibatch, data in iterate_tqdm(
         enumerate(loader), verbosity, desc="Train", total=nbatch
     ):
@@ -456,27 +462,38 @@ def train_model_parallel(
         with record_function("get_head_indices"):
             head_index = get_head_indices(model, data)
         tr.stop("get_head_indices")
+        tr.start("data_to_queue")
+        data_queue.append(data)
+        head_index_queue.append(head_index)
+        tr.stop("data_to_queue")
         tr.start("forward")
+        produced_data = None # a variable to keep the data popped by the queue
         with record_function("forward"):
-            data = data.to(get_device())
-            pred = model(data)
-            loss, tasks_loss = model.loss(pred, data.y.to(pred[0].device), head_index)
+            pred = model(data_queue, stage_inputs, stage_outputs)
+            if (pred is not None):
+                produced_data = data_queue.pop(0)
+                producted_head_index = head_index_queue.pop(0)
+                loss, tasks_loss = model.loss(pred, produced_data.y.to(pred[0].device), producted_head_index)
+            else:
+                loss = 0.0
+                tasks_loss = 0.0
         tr.stop("forward")
-        tr.start("backward")
-        with record_function("backward"):
-            loss.backward()
-        tr.stop("backward")
-        tr.start("opt_step")
-        # print_peak_memory(verbosity, "Max memory allocated before optimizer step")
-        opt.step()
-        # print_peak_memory(verbosity, "Max memory allocated after optimizer step")
-        tr.stop("opt_step")
-        profiler.step()
-        with torch.no_grad():
-            total_error += loss * data.num_graphs
-            num_samples_local += data.num_graphs
-            for itask in range(len(tasks_loss)):
-                tasks_error[itask] += tasks_loss[itask] * data.num_graphs
+        if produced_data is not None:
+            tr.start("backward")
+            with record_function("backward"):
+                loss.backward() # [TODO] staleness may happen in current implementation
+            tr.stop("backward")
+            tr.start("opt_step")
+            # print_peak_memory(verbosity, "Max memory allocated before optimizer step")
+            opt.step()
+            # print_peak_memory(verbosity, "Max memory allocated after optimizer step")
+            tr.stop("opt_step")
+            profiler.step()
+            with torch.no_grad():
+                total_error += loss * produced_data.num_graphs
+                num_samples_local += produced_data.num_graphs
+                for itask in range(len(tasks_loss)):
+                    tasks_error[itask] += tasks_loss[itask] * produced_data.num_graphs
         if ibatch < (nbatch - 1):
             tr.start("dataload")
         if use_ddstore:
@@ -488,7 +505,7 @@ def train_model_parallel(
     tasks_error = tasks_error / num_samples_local
     return train_error, tasks_error
 
-
+# [TODO] Modifiy validate for pipeline 
 @torch.no_grad()
 def validate_model_parallel(loader, model, verbosity, reduce_ranks=True):
 
@@ -532,7 +549,7 @@ def validate_model_parallel(loader, model, verbosity, reduce_ranks=True):
         tasks_error = reduce_values_ranks(tasks_error)
     return val_error, tasks_error
 
-
+# [TODO] Modifiy validate for pipeline 
 @torch.no_grad()
 def test_model_parallel(loader, model, verbosity, reduce_ranks=True, return_samples=True):
 

@@ -175,50 +175,81 @@ def model_parallel(layers, num_stages=4):
     layers.graph_shared.to(f"cuda:{num_stages-1}")
 
     ## Replace forward function
-    def model_parallel_forward(self, data):
-        x = data.x
-        pos = data.pos
+    def model_parallel_forward(self, data_queue, stage_inputs, stage_outputs):
+        x = data_queue[-1].x
+        pos = data_queue[-1].pos
         ### encoder part ####
-        conv_args = self._conv_args(data)
+        conv_args = self._conv_args(data_queue[-1])
+        stage_inputs[0]["x"] = x
+        stage_inputs[0]["pos"] = pos
+        stage_inputs[0]["conv_args"] = conv_args
+
         layer_idx = 0
         gpu_idx = 0
         for conv, feat_layer in zip(self.graph_convs, self.feature_layers):
             if (layer_idx in start_layer_idx):
-                x = x.to(f"cuda:{gpu_idx}")
+                # Update inputs for this gpu
+                x = stage_inputs[gpu_idx]["x"]
+                pos = stage_inputs[gpu_idx]["pos"]
+                conv_args = stage_inputs[gpu_idx]["conv_args"]
+
+                # Put input in the correct GPUs
+                if x is not None:
+                    x = x.to(f"cuda:{gpu_idx}")
                 if pos is not None:
                     pos = pos.to(f"cuda:{gpu_idx}")
-                conv_args["edge_index"] = conv_args["edge_index"].to(f"cuda:{gpu_idx}")
-                if self.use_edge_attr:
-                    conv_args["edge_attr"] = conv_args["edge_attr"].to(f"cuda:{gpu_idx}")
+                if conv_args is not None:
+                    conv_args["edge_index"] = conv_args["edge_index"].to(f"cuda:{gpu_idx}")
+                    if self.use_edge_attr:
+                        conv_args["edge_attr"] = conv_args["edge_attr"].to(f"cuda:{gpu_idx}")
+            
+            if x is not None:
+                c, pos = conv(x=x, pos=pos, **conv_args)
+                x = self.activation_function(feat_layer(c))
+
+            if ((layer_idx+1) in end_layer_idx):
+                # Update outpurs for this gpu (i.e., input for the next gpu in the next iter)
+                stage_outputs[gpu_idx]["x"] = x
+                stage_outputs[gpu_idx]["pos"] = pos
+                stage_outputs[gpu_idx]["conv_args"] = conv_args
                 gpu_idx += 1
-            c, pos = conv(x=x, pos=pos, **conv_args)
-            x = self.activation_function(feat_layer(c))
+
             layer_idx += 1
+        
+        # Update stage_inputs based on stage_outputs:
+        for gpu_idx in range(num_stages-1):
+            stage_inputs[gpu_idx+1]["x"] = stage_outputs[gpu_idx]["x"]
+            stage_inputs[gpu_idx+1]["pos"] = stage_outputs[gpu_idx]["pos"]
+            stage_inputs[gpu_idx+1]["conv_args"] = stage_outputs[gpu_idx]["conv_args"]
 
         #### multi-head decoder part####
         # shared dense layers for graph level output
-        if data.batch is None:
-            x_graph = x.mean(dim=0, keepdim=True)
-        else:
-            x_graph = global_mean_pool(x, data.batch.to(x.device))
-        outputs = []
-        for head_dim, headloc, type_head in zip(
-            self.head_dims, self.heads_NN, self.head_type
-        ):
-            if type_head == "graph":
-                x_graph_head = self.graph_shared(x_graph)
-                outputs.append(headloc(x_graph_head))
+        if stage_outputs[num_stages-1]["x"] is not None:
+            x = stage_outputs[num_stages-1]["x"]
+            if data_queue[0].batch is None:
+                x_graph = x.mean(dim=0, keepdim=True)
             else:
-                if self.node_NN_type == "conv":
-                    for conv, batch_norm in zip(headloc[0::2], headloc[1::2]):
-                        c, pos = conv(x=x, pos=pos, **conv_args)
-                        c = batch_norm(c)
-                        x = self.activation_function(c)
-                    x_node = x
+                x_graph = global_mean_pool(x, data_queue[0].batch.to(x.device))
+            outputs = []
+            for head_dim, headloc, type_head in zip(
+                self.head_dims, self.heads_NN, self.head_type
+            ):
+                if type_head == "graph":
+                    x_graph_head = self.graph_shared(x_graph)
+                    outputs.append(headloc(x_graph_head))
                 else:
-                    x_node = headloc(x=x, batch=data.batch)
-                outputs.append(x_node)
-        return outputs
+                    if self.node_NN_type == "conv":
+                        for conv, batch_norm in zip(headloc[0::2], headloc[1::2]):
+                            c, pos = conv(x=x, pos=pos, **conv_args)
+                            c = batch_norm(c)
+                            x = self.activation_function(c)
+                        x_node = x
+                    else:
+                        x_node = headloc(x=x, batch=data_queue[0].batch)
+                    outputs.append(x_node)
+            return outputs
+        else:
+            return None
 
     layers.forward = model_parallel_forward.__get__(layers, layers.__class__)
 
