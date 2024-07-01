@@ -23,6 +23,7 @@ from datetime import timedelta
 import time
 import subprocess
 
+import deepspeed
 
 def find_ifname(myaddr):
     """
@@ -110,7 +111,7 @@ def get_comm_size_and_rank():
     return int(world_size), int(world_rank)
 
 
-def setup_ddp():
+def setup_ddp(use_deepspeed=False):
     """ "Initialize DDP"""
 
     if dist.is_initialized():
@@ -163,9 +164,14 @@ def setup_ddp():
             )
 
         if not dist.is_initialized():
-            dist.init_process_group(
-                backend=backend, init_method="env://", timeout=timedelta(seconds=1800)
-            )
+            if use_deepspeed:
+                deepspeed.init_distributed(
+                    dist_backend=backend, init_method="env://", timeout=timedelta(seconds=1800)
+                )
+            else:
+                dist.init_process_group(
+                    backend=backend, init_method="env://", timeout=timedelta(seconds=1800)
+                )
 
     except KeyError:
         print("DDP has to be initialized within a job - Running in sequential mode")
