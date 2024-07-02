@@ -25,7 +25,8 @@
             "denormalize_output": false
         },
         "Training": {
-            "num_epoch": 100,
+            "checkpoint": 1,
+            "num_epoch": 2,
             "batch_size": 256,
             "continue": 0,
             "startfrom": "existing_model",

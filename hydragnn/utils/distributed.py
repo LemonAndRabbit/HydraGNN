@@ -24,6 +24,7 @@ import time
 import subprocess
 from mpi4py import MPI
 
+import deepspeed
 
 def find_ifname(myaddr):
     """
@@ -82,16 +83,16 @@ def init_comm_size_and_rank():
     world_size = None
     world_rank = 0
 
-    try:
-        comm = MPI.COMM_WORLD
-        world_size = comm.Get_size()
-        world_rank = comm.Get_rank()
-        os.environ['OMPI_COMM_WORLD_SIZE'] = str(world_size)
-        os.environ['OMPI_COMM_WORLD_RANK'] = str(world_rank)
-        os.environ['OMPI_COMM_WORLD_LOCAL_RANK'] = str(world_rank)
-    except Exception as e:
-        print("Error in init_comm_size_and_rank", e)
-        pass
+    # try:
+    #     comm = MPI.COMM_WORLD
+    #     world_size = comm.Get_size()
+    #     world_rank = comm.Get_rank()
+    #     os.environ['OMPI_COMM_WORLD_SIZE'] = str(world_size)
+    #     os.environ['OMPI_COMM_WORLD_RANK'] = str(world_rank)
+    #     os.environ['OMPI_COMM_WORLD_LOCAL_RANK'] = str(world_rank)
+    # except Exception as e:
+    #     print("Error in init_comm_size_and_rank", e)
+    #     pass
     if os.getenv("OMPI_COMM_WORLD_SIZE") and os.getenv("OMPI_COMM_WORLD_RANK"):
         ## Summit
         world_size = int(os.environ["OMPI_COMM_WORLD_SIZE"])
@@ -121,7 +122,7 @@ def get_comm_size_and_rank():
     return int(world_size), int(world_rank)
 
 
-def setup_ddp():
+def setup_ddp(use_deepspeed=False):
     """ "Initialize DDP"""
 
     if dist.is_initialized():
@@ -161,6 +162,7 @@ def setup_ddp():
             os.environ["MASTER_PORT"] = master_port
             os.environ["WORLD_SIZE"] = str(world_size)
             os.environ["RANK"] = str(world_rank)
+            os.environ["LOCAL_RANK"] = str(get_local_rank())
 
         if (backend == "gloo") and ("GLOO_SOCKET_IFNAME" not in os.environ):
             ifname = find_ifname(master_addr)
@@ -174,9 +176,14 @@ def setup_ddp():
             )
 
         if not dist.is_initialized():
-            dist.init_process_group(
-                backend=backend, init_method="env://", timeout=timedelta(seconds=1800)
-            )
+            if use_deepspeed:
+                deepspeed.init_distributed(
+                    dist_backend=backend, init_method="env://", timeout=timedelta(seconds=1800)
+                )
+            else:
+                dist.init_process_group(
+                    backend=backend, init_method="env://", timeout=timedelta(seconds=1800)
+                )
 
     except KeyError:
         print("DDP has to be initialized within a job - Running in sequential mode")
@@ -222,6 +229,24 @@ def get_device_name(use_gpu=True, rank_per_model=1, verbosity_level=0):
     device_name = "cuda:" + str(localrank)
 
     return device_name
+
+def get_local_rank():
+    localrank = 0
+    if torch.cuda.device_count() > 1:
+        if os.getenv("OMPI_COMM_WORLD_LOCAL_RANK"):
+            ## Summit
+            localrank = int(os.environ["OMPI_COMM_WORLD_LOCAL_RANK"])
+        elif os.getenv("SLURM_LOCALID"):
+            ## CADES
+            localrank = int(os.environ["SLURM_LOCALID"])
+
+        if localrank >= torch.cuda.device_count():
+            print(
+                "WARN: localrank is greater than the available device count - %d %d"
+                % (localrank, torch.cuda.device_count())
+            )
+    return localrank
+
 
 
 def get_device_from_name(name: str):
