@@ -477,8 +477,8 @@ if __name__ == "__main__":
 
         # create deepspeed model
         model, optimizer, _, _ = deepspeed.initialize(
-            model=model, config=ds_config, dist_init_required=False, optimizer=optimizer, lr_scheduler=scheduler
-        )
+            model=model, config=ds_config, dist_init_required=False, optimizer=optimizer
+        ) # scheduler is not managed by deepspeed because it is per-epoch instead of per-step
 
         hydragnn.utils.load_existing_model_config(
             model, config["NeuralNetwork"]["Training"], use_deepspeed=True
