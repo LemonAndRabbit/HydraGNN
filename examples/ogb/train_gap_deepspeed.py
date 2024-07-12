@@ -39,6 +39,7 @@ import torch
 import torch.distributed as dist
 
 import deepspeed
+from deepspeed.pipe import PipelineModule
 
 # import warnings
 
@@ -279,6 +280,13 @@ if __name__ == "__main__":
     parser.add_argument(
         "--use_deepspeed", help="Use Deepspeed", action="store_true", dest="use_deepspeed"
     )
+    parser.add_argument(
+        "-p",
+        "--pipeline_parallel_size",
+        type=int,
+        default=1,
+        help="pipeline parallelism"
+    )
     parser.set_defaults(format="adios")
     args = parser.parse_args()
 
@@ -439,6 +447,39 @@ if __name__ == "__main__":
         trainset, valset, testset, config["NeuralNetwork"]["Training"]["batch_size"]
     )
 
+    if args.pipeline_parallel_size > 0:
+        # TODO: only the first stage uses the input data, and only the last stage uses labels for loss calculation
+        from functools import partial
+        # Replace the collate_fn in train_loader for deepspeed pipeline
+        num_heads = len(config["NeuralNetwork"]["Architecture"]["output_heads"])
+        from typing import Tuple
+        def ds_pipe_collate(pyg_collate_fn, batch):
+            pyg_batch = pyg_collate_fn(batch)
+
+            pipe_batch_x = (
+                pyg_batch.x,
+                pyg_batch.pos,
+                pyg_batch.edge_index.to(torch.long),
+                pyg_batch.edge_attr,
+                pyg_batch.batch,
+                None, # it should be the output of Mean/GlobalMean layer
+            )
+            pipe_batch_x += tuple([None]*num_heads)
+
+            # Replace all None with math.nan because all inputs have to be tensor, as required by ds_pipe
+            pipe_batch_x = tuple(torch.tensor([math.nan]) if x is None else x for x in pipe_batch_x)
+
+            pipe_batch_y = (
+                pyg_batch.y,
+                pyg_batch.y_loc,
+            )
+
+            return (pipe_batch_x, pipe_batch_y)
+
+        train_loader.collate_fn = partial(ds_pipe_collate, train_loader.collate_fn)
+        val_loader.collate_fn   = partial(ds_pipe_collate, val_loader.collate_fn)
+        test_loader.collate_fn  = partial(ds_pipe_collate, test_loader.collate_fn)
+
     config = hydragnn.utils.update_config(config, train_loader, val_loader, test_loader)
     timer.stop()
 
@@ -475,10 +516,22 @@ if __name__ == "__main__":
         # create temporary deepspeed configuration
         ds_config = parse_deepspeed_config(config)
 
+        if args.pipeline_parallel_size > 0:
+            # create pipeline model 
+            pipe_model = hydragnn.models.BasePipe(model, input_w_batch=True)
+            model = PipelineModule(
+                layers=pipe_model.to_layers(),
+                num_stages=args.pipeline_parallel_size,
+                loss_fn=pipe_model.get_pipeloss(get_head_indices_func = hydragnn.train.get_head_indices)
+            )
+        
         # create deepspeed model
         model, optimizer, _, _ = deepspeed.initialize(
-            model=model, config=ds_config, dist_init_required=False, optimizer=optimizer, lr_scheduler=scheduler
-        )
+            model=model, 
+            config=ds_config, 
+            dist_init_required=False, 
+            optimizer=optimizer
+        ) # scheduler is not managed by deepspeed because it is per-epoch instead of per-step
 
         hydragnn.utils.load_existing_model_config(
             model, config["NeuralNetwork"]["Training"], use_deepspeed=True
@@ -500,6 +553,7 @@ if __name__ == "__main__":
         verbosity,
         create_plots=False,
         use_deepspeed=args.use_deepspeed,
+        use_ds_pipe=(args.pipeline_parallel_size > 0)
     )
 
     hydragnn.utils.save_model(model, optimizer, log_name)

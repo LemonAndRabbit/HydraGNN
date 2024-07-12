@@ -1,2 +1,2 @@
-from .train_validate_test import train_validate_test, train, validate, test
+from .train_validate_test import train_validate_test, train, validate, test, get_head_indices
 from .train_validate_test_model_parallel import train_validate_test_model_parallel, train_model_parallel, validate_model_parallel, test_model_parallel

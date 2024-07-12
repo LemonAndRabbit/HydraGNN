@@ -66,6 +66,7 @@ def train_validate_test(
     plot_hist_solution=False,
     create_plots=False,
     use_deepspeed=False,
+    use_ds_pipe=False
 ):
     num_epoch = config["Training"]["num_epoch"]
     EarlyStop = (
@@ -86,9 +87,11 @@ def train_validate_test(
     total_loss_val = torch.zeros(num_epoch, device=device)
     total_loss_test = torch.zeros(num_epoch, device=device)
     # loss tracking for each head/task
-    task_loss_train = torch.zeros((num_epoch, model.module.num_heads), device=device)
-    task_loss_test = torch.zeros((num_epoch, model.module.num_heads), device=device)
-    task_loss_val = torch.zeros((num_epoch, model.module.num_heads), device=device)
+    num_heads = len(config["Architecture"]["output_heads"]) # More flexiable method to retrive num_heads than model.module.num_heads
+    head_dims = config["Architecture"]["output_dim"]
+    task_loss_train = torch.zeros((num_epoch, num_heads), device=device)
+    task_loss_test = torch.zeros((num_epoch, num_heads), device=device)
+    task_loss_val = torch.zeros((num_epoch, num_heads), device=device)
 
     # preparing for results visualization
     ## collecting node feature
@@ -105,8 +108,8 @@ def train_validate_test(
         visualizer = Visualizer(
             model_with_config_name,
             node_feature=node_feature,
-            num_heads=model.module.num_heads,
-            head_dims=model.module.head_dims,
+            num_heads=num_heads,
+            head_dims=head_dims,
             num_nodes_list=nodes_num_list,
         )
         visualizer.num_nodes_plot()
@@ -156,7 +159,13 @@ def train_validate_test(
             tr.enable()
             tr.start("train")
             train_loss, train_taskserr = train(
-                train_loader, model, optimizer, verbosity, profiler=prof, use_deepspeed=use_deepspeed
+                train_loader, 
+                model, 
+                optimizer, 
+                verbosity, 
+                profiler=prof, 
+                use_deepspeed=use_deepspeed,
+                use_ds_pipe=use_ds_pipe
             )
             tr.stop("train")
             tr.disable()
@@ -166,83 +175,94 @@ def train_validate_test(
         if int(os.getenv("HYDRAGNN_VALTEST", "1")) == 0:
             continue
 
-        val_loss, val_taskserr = validate(
-            val_loader, model, verbosity, reduce_ranks=True
-        )
-        test_loss, test_taskserr, true_values, predicted_values = test(
-            test_loader,
-            model,
-            verbosity,
-            reduce_ranks=True,
-            return_samples=plot_hist_solution,
-        )
-        scheduler.step(val_loss)
-        if writer is not None:
-            writer.add_scalar("train error", train_loss, epoch)
-            writer.add_scalar("validate error", val_loss, epoch)
-            writer.add_scalar("test error", test_loss, epoch)
-            for ivar in range(model.module.num_heads):
-                writer.add_scalar(
-                    "train error of task" + str(ivar), train_taskserr[ivar], epoch
-                )
-        print_distributed(
-            verbosity,
-            f"Epoch: {epoch:02d}, Train Loss: {train_loss:.8f}, Val Loss: {val_loss:.8f}, "
-            f"Test Loss: {test_loss:.8f}",
-        )
-        print_distributed(
-            verbosity,
-            "Tasks Train Loss:",
-            [taskerr.item() for taskerr in train_taskserr],
-        )
-        print_distributed(
-            verbosity, "Tasks Val Loss:", [taskerr.item() for taskerr in val_taskserr]
-        )
-        print_distributed(
-            verbosity, "Tasks Test Loss:", [taskerr.item() for taskerr in test_taskserr]
-        )
-
-        total_loss_train[epoch] = train_loss
-        total_loss_val[epoch] = val_loss
-        total_loss_test[epoch] = test_loss
-        task_loss_train[epoch, :] = train_taskserr
-        task_loss_val[epoch, :] = val_taskserr
-        task_loss_test[epoch, :] = test_taskserr
-
-        ###tracking the solution evolving with training
-        if plot_hist_solution:
-            visualizer.create_scatter_plots(
-                true_values,
-                predicted_values,
-                output_names=config["Variables_of_interest"]["output_names"],
-                iepoch=epoch,
-            )
-
-        if SaveCheckpoint:
-            if checkpoint(model, optimizer, reduce_values_ranks(val_loss).item()):
-                print_distributed(
-                    verbosity, "Creating Checkpoint: %f" % checkpoint.min_perf_metric
-                )
-            print_distributed(
-                verbosity, "Best Performance Metric: %f" % checkpoint.min_perf_metric
-            )
-
-        if EarlyStop:
-            if earlystopper(reduce_values_ranks(val_loss)):
-                print_distributed(
-                    verbosity,
-                    "Early stopping executed at epoch = %d due to val_loss not decreasing"
-                    % epoch,
-                )
-                break
-
-        should_stop = check_remaining(t0)
-        if should_stop:
+        if ds_pipe: # TODO: test and val for ds_pipe
+            val_loss = train_loss
+            val_taskserr = -1
+            test_loss = train_loss
+            test_taskserr = -1
             print_distributed(
                 verbosity,
-                "No time left. Early stop.",
+                f"Epoch: {epoch:02d}, Train Loss: {train_loss:.8f}, Val Loss: {val_loss:.8f}, "
+                f"Test Loss: {test_loss:.8f}",
             )
-            break
+        else:
+            val_loss, val_taskserr = validate(
+                val_loader, model, verbosity, reduce_ranks=True
+            )
+            test_loss, test_taskserr, true_values, predicted_values = test(
+                test_loader,
+                model,
+                verbosity,
+                reduce_ranks=True,
+                return_samples=plot_hist_solution,
+            )
+            scheduler.step(val_loss)
+            if writer is not None:
+                writer.add_scalar("train error", train_loss, epoch)
+                writer.add_scalar("validate error", val_loss, epoch)
+                writer.add_scalar("test error", test_loss, epoch)
+                for ivar in range(model.module.num_heads):
+                    writer.add_scalar(
+                        "train error of task" + str(ivar), train_taskserr[ivar], epoch
+                    )
+            print_distributed(
+                verbosity,
+                f"Epoch: {epoch:02d}, Train Loss: {train_loss:.8f}, Val Loss: {val_loss:.8f}, "
+                f"Test Loss: {test_loss:.8f}",
+            )
+            print_distributed(
+                verbosity,
+                "Tasks Train Loss:",
+                [taskerr.item() for taskerr in train_taskserr],
+            )
+            print_distributed(
+                verbosity, "Tasks Val Loss:", [taskerr.item() for taskerr in val_taskserr]
+            )
+            print_distributed(
+                verbosity, "Tasks Test Loss:", [taskerr.item() for taskerr in test_taskserr]
+            )
+
+            total_loss_train[epoch] = train_loss
+            total_loss_val[epoch] = val_loss
+            total_loss_test[epoch] = test_loss
+            task_loss_train[epoch, :] = train_taskserr
+            task_loss_val[epoch, :] = val_taskserr
+            task_loss_test[epoch, :] = test_taskserr
+
+            ###tracking the solution evolving with training
+            if plot_hist_solution:
+                visualizer.create_scatter_plots(
+                    true_values,
+                    predicted_values,
+                    output_names=config["Variables_of_interest"]["output_names"],
+                    iepoch=epoch,
+                )
+
+            if SaveCheckpoint:
+                if checkpoint(model, optimizer, reduce_values_ranks(val_loss).item()):
+                    print_distributed(
+                        verbosity, "Creating Checkpoint: %f" % checkpoint.min_perf_metric
+                    )
+                print_distributed(
+                    verbosity, "Best Performance Metric: %f" % checkpoint.min_perf_metric
+                )
+
+            if EarlyStop:
+                if earlystopper(reduce_values_ranks(val_loss)):
+                    print_distributed(
+                        verbosity,
+                        "Early stopping executed at epoch = %d due to val_loss not decreasing"
+                        % epoch,
+                    )
+                    break
+
+            should_stop = check_remaining(t0)
+            if should_stop:
+                print_distributed(
+                    verbosity,
+                    "No time left. Early stop.",
+                )
+                break
 
     timer.stop()
 
@@ -435,13 +455,17 @@ def train(
     opt,
     verbosity,
     profiler=None,
-    use_deepspeed=False
+    use_deepspeed=False,
+    use_ds_pipe=False
 ):
     if profiler is None:
         profiler = Profiler()
 
     total_error = torch.tensor(0.0, device=get_device())
-    tasks_error = torch.zeros(model.module.num_heads, device=get_device())
+    if use_ds_pipe: 
+        tasks_error = -1 # TODO: figure out how to pass both loss and task_loss for ds_pipe
+    else: 
+        tasks_error = torch.zeros(model.module.num_heads, device=get_device())
     num_samples_local = 0
     model.train()
 
@@ -476,56 +500,78 @@ def train(
             MPI.COMM_WORLD.Barrier()
             tr.stop("dataload_sync")
         tr.stop("dataload", **syncopt)
-        tr.start("zero_grad")
-        with record_function("zero_grad"):
-            if use_deepspeed:
-                pass
-            else:
-                opt.zero_grad()
-        tr.stop("zero_grad")
-        tr.start("get_head_indices")
-        with record_function("get_head_indices"):
-            head_index = get_head_indices(model, data)
-        tr.stop("get_head_indices")
-        tr.start("forward", **syncopt)
-        with record_function("forward"):
-            if trace_level > 0:
-                tr.start("h2d", **syncopt)
-            data = data.to(get_device())
-            if trace_level > 0:
-                tr.stop("h2d", **syncopt)
-            pred = model(data)
-            loss, tasks_loss = model.module.loss(pred, data.y, head_index)
-            if trace_level > 0:
-                tr.start("forward_sync", **syncopt)
-                MPI.COMM_WORLD.Barrier()
-                tr.stop("forward_sync")
-        tr.stop("forward", **syncopt)
-        tr.start("backward", **syncopt)
-        with record_function("backward"):
-            if use_deepspeed:
-                model.backward(loss)
-            else:
-                loss.backward()
-            if trace_level > 0:
-                tr.start("backward_sync", **syncopt)
-                MPI.COMM_WORLD.Barrier()
-                tr.stop("backward_sync")
-        tr.stop("backward", **syncopt)
-        tr.start("opt_step", **syncopt)
-        # print_peak_memory(verbosity, "Max memory allocated before optimizer step")
-        if use_deepspeed:
-            model.step()
+        if use_ds_pipe: 
+            # create the iterator for deepspeed pipeline
+            tr.start("[ds_pipe] data formatting")
+            with record_function("zero_grad"):
+                ds_pipe_batch = (
+                    tuple(t.to(get_device()) if t is not None else None for t in data[0]),
+                    tuple(t.to(get_device()) if t is not None else None for t in data[1]),
+                ) # TODO: the collate should return tuple without forcing typing cast, but I do not know why the data is list here.
+                ds_pipe_iter = iter([ds_pipe_batch])
+            tr.stop("[ds_pipe] data formatting")
+
+            tr.start("[ds_pipe] Forward + Backward")
+            with record_function("[ds_pipe] Forward + Backward"):
+                loss = model.train_batch(data_iter=ds_pipe_iter)
+            tr.stop("[ds_pipe] Forward + Backward")
         else:
-            opt.step()
-        # print_peak_memory(verbosity, "Max memory allocated after optimizer step")
-        tr.stop("opt_step", **syncopt)
+            tr.start("zero_grad")
+            with record_function("zero_grad"):
+                if use_deepspeed:
+                    pass
+                else:
+                    opt.zero_grad()
+            tr.stop("zero_grad")
+            tr.start("get_head_indices")
+            with record_function("get_head_indices"):
+                head_index = get_head_indices(model, data)
+            tr.stop("get_head_indices")
+            tr.start("forward", **syncopt)
+            with record_function("forward"):
+                if trace_level > 0:
+                    tr.start("h2d", **syncopt)
+                data = data.to(get_device())
+                if trace_level > 0:
+                    tr.stop("h2d", **syncopt)
+                pred = model(data)
+                loss, tasks_loss = model.module.loss(pred, data.y, head_index)
+                if trace_level > 0:
+                    tr.start("forward_sync", **syncopt)
+                    MPI.COMM_WORLD.Barrier()
+                    tr.stop("forward_sync")
+            tr.stop("forward", **syncopt)
+            tr.start("backward", **syncopt)
+            with record_function("backward"):
+                if use_deepspeed:
+                    model.backward(loss)
+                else:
+                    loss.backward()
+                if trace_level > 0:
+                    tr.start("backward_sync", **syncopt)
+                    MPI.COMM_WORLD.Barrier()
+                    tr.stop("backward_sync")
+            tr.stop("backward", **syncopt)
+            tr.start("opt_step", **syncopt)
+            # print_peak_memory(verbosity, "Max memory allocated before optimizer step")
+            if use_deepspeed:
+                model.step()
+            else:
+                opt.step()
+            # print_peak_memory(verbosity, "Max memory allocated after optimizer step")
+            tr.stop("opt_step", **syncopt)
         profiler.step()
         with torch.no_grad():
-            total_error += loss * data.num_graphs
-            num_samples_local += data.num_graphs
-            for itask in range(len(tasks_loss)):
-                tasks_error[itask] += tasks_loss[itask] * data.num_graphs
+            if use_ds_pipe:
+                num_graphs = data[1][0].shape[0]
+                total_error += loss * num_graphs
+                num_samples_local += num_graphs
+                tasks_error = -1
+            else:
+                total_error += loss * data.num_graphs
+                num_samples_local += data.num_graphs
+                for itask in range(len(tasks_loss)):
+                    tasks_error[itask] += tasks_loss[itask] * data.num_graphs
         if ibatch < (nbatch - 1):
             tr.start("dataload", **syncopt)
         if use_ddstore:
@@ -538,7 +584,11 @@ def train(
         loader.dataset.ddstore.epoch_end()
 
     train_error = total_error / num_samples_local
-    tasks_error = tasks_error / num_samples_local
+
+    if use_ds_pipe:
+        tasks_error = -1
+    else:
+        tasks_error = tasks_error / num_samples_local
     return train_error, tasks_error
 
 
