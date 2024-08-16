@@ -287,6 +287,13 @@ if __name__ == "__main__":
         default=1,
         help="pipeline parallelism"
     )
+    parser.add_argument(
+        '--local_rank',
+        type=int,
+        default=-1,
+        help='[Only Used for Deepspeed Pipeline]local rank passed from distributed launcher'
+    )
+
     parser.set_defaults(format="adios")
     args = parser.parse_args()
 
@@ -320,6 +327,9 @@ if __name__ == "__main__":
     ##################################################################################################################
 
     comm = MPI.COMM_WORLD
+
+    if args.pipeline_parallel_size > 0:
+        args.local_rank = rank
 
     ## Set up logging
     logging.basicConfig(
@@ -404,6 +414,9 @@ if __name__ == "__main__":
 
     timer = Timer("load_data")
     timer.start()
+
+    # TODO: only the first stage uses the input data, and only the last stage uses labels for loss calculation
+
     if args.format == "adios":
         opt = {"preload": True, "shmem": False}
         if args.shmem:
@@ -459,26 +472,32 @@ if __name__ == "__main__":
             pipe_batch_x = (
                 pyg_batch.x,
                 pyg_batch.pos,
-                pyg_batch.edge_index.to(torch.long),
+                pyg_batch.edge_index.to(torch.long).view(torch.float64),
                 pyg_batch.edge_attr,
-                pyg_batch.batch,
+                pyg_batch.batch.view(torch.float64),
                 None, # it should be the output of Mean/GlobalMean layer
             )
             pipe_batch_x += tuple([None]*num_heads)
 
             # Replace all None with math.nan because all inputs have to be tensor, as required by ds_pipe
-            pipe_batch_x = tuple(torch.tensor([math.nan]) if x is None else x for x in pipe_batch_x)
+            pipe_batch_x = tuple(torch.tensor([1.0], requires_grad=True)+0.0 if x is None else x for x in pipe_batch_x)
 
             pipe_batch_y = (
                 pyg_batch.y,
-                pyg_batch.y_loc,
+                pyg_batch.y_loc.view(torch.float64),
             )
+            
+            pipe_batch_x = tuple(tensor.requires_grad_() for tensor in pipe_batch_x)
+            pipe_batch_y = tuple(tensor.requires_grad_() for tensor in pipe_batch_y)
 
             return (pipe_batch_x, pipe_batch_y)
 
         train_loader.collate_fn = partial(ds_pipe_collate, train_loader.collate_fn)
         val_loader.collate_fn   = partial(ds_pipe_collate, val_loader.collate_fn)
         test_loader.collate_fn  = partial(ds_pipe_collate, test_loader.collate_fn)
+
+    # if (args.pipeline_parallel_size > 0) and (args.local_rank==0 or args.local_rank==3):
+    #     dist.barrier()
 
     config = hydragnn.utils.update_config(config, train_loader, val_loader, test_loader)
     timer.stop()

@@ -13,8 +13,8 @@ class ModuleWrapper:
 class DataWrapper:
     def __init__(self, pipe_out, label):
         self.y = label[0]
-        self.y_loc = label[1]
-        self.batch = pipe_out[4]
+        self.y_loc = label[1].view(torch.int64)
+        self.batch = pipe_out[4].view(torch.int64)
 
 class ConvPipe(nn.Module):
     def __init__(self, conv_instance):
@@ -25,7 +25,7 @@ class ConvPipe(nn.Module):
         c, pos = self.conv(
             x=input_tuple[0], 
             pos=input_tuple[1], 
-            edge_index=input_tuple[2],
+            edge_index=input_tuple[2].view(torch.int64),
         )
         return (c, pos,) + input_tuple[2:]
 
@@ -37,7 +37,7 @@ class ConvPipeEdgeAttr(ConvPipe):
         c, pos = self.conv(
             x=input_tuple[0], 
             pos=input_tuple[1], 
-            edge_index=input_tuple[2],
+            edge_index=input_tuple[2].view(torch.int64),
             edge_attr=input_tuple[3],
         )
         return (c, pos,) + input_tuple[2:]
@@ -63,7 +63,7 @@ class GlobalMeanPipe(nn.Module):
     def __init__(self):
         super().__init__()
     def forward(self, input_tuple):
-        x_graph = global_mean_pool(input_tuple[0], input_tuple[4])
+        x_graph = global_mean_pool(input_tuple[0], input_tuple[4].view(torch.int64))
         return input_tuple[:5] + (x_graph, ) + input_tuple[6:]
 
 class HeadPipe(nn.Module):
@@ -97,14 +97,14 @@ class HeadPipe(nn.Module):
                 if self.node_NN_type == "conv":
                     for conv, batch_norm in zip(headloc[0::2], headloc[1::2]):
                         if self.use_edge_attr:
-                            c, pos = conv(x=input_tuple[0], pos=input_tuple[1], edge_index=input_tuple[2], edge_attr=input_tuple[3])
+                            c, pos = conv(x=input_tuple[0], pos=input_tuple[1], edge_index=input_tuple[2].view(torch.int64), edge_attr=input_tuple[3])
                         else:
-                            c, pos = conv(x=input_tuple[0], pos=input_tuple[1], edge_index=input_tuple[2])
+                            c, pos = conv(x=input_tuple[0], pos=input_tuple[1], edge_index=input_tuple[2].view(torch.int64))
                         c = batch_norm(c)
                         x = self.activation_function(c)
                     x_node = x
                 else:
-                    x_node = headloc(x=input_tuple[0], batch=input_tuple[4])
+                    x_node = headloc(x=input_tuple[0], batch=input_tuple[4].view(torch.int64))
                 outputs.append(x_node)
         return input_tuple[:6] + tuple(outputs)
         
@@ -150,11 +150,12 @@ class BasePipe(Base):
         def pipeloss(pipe_out, label):
             # pipe_out: (x, pos, edge_index, edge_attr, batch, x_graph, **outputs)
             # label: (y, y_loc)
+            print("[Loss] Forward")
             pred = pipe_out[6:]
             y = label[0]
             head_index = get_head_indices_func(moduled_model, DataWrapper(pipe_out, label))
 
             loss, tasks_loss = self.loss(pred, y, head_index)
-            return loss
+            return loss.requires_grad_()
 
         return pipeloss

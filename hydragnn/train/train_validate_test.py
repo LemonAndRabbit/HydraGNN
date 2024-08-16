@@ -501,19 +501,29 @@ def train(
             tr.stop("dataload_sync")
         tr.stop("dataload", **syncopt)
         if use_ds_pipe: 
+            _, rank = get_comm_size_and_rank()
             # create the iterator for deepspeed pipeline
             tr.start("[ds_pipe] data formatting")
             with record_function("zero_grad"):
                 ds_pipe_batch = (
-                    tuple(t.to(get_device()) if t is not None else None for t in data[0]),
-                    tuple(t.to(get_device()) if t is not None else None for t in data[1]),
+                    tuple(t.to(get_device()) for t in data[0]),
+                    tuple(t.to(get_device()) for t in data[1]),
                 ) # TODO: the collate should return tuple without forcing typing cast, but I do not know why the data is list here.
+                dist.barrier()
+                if rank != 0 and rank != 3:
+                    dist.barrier()
                 ds_pipe_iter = iter([ds_pipe_batch])
+                if rank == 0 or rank == 3:
+                    dist.barrier()
             tr.stop("[ds_pipe] data formatting")
 
             tr.start("[ds_pipe] Forward + Backward")
             with record_function("[ds_pipe] Forward + Backward"):
-                loss = model.train_batch(data_iter=ds_pipe_iter)
+                try:
+                    loss = model.train_batch(data_iter=ds_pipe_iter)
+                except Exception as e:
+                    print(f"An error occurred: {e}")
+                    import pdb; pdb.set_trace()
             tr.stop("[ds_pipe] Forward + Backward")
         else:
             tr.start("zero_grad")
