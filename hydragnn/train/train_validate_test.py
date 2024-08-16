@@ -48,7 +48,7 @@ def get_nbatch(loader):
     if os.getenv("HYDRAGNN_MAX_NUM_BATCH") is not None:
         nbatch = min(nbatch, int(os.environ["HYDRAGNN_MAX_NUM_BATCH"]))
 
-    return nbatch
+    return 2
 
 
 def train_validate_test(
@@ -171,132 +171,132 @@ def train_validate_test(
         if int(os.getenv("HYDRAGNN_VALTEST", "1")) == 0:
             continue
 
-        val_loss, val_taskserr = validate(
-            val_loader, model, verbosity, reduce_ranks=True
-        )
-        test_loss, test_taskserr, true_values, predicted_values = test(
-            test_loader,
-            model,
-            verbosity,
-            reduce_ranks=True,
-            return_samples=plot_hist_solution,
-        )
-        scheduler.step(val_loss)
-        if writer is not None:
-            writer.add_scalar("train error", train_loss, epoch)
-            writer.add_scalar("validate error", val_loss, epoch)
-            writer.add_scalar("test error", test_loss, epoch)
-            for ivar in range(model.module.num_heads):
-                writer.add_scalar(
-                    "train error of task" + str(ivar), train_taskserr[ivar], epoch
-                )
-        print_distributed(
-            verbosity,
-            f"Epoch: {epoch:02d}, Train Loss: {train_loss:.8f}, Val Loss: {val_loss:.8f}, "
-            f"Test Loss: {test_loss:.8f}",
-        )
-        print_distributed(
-            verbosity,
-            "Tasks Train Loss:",
-            [taskerr.item() for taskerr in train_taskserr],
-        )
-        print_distributed(
-            verbosity, "Tasks Val Loss:", [taskerr.item() for taskerr in val_taskserr]
-        )
-        print_distributed(
-            verbosity, "Tasks Test Loss:", [taskerr.item() for taskerr in test_taskserr]
-        )
+    #     val_loss, val_taskserr = validate(
+    #         val_loader, model, verbosity, reduce_ranks=True
+    #     )
+    #     test_loss, test_taskserr, true_values, predicted_values = test(
+    #         test_loader,
+    #         model,
+    #         verbosity,
+    #         reduce_ranks=True,
+    #         return_samples=plot_hist_solution,
+    #     )
+    #     scheduler.step(val_loss)
+    #     if writer is not None:
+    #         writer.add_scalar("train error", train_loss, epoch)
+    #         writer.add_scalar("validate error", val_loss, epoch)
+    #         writer.add_scalar("test error", test_loss, epoch)
+    #         for ivar in range(model.module.num_heads):
+    #             writer.add_scalar(
+    #                 "train error of task" + str(ivar), train_taskserr[ivar], epoch
+    #             )
+    #     print_distributed(
+    #         verbosity,
+    #         f"Epoch: {epoch:02d}, Train Loss: {train_loss:.8f}, Val Loss: {val_loss:.8f}, "
+    #         f"Test Loss: {test_loss:.8f}",
+    #     )
+    #     print_distributed(
+    #         verbosity,
+    #         "Tasks Train Loss:",
+    #         [taskerr.item() for taskerr in train_taskserr],
+    #     )
+    #     print_distributed(
+    #         verbosity, "Tasks Val Loss:", [taskerr.item() for taskerr in val_taskserr]
+    #     )
+    #     print_distributed(
+    #         verbosity, "Tasks Test Loss:", [taskerr.item() for taskerr in test_taskserr]
+    #     )
 
-        total_loss_train[epoch] = train_loss
-        total_loss_val[epoch] = val_loss
-        total_loss_test[epoch] = test_loss
-        task_loss_train[epoch, :] = train_taskserr
-        task_loss_val[epoch, :] = val_taskserr
-        task_loss_test[epoch, :] = test_taskserr
+    #     total_loss_train[epoch] = train_loss
+    #     total_loss_val[epoch] = val_loss
+    #     total_loss_test[epoch] = test_loss
+    #     task_loss_train[epoch, :] = train_taskserr
+    #     task_loss_val[epoch, :] = val_taskserr
+    #     task_loss_test[epoch, :] = test_taskserr
 
-        ###tracking the solution evolving with training
-        if plot_hist_solution:
-            visualizer.create_scatter_plots(
-                true_values,
-                predicted_values,
-                output_names=config["Variables_of_interest"]["output_names"],
-                iepoch=epoch,
-            )
+    #     ###tracking the solution evolving with training
+    #     if plot_hist_solution:
+    #         visualizer.create_scatter_plots(
+    #             true_values,
+    #             predicted_values,
+    #             output_names=config["Variables_of_interest"]["output_names"],
+    #             iepoch=epoch,
+    #         )
 
-        if SaveCheckpoint:
-            if checkpoint(model, optimizer, reduce_values_ranks(val_loss).item()):
-                print_distributed(
-                    verbosity, "Creating Checkpoint: %f" % checkpoint.min_perf_metric
-                )
-            print_distributed(
-                verbosity, "Best Performance Metric: %f" % checkpoint.min_perf_metric
-            )
+    #     if SaveCheckpoint:
+    #         if checkpoint(model, optimizer, reduce_values_ranks(val_loss).item()):
+    #             print_distributed(
+    #                 verbosity, "Creating Checkpoint: %f" % checkpoint.min_perf_metric
+    #             )
+    #         print_distributed(
+    #             verbosity, "Best Performance Metric: %f" % checkpoint.min_perf_metric
+    #         )
 
-        if EarlyStop:
-            if earlystopper(reduce_values_ranks(val_loss)):
-                print_distributed(
-                    verbosity,
-                    "Early stopping executed at epoch = %d due to val_loss not decreasing"
-                    % epoch,
-                )
-                break
+    #     if EarlyStop:
+    #         if earlystopper(reduce_values_ranks(val_loss)):
+    #             print_distributed(
+    #                 verbosity,
+    #                 "Early stopping executed at epoch = %d due to val_loss not decreasing"
+    #                 % epoch,
+    #             )
+    #             break
 
-        should_stop = check_remaining(t0)
-        if should_stop:
-            print_distributed(
-                verbosity,
-                "No time left. Early stop.",
-            )
-            break
+    #     should_stop = check_remaining(t0)
+    #     if should_stop:
+    #         print_distributed(
+    #             verbosity,
+    #             "No time left. Early stop.",
+    #         )
+    #         break
 
-    timer.stop()
+    # timer.stop()
 
-    if create_plots:
-        # reduce loss statistics across all processes
-        total_loss_train = reduce_values_ranks(total_loss_train)
-        total_loss_val = reduce_values_ranks(total_loss_val)
-        total_loss_test = reduce_values_ranks(total_loss_test)
-        task_loss_train = reduce_values_ranks(task_loss_train)
-        task_loss_val = reduce_values_ranks(task_loss_val)
-        task_loss_test = reduce_values_ranks(task_loss_test)
+    # if create_plots:
+    #     # reduce loss statistics across all processes
+    #     total_loss_train = reduce_values_ranks(total_loss_train)
+    #     total_loss_val = reduce_values_ranks(total_loss_val)
+    #     total_loss_test = reduce_values_ranks(total_loss_test)
+    #     task_loss_train = reduce_values_ranks(task_loss_train)
+    #     task_loss_val = reduce_values_ranks(task_loss_val)
+    #     task_loss_test = reduce_values_ranks(task_loss_test)
 
-        # At the end of training phase, do the one test run for visualizer to get latest predictions
-        test_loss, test_taskserr, true_values, predicted_values = test(
-            test_loader, model, verbosity
-        )
+    #     # At the end of training phase, do the one test run for visualizer to get latest predictions
+    #     test_loss, test_taskserr, true_values, predicted_values = test(
+    #         test_loader, model, verbosity
+    #     )
 
-        ##output predictions with unit/not normalized
-        if config["Variables_of_interest"]["denormalize_output"]:
-            true_values, predicted_values = output_denormalize(
-                config["Variables_of_interest"]["y_minmax"],
-                true_values,
-                predicted_values,
-            )
+    #     ##output predictions with unit/not normalized
+    #     if config["Variables_of_interest"]["denormalize_output"]:
+    #         true_values, predicted_values = output_denormalize(
+    #             config["Variables_of_interest"]["y_minmax"],
+    #             true_values,
+    #             predicted_values,
+    #         )
 
-    _, rank = get_comm_size_and_rank()
-    if create_plots and rank == 0:
-        ######result visualization######
-        visualizer.create_plot_global(
-            true_values,
-            predicted_values,
-            output_names=config["Variables_of_interest"]["output_names"],
-        )
-        visualizer.create_scatter_plots(
-            true_values,
-            predicted_values,
-            output_names=config["Variables_of_interest"]["output_names"],
-        )
-        ######plot loss history#####
-        visualizer.plot_history(
-            total_loss_train,
-            total_loss_val,
-            total_loss_test,
-            task_loss_train,
-            task_loss_val,
-            task_loss_test,
-            model.module.loss_weights,
-            config["Variables_of_interest"]["output_names"],
-        )
+    # _, rank = get_comm_size_and_rank()
+    # if create_plots and rank == 0:
+    #     ######result visualization######
+    #     visualizer.create_plot_global(
+    #         true_values,
+    #         predicted_values,
+    #         output_names=config["Variables_of_interest"]["output_names"],
+    #     )
+    #     visualizer.create_scatter_plots(
+    #         true_values,
+    #         predicted_values,
+    #         output_names=config["Variables_of_interest"]["output_names"],
+    #     )
+    #     ######plot loss history#####
+    #     visualizer.plot_history(
+    #         total_loss_train,
+    #         total_loss_val,
+    #         total_loss_test,
+    #         task_loss_train,
+    #         task_loss_val,
+    #         task_loss_test,
+    #         model.module.loss_weights,
+    #         config["Variables_of_interest"]["output_names"],
+    #     )
 
 
 def get_head_indices(model, data):
@@ -460,10 +460,16 @@ def train(loader, model, opt, verbosity, profiler=None, use_deepspeed=False):
         tr.start("epoch_begin")
         loader.dataset.ddstore.epoch_begin()
         tr.stop("epoch_begin")
+    # print("WARNNING: ONly training for 2 epochs")
     for ibatch, data in iterate_tqdm(
         enumerate(loader), verbosity, desc="Train", total=nbatch
     ):
-        if ibatch >= nbatch:
+        # _, rank = get_comm_size_and_rank()
+        # torch.save(data, f'{rank}_loaded_data.pt')
+        # torch.save(data.batch, f'{rank}_loaded_data_batch.pt')
+        # exit(0)
+        print(f'{data.batch.max().item()}')
+        if ibatch >= 2:
             break
         if use_ddstore:
             tr.start("epoch_end")

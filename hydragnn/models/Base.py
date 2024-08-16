@@ -306,7 +306,7 @@ class Base(Module):
         if data.batch is None:
             x_graph = x.mean(dim=0, keepdim=True)
         else:
-            x_graph = global_mean_pool(x, data.batch.to(x.device))
+            x_graph = global_mean_pool(x, data.batch.to(x.device), size=32)
         outputs = []
         for head_dim, headloc, type_head in zip(
             self.head_dims, self.heads_NN, self.head_type

@@ -3,10 +3,9 @@
 #SBATCH -J HydraGNN
 #SBATCH -o job-%j.out
 #SBATCH -e job-%j.out
-#SBATCH -t 01:00:00
+#SBATCH -t 2:00:00
 #SBATCH -p batch
-#SBATCH -q debug
-#SBATCH -N 8
+#SBATCH -N 16
 #SBATCH -S 1
 
 ulimit -n 65536
@@ -43,4 +42,4 @@ export PYTHONPATH=$PWD:$PYTHONPATH
 # srun -N$SLURM_JOB_NUM_NODES -n$((SLURM_JOB_NUM_NODES*8)) -c7 --gres=gpu:8 \
 #    python -u ./examples/ogb/train_gap.py gap --adios --use_deepspeed
 srun -N$SLURM_JOB_NUM_NODES -n$((SLURM_JOB_NUM_NODES*8)) -c7 --gpus-per-task=1 --gpu-bind=closest \
-    python -u ./examples/ogb/train_gap.py gap --adios --use_deepspeed
+    python -u ./examples/open_catalyst_2020/train.py --adios --use_deepspeed --modelname OC2020_entire_dataset

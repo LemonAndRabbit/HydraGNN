@@ -1,0 +1,88 @@
+MINICOM=-c on
+MIOPEN_DISABLE_CACHE=1
+MPICH_ENV_DISPLAY=0
+MPICH_OFI_NIC_POLICY=NUMA
+MPICH_VERSION_DISPLAY=0
+MPICH_DIR=/opt/cray/pe/mpich/8.1.28/ofi/crayclang/17.0
+HYDRA_LAUNCHER_EXTRA_ARGS=--external-launcher
+HYDRAGNN_VALTEST=0
+HYDRAGNN_AGGR_BACKEND=mpi
+HYDRAGNN_NUM_WORKERS=0
+HYDRA_BOOTSTRAP=slurm
+HYDRAGNN_USE_VARIABLE_GRAPH_SIZE=1
+NCCL_P2P_LEVEL=NVL
+NCCL_PROTO=Simple
+NCCL_P2P_DISABLE=1
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+slurmstepd: error: execve(): python: No such file or directory
+srun: error: frontier09282: tasks 0-7: Exited with exit code 2
+srun: Terminating StepId=2119970.0
+srun: error: frontier09286: tasks 8-15: Exited with exit code 2
+srun: error: frontier09292: tasks 24-31: Exited with exit code 2
+srun: error: frontier09290: tasks 16-23: Exited with exit code 2
+srun: error: frontier09293: tasks 32-39: Exited with exit code 2
+srun: error: frontier09295: tasks 40-47: Exited with exit code 2
+srun: error: frontier09298: tasks 48-55: Exited with exit code 2
+srun: error: frontier09300: tasks 56-63: Exited with exit code 2

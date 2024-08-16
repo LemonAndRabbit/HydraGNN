@@ -1,0 +1,1061 @@
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+-------------------------------------------------------------------------------
+There are messages associated with the following module(s):
+-------------------------------------------------------------------------------
+
+DefApps:
+   The software stack on Frontier had updates on July 9th & 16th, 2024.
+   Retired modules: https://docs.olcf.ornl.gov/software/software-news.html#frontier-user-environment-changes-july-9-2024
+   New defaults: https://docs.olcf.ornl.gov/software/software-news.html#frontier-system-software-update-july-16-2024
+
+-------------------------------------------------------------------------------
+
+
+Lmod is automatically replacing "cce/17.0.0" with "gcc-native/12.3".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.5.0" with "PrgEnv-gnu/8.5.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/23.12.5     2) cray-mpich/8.1.28     3) darshan-runtime/3.4.0-mpi
+
+
+Lmod is automatically replacing "gcc-native/12.3" with "amd-mixed/5.4.3".
+
+Lmod has detected the following error: The following module(s) are unknown:
+"darshan-runtime" "amd-mixed/5.4.3"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "darshan-runtime" "amd-mixed/5.4.3"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"cray-mpich/8.1.26"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "cray-mpich/8.1.26"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+[2024-07-22 14:36:03,786] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,786] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,786] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,786] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,786] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,786] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,786] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,786] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,788] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,788] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,788] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,788] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,788] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,788] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,788] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,788] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,793] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,793] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,793] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,793] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,793] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,793] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,793] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,793] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,795] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,795] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,795] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,795] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,795] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,795] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,795] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,795] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,795] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,795] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,795] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,795] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,795] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,795] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,795] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,795] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,799] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,799] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,799] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,799] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,799] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,799] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,799] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,799] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,801] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,801] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,801] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,801] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,801] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,801] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,801] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,801] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,802] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,802] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,802] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,802] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,802] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,802] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,802] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 14:36:03,802] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[2024-07-22 14:36:18,291] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,291] [INFO] [comm.py:637:init_distributed] cdb=None
+Distributed data parallel: nccl master at frontier06978:8889
+[2024-07-22 14:36:18,291] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,291] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,291] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,291] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,291] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,291] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,291] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,291] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,291] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,291] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,291] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,291] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,291] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2024-07-22 14:36:18,291] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,291] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,292] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:426] [c10d] The server socket cannot be initialized on [::]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-07-22 14:36:18,332] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,332] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,332] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,332] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,332] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,332] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,332] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 14:36:18,332] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier06978.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+0: Adios reading: ./examples/ogb/dataset/ogb_gap.bp
+0: Read attr time (sec):  0.002262592315673828
+0: read and bcast: trainset/edge_attr/variable_count 0.6209597587585449
+0: read and bcast: trainset/edge_attr/variable_offset 0.9643709659576416
+0: read and bcast: trainset/edge_attr/variable_dim 0.9646923542022705
+0: read and bcast: trainset/y_loc/variable_count 17.951719999313354
+0: read and bcast: trainset/y_loc/variable_offset 18.16935396194458
+0: read and bcast: trainset/y_loc/variable_dim 18.169718027114868
+0: read and bcast: trainset/x/variable_count 19.041812419891357
+0: read and bcast: trainset/x/variable_offset 19.21809434890747
+0: read and bcast: trainset/x/variable_dim 19.218432664871216
+0: read and bcast: trainset/y/variable_count 96.16678762435913
+0: read and bcast: trainset/y/variable_offset 96.46140837669373
+0: read and bcast: trainset/y/variable_dim 96.46171975135803
+0: read and bcast: trainset/edge_index/variable_count 96.92061710357666
+0: read and bcast: trainset/edge_index/variable_offset 97.04779696464539
+0: read and bcast: trainset/edge_index/variable_dim 97.04811143875122
+0: Overall time (sec):  113.0200469493866
+0: DDStore adding time (sec):  0.0
+0: Data loading time (sec):  113.03135323524475
+0: Adios reading: ./examples/ogb/dataset/ogb_gap.bp
+0: Read attr time (sec):  0.0006630420684814453
+0: read and bcast: valset/edge_attr/variable_count 0.24023199081420898
+0: read and bcast: valset/edge_attr/variable_offset 0.24702811241149902
+0: read and bcast: valset/edge_attr/variable_dim 0.24719572067260742
+0: read and bcast: valset/y_loc/variable_count 1.6820399761199951
+0: read and bcast: valset/y_loc/variable_offset 1.7267296314239502
+0: read and bcast: valset/y_loc/variable_dim 1.7269210815429688
+0: read and bcast: valset/x/variable_count 1.743384838104248
+0: read and bcast: valset/x/variable_offset 1.7492496967315674
+0: read and bcast: valset/x/variable_dim 1.7493999004364014
+0: read and bcast: valset/y/variable_count 6.334995746612549
+0: read and bcast: valset/y/variable_offset 6.431206226348877
+0: read and bcast: valset/y/variable_dim 6.431347608566284
+0: read and bcast: valset/edge_index/variable_count 6.470705986022949
+0: read and bcast: valset/edge_index/variable_offset 6.477093935012817
+0: read and bcast: valset/edge_index/variable_dim 6.477259635925293
+0: Overall time (sec):  7.667574405670166
+0: DDStore adding time (sec):  0.0
+0: Data loading time (sec):  8.675758361816406
+0: Adios reading: ./examples/ogb/dataset/ogb_gap.bp
+0: Read attr time (sec):  0.0006289482116699219
+0: read and bcast: testset/edge_attr/variable_count 0.24777626991271973
+0: read and bcast: testset/edge_attr/variable_offset 0.25443029403686523
+0: read and bcast: testset/edge_attr/variable_dim 0.254589319229126
+0: read and bcast: testset/y_loc/variable_count 1.5035626888275146
+0: read and bcast: testset/y_loc/variable_offset 1.524468183517456
+0: read and bcast: testset/y_loc/variable_dim 1.5246150493621826
+0: read and bcast: testset/x/variable_count 1.5956969261169434
+0: read and bcast: testset/x/variable_offset 1.6015264987945557
+0: read and bcast: testset/x/variable_dim 1.6019251346588135
+0: read and bcast: testset/y/variable_count 6.088805913925171
+0: read and bcast: testset/y/variable_offset 6.1823039054870605
+0: read and bcast: testset/y/variable_dim 6.182448625564575
+0: read and bcast: testset/edge_index/variable_count 6.234654664993286
+0: read and bcast: testset/edge_index/variable_offset 6.2413859367370605
+0: read and bcast: testset/edge_index/variable_dim 6.2415595054626465
+0: Overall time (sec):  7.3620476722717285
+0: DDStore adding time (sec):  0.0
+0: Data loading time (sec):  7.436501502990723
+INFO (rank 0): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 1): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 17): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 23): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 29): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 13): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 42): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 25): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 20): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 37): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 18): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 9): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 15): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 31): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 11): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 7): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 2): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 41): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 33): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 45): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 4): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 19): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 3): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 26): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 6): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 22): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 21): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 10): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 27): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 39): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 49): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 5): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 46): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 14): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 12): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 30): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 35): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 57): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 28): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 61): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 34): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 44): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 47): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 38): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 62): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 43): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 36): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 59): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 24): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 55): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 50): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 16): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 8): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 52): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 58): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 32): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 53): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 60): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 63): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 54): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 51): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 40): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 56): trainset,valset,testset size: 3106934 172605 172612
+INFO (rank 48): trainset,valset,testset size: 3106934 172605 172612
+0: Using GPU
+0:     graph_convs.0.module_0.aggr_module.avg_deg_lin	                 [1]	         1
+0:     graph_convs.0.module_0.aggr_module.avg_deg_log	                 [1]	         1
+0:          graph_convs.0.module_0.pre_nns.0.0.weight	            [37, 74]	      2738
+0:            graph_convs.0.module_0.pre_nns.0.0.bias	                [37]	        37
+0:         graph_convs.0.module_0.post_nns.0.0.weight	           [55, 629]	     34595
+0:           graph_convs.0.module_0.post_nns.0.0.bias	                [55]	        55
+0:                  graph_convs.0.module_0.lin.weight	            [55, 55]	      3025
+0:                    graph_convs.0.module_0.lin.bias	                [55]	        55
+0:     graph_convs.1.module_0.aggr_module.avg_deg_lin	                 [1]	         1
+0:     graph_convs.1.module_0.aggr_module.avg_deg_log	                 [1]	         1
+0:          graph_convs.1.module_0.pre_nns.0.0.weight	           [55, 110]	      6050
+0:            graph_convs.1.module_0.pre_nns.0.0.bias	                [55]	        55
+0:         graph_convs.1.module_0.post_nns.0.0.weight	           [55, 935]	     51425
+0:           graph_convs.1.module_0.post_nns.0.0.bias	                [55]	        55
+0:                  graph_convs.1.module_0.lin.weight	            [55, 55]	      3025
+0:                    graph_convs.1.module_0.lin.bias	                [55]	        55
+0:     graph_convs.2.module_0.aggr_module.avg_deg_lin	                 [1]	         1
+0:     graph_convs.2.module_0.aggr_module.avg_deg_log	                 [1]	         1
+0:          graph_convs.2.module_0.pre_nns.0.0.weight	           [55, 110]	      6050
+0:            graph_convs.2.module_0.pre_nns.0.0.bias	                [55]	        55
+0:         graph_convs.2.module_0.post_nns.0.0.weight	           [55, 935]	     51425
+0:           graph_convs.2.module_0.post_nns.0.0.bias	                [55]	        55
+0:                  graph_convs.2.module_0.lin.weight	            [55, 55]	      3025
+0:                    graph_convs.2.module_0.lin.bias	                [55]	        55
+0:     graph_convs.3.module_0.aggr_module.avg_deg_lin	                 [1]	         1
+0:     graph_convs.3.module_0.aggr_module.avg_deg_log	                 [1]	         1
+0:          graph_convs.3.module_0.pre_nns.0.0.weight	           [55, 110]	      6050
+0:            graph_convs.3.module_0.pre_nns.0.0.bias	                [55]	        55
+0:         graph_convs.3.module_0.post_nns.0.0.weight	           [55, 935]	     51425
+0:           graph_convs.3.module_0.post_nns.0.0.bias	                [55]	        55
+0:                  graph_convs.3.module_0.lin.weight	            [55, 55]	      3025
+0:                    graph_convs.3.module_0.lin.bias	                [55]	        55
+0:     graph_convs.4.module_0.aggr_module.avg_deg_lin	                 [1]	         1
+0:     graph_convs.4.module_0.aggr_module.avg_deg_log	                 [1]	         1
+0:          graph_convs.4.module_0.pre_nns.0.0.weight	           [55, 110]	      6050
+0:            graph_convs.4.module_0.pre_nns.0.0.bias	                [55]	        55
+0:         graph_convs.4.module_0.post_nns.0.0.weight	           [55, 935]	     51425
+0:           graph_convs.4.module_0.post_nns.0.0.bias	                [55]	        55
+0:                  graph_convs.4.module_0.lin.weight	            [55, 55]	      3025
+0:                    graph_convs.4.module_0.lin.bias	                [55]	        55
+0:     graph_convs.5.module_0.aggr_module.avg_deg_lin	                 [1]	         1
+0:     graph_convs.5.module_0.aggr_module.avg_deg_log	                 [1]	         1
+0:          graph_convs.5.module_0.pre_nns.0.0.weight	           [55, 110]	      6050
+0:            graph_convs.5.module_0.pre_nns.0.0.bias	                [55]	        55
+0:         graph_convs.5.module_0.post_nns.0.0.weight	           [55, 935]	     51425
+0:           graph_convs.5.module_0.post_nns.0.0.bias	                [55]	        55
+0:                  graph_convs.5.module_0.lin.weight	            [55, 55]	      3025
+0:                    graph_convs.5.module_0.lin.bias	                [55]	        55
+0:                     feature_layers.0.module.weight	                [55]	        55
+0:                       feature_layers.0.module.bias	                [55]	        55
+0:               feature_layers.0.module.running_mean	                [55]	        55
+0:                feature_layers.0.module.running_var	                [55]	        55
+0:        feature_layers.0.module.num_batches_tracked	                  []	         1
+0:                     feature_layers.1.module.weight	                [55]	        55
+0:                       feature_layers.1.module.bias	                [55]	        55
+0:               feature_layers.1.module.running_mean	                [55]	        55
+0:                feature_layers.1.module.running_var	                [55]	        55
+0:        feature_layers.1.module.num_batches_tracked	                  []	         1
+0:                     feature_layers.2.module.weight	                [55]	        55
+0:                       feature_layers.2.module.bias	                [55]	        55
+0:               feature_layers.2.module.running_mean	                [55]	        55
+0:                feature_layers.2.module.running_var	                [55]	        55
+0:        feature_layers.2.module.num_batches_tracked	                  []	         1
+0:                     feature_layers.3.module.weight	                [55]	        55
+0:                       feature_layers.3.module.bias	                [55]	        55
+0:               feature_layers.3.module.running_mean	                [55]	        55
+0:                feature_layers.3.module.running_var	                [55]	        55
+0:        feature_layers.3.module.num_batches_tracked	                  []	         1
+0:                     feature_layers.4.module.weight	                [55]	        55
+0:                       feature_layers.4.module.bias	                [55]	        55
+0:               feature_layers.4.module.running_mean	                [55]	        55
+0:                feature_layers.4.module.running_var	                [55]	        55
+0:        feature_layers.4.module.num_batches_tracked	                  []	         1
+0:                     feature_layers.5.module.weight	                [55]	        55
+0:                       feature_layers.5.module.bias	                [55]	        55
+0:               feature_layers.5.module.running_mean	                [55]	        55
+0:                feature_layers.5.module.running_var	                [55]	        55
+0:        feature_layers.5.module.num_batches_tracked	                  []	         1
+0:                                heads_NN.0.0.weight	           [50, 100]	      5000
+0:                                  heads_NN.0.0.bias	                [50]	        50
+0:                                heads_NN.0.2.weight	            [25, 50]	      1250
+0:                                  heads_NN.0.2.bias	                [25]	        25
+0:                                heads_NN.0.4.weight	             [1, 25]	        25
+0:                                  heads_NN.0.4.bias	                 [1]	         1
+0:                              graph_shared.0.weight	           [100, 55]	      5500
+0:                                graph_shared.0.bias	               [100]	       100
+0: --------------------------------------------------
+0:                                              Total	                    	    357119
+0: All (total, MB): 357119 1.3623
+[2024-07-22 14:38:30,167] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.14.4, git-hash=unknown, git-branch=unknown
+INFO (rank 0): Added key: store_based_barrier_key:2 to store for rank: 0
+INFO (rank 6): Added key: store_based_barrier_key:2 to store for rank: 6
+INFO (rank 3): Added key: store_based_barrier_key:2 to store for rank: 3
+INFO (rank 24): Added key: store_based_barrier_key:2 to store for rank: 24
+INFO (rank 38): Added key: store_based_barrier_key:2 to store for rank: 38
+INFO (rank 29): Added key: store_based_barrier_key:2 to store for rank: 29
+INFO (rank 46): Added key: store_based_barrier_key:2 to store for rank: 46
+INFO (rank 33): Added key: store_based_barrier_key:2 to store for rank: 33
+INFO (rank 2): Added key: store_based_barrier_key:2 to store for rank: 2
+INFO (rank 60): Added key: store_based_barrier_key:2 to store for rank: 60
+INFO (rank 47): Added key: store_based_barrier_key:2 to store for rank: 47
+INFO (rank 34): Added key: store_based_barrier_key:2 to store for rank: 34
+INFO (rank 63): Added key: store_based_barrier_key:2 to store for rank: 63
+INFO (rank 41): Added key: store_based_barrier_key:2 to store for rank: 41
+INFO (rank 25): Added key: store_based_barrier_key:2 to store for rank: 25
+INFO (rank 57): Added key: store_based_barrier_key:2 to store for rank: 57
+INFO (rank 42): Added key: store_based_barrier_key:2 to store for rank: 42
+INFO (rank 18): Added key: store_based_barrier_key:2 to store for rank: 18
+INFO (rank 26): Added key: store_based_barrier_key:2 to store for rank: 26
+INFO (rank 43): Added key: store_based_barrier_key:2 to store for rank: 43
+INFO (rank 22): Added key: store_based_barrier_key:2 to store for rank: 22
+INFO (rank 11): Added key: store_based_barrier_key:2 to store for rank: 11
+INFO (rank 13): Added key: store_based_barrier_key:2 to store for rank: 13
+INFO (rank 55): Added key: store_based_barrier_key:2 to store for rank: 55
+INFO (rank 9): Added key: store_based_barrier_key:2 to store for rank: 9
+INFO (rank 10): Added key: store_based_barrier_key:2 to store for rank: 10
+INFO (rank 12): Added key: store_based_barrier_key:2 to store for rank: 12
+INFO (rank 53): Added key: store_based_barrier_key:2 to store for rank: 53
+INFO (rank 50): Added key: store_based_barrier_key:2 to store for rank: 50
+INFO (rank 51): Added key: store_based_barrier_key:2 to store for rank: 51
+INFO (rank 52): Added key: store_based_barrier_key:2 to store for rank: 52
+INFO (rank 49): Added key: store_based_barrier_key:2 to store for rank: 49
+INFO (rank 54): Added key: store_based_barrier_key:2 to store for rank: 54
+INFO (rank 35): Added key: store_based_barrier_key:2 to store for rank: 35
+INFO (rank 62): Added key: store_based_barrier_key:2 to store for rank: 62
+INFO (rank 5): Added key: store_based_barrier_key:2 to store for rank: 5
+INFO (rank 1): Added key: store_based_barrier_key:2 to store for rank: 1
+INFO (rank 7): Added key: store_based_barrier_key:2 to store for rank: 7
+INFO (rank 17): Added key: store_based_barrier_key:2 to store for rank: 17
+INFO (rank 20): Added key: store_based_barrier_key:2 to store for rank: 20
+INFO (rank 19): Added key: store_based_barrier_key:2 to store for rank: 19
+INFO (rank 23): Added key: store_based_barrier_key:2 to store for rank: 23
+INFO (rank 61): Added key: store_based_barrier_key:2 to store for rank: 61
+INFO (rank 36): Added key: store_based_barrier_key:2 to store for rank: 36
+INFO (rank 58): Added key: store_based_barrier_key:2 to store for rank: 58
+INFO (rank 40): Added key: store_based_barrier_key:2 to store for rank: 40
+INFO (rank 59): Added key: store_based_barrier_key:2 to store for rank: 59
+INFO (rank 37): Added key: store_based_barrier_key:2 to store for rank: 37
+INFO (rank 39): Added key: store_based_barrier_key:2 to store for rank: 39
+INFO (rank 4): Added key: store_based_barrier_key:2 to store for rank: 4
+INFO (rank 21): Added key: store_based_barrier_key:2 to store for rank: 21
+INFO (rank 15): Added key: store_based_barrier_key:2 to store for rank: 15
+INFO (rank 27): Added key: store_based_barrier_key:2 to store for rank: 27
+INFO (rank 28): Added key: store_based_barrier_key:2 to store for rank: 28
+INFO (rank 30): Added key: store_based_barrier_key:2 to store for rank: 30
+INFO (rank 31): Added key: store_based_barrier_key:2 to store for rank: 31
+INFO (rank 44): Added key: store_based_barrier_key:2 to store for rank: 44
+INFO (rank 45): Added key: store_based_barrier_key:2 to store for rank: 45
+INFO (rank 14): Added key: store_based_barrier_key:2 to store for rank: 14
+INFO (rank 48): Added key: store_based_barrier_key:2 to store for rank: 48
+INFO (rank 56): Added key: store_based_barrier_key:2 to store for rank: 56
+INFO (rank 16): Added key: store_based_barrier_key:2 to store for rank: 16
+INFO (rank 32): Added key: store_based_barrier_key:2 to store for rank: 32
+INFO (rank 8): Added key: store_based_barrier_key:2 to store for rank: 8
+INFO (rank 8): Rank 8: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 24): Rank 24: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 28): Rank 28: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 29): Rank 29: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 9): Rank 9: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 53): Rank 53: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 17): Rank 17: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 25): Rank 25: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 11): Rank 11: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 50): Rank 50: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 18): Rank 18: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 26): Rank 26: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 12): Rank 12: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 41): Rank 41: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 52): Rank 52: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 19): Rank 19: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 43): Rank 43: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 54): Rank 54: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 22): Rank 22: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 27): Rank 27: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 46): Rank 46: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 55): Rank 55: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 23): Rank 23: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 30): Rank 30: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 47): Rank 47: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 48): Rank 48: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 20): Rank 20: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 31): Rank 31: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 13): Rank 13: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 60): Rank 60: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 40): Rank 40: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 49): Rank 49: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 21): Rank 21: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 38): Rank 38: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 10): Rank 10: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 42): Rank 42: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 51): Rank 51: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 0): Rank 0: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 14): Rank 14: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 62): Rank 62: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 44): Rank 44: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 33): Rank 33: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 6): Rank 6: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 15): Rank 15: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 57): Rank 57: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 45): Rank 45: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 36): Rank 36: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 1): Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 58): Rank 58: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 37): Rank 37: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 2): Rank 2: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 59): Rank 59: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 39): Rank 39: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 3): Rank 3: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 34): Rank 34: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 4): Rank 4: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 61): Rank 61: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 35): Rank 35: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 5): Rank 5: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 63): Rank 63: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 7): Rank 7: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 56): Rank 56: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 16): Rank 16: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+INFO (rank 32): Rank 32: Completed store-based barrier for key:store_based_barrier_key:2 with 64 nodes.
+[2024-07-22 14:38:30,532] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2024-07-22 14:38:30,532] [INFO] [logging.py:96:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2024-07-22 14:38:30,532] [INFO] [logging.py:96:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2024-07-22 14:38:30,533] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Basic Optimizer = AdamW
+[2024-07-22 14:38:30,533] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Final Optimizer = AdamW
+[2024-07-22 14:38:30,533] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed using client LR scheduler
+[2024-07-22 14:38:30,533] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
+[2024-07-22 14:38:30,533] [INFO] [logging.py:96:log_dist] [Rank 0] step=0, skipped=0, lr=[0.001], mom=[(0.9, 0.999)]
+[2024-07-22 14:38:30,533] [INFO] [config.py:997:print] DeepSpeedEngine configuration:
+[2024-07-22 14:38:30,534] [INFO] [config.py:1001:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2024-07-22 14:38:30,534] [INFO] [config.py:1001:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2024-07-22 14:38:30,534] [INFO] [config.py:1001:print]   amp_enabled .................. False
+[2024-07-22 14:38:30,534] [INFO] [config.py:1001:print]   amp_params ................... False
+[2024-07-22 14:38:30,534] [INFO] [config.py:1001:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2024-07-22 14:38:30,534] [INFO] [config.py:1001:print]   bfloat16_enabled ............. False
+[2024-07-22 14:38:30,534] [INFO] [config.py:1001:print]   bfloat16_immediate_grad_update  False
+[2024-07-22 14:38:30,534] [INFO] [config.py:1001:print]   checkpoint_parallel_write_pipeline  False
+[2024-07-22 14:38:30,534] [INFO] [config.py:1001:print]   checkpoint_tag_validation_enabled  True
+[2024-07-22 14:38:30,534] [INFO] [config.py:1001:print]   checkpoint_tag_validation_fail  False
+[2024-07-22 14:38:30,534] [INFO] [config.py:1001:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7fffe584eb50>
+[2024-07-22 14:38:30,534] [INFO] [config.py:1001:print]   communication_data_type ...... None
+[2024-07-22 14:38:30,534] [INFO] [config.py:1001:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2024-07-22 14:38:30,534] [INFO] [config.py:1001:print]   curriculum_enabled_legacy .... False
+[2024-07-22 14:38:30,534] [INFO] [config.py:1001:print]   curriculum_params_legacy ..... False
+[2024-07-22 14:38:30,534] [INFO] [config.py:1001:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   data_efficiency_enabled ...... False
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   dataloader_drop_last ......... False
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   disable_allgather ............ False
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   dump_state ................... False
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   dynamic_loss_scale_args ...... None
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   eigenvalue_enabled ........... False
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   eigenvalue_gas_boundary_resolution  1
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   eigenvalue_layer_num ......... 0
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   eigenvalue_max_iter .......... 100
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   eigenvalue_stability ......... 1e-06
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   eigenvalue_tol ............... 0.01
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   eigenvalue_verbose ........... False
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   elasticity_enabled ........... False
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   fp16_auto_cast ............... None
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   fp16_enabled ................. False
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   fp16_master_weights_and_gradients  False
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   global_rank .................. 0
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   grad_accum_dtype ............. None
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   gradient_accumulation_steps .. 1
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   gradient_clipping ............ 0.0
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   gradient_predivide_factor .... 1.0
+[2024-07-22 14:38:30,535] [INFO] [config.py:1001:print]   graph_harvesting ............. False
+[2024-07-22 14:38:30,536] [INFO] [config.py:1001:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2024-07-22 14:38:30,536] [INFO] [config.py:1001:print]   initial_dynamic_scale ........ 65536
+[2024-07-22 14:38:30,536] [INFO] [config.py:1001:print]   load_universal_checkpoint .... False
+[2024-07-22 14:38:30,536] [INFO] [config.py:1001:print]   loss_scale ................... 0
+[2024-07-22 14:38:30,536] [INFO] [config.py:1001:print]   memory_breakdown ............. False
+[2024-07-22 14:38:30,536] [INFO] [config.py:1001:print]   mics_hierarchial_params_gather  False
+[2024-07-22 14:38:30,536] [INFO] [config.py:1001:print]   mics_shard_size .............. -1
+[2024-07-22 14:38:30,536] [INFO] [config.py:1001:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=False, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experiment_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') enabled=False
+[2024-07-22 14:38:30,536] [INFO] [config.py:1001:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2024-07-22 14:38:30,536] [INFO] [config.py:1001:print]   optimizer_legacy_fusion ...... False
+[2024-07-22 14:38:30,536] [INFO] [config.py:1001:print]   optimizer_name ............... None
+[2024-07-22 14:38:30,536] [INFO] [config.py:1001:print]   optimizer_params ............. None
+[2024-07-22 14:38:30,536] [INFO] [config.py:1001:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2024-07-22 14:38:30,536] [INFO] [config.py:1001:print]   pld_enabled .................. False
+[2024-07-22 14:38:30,536] [INFO] [config.py:1001:print]   pld_params ................... False
+[2024-07-22 14:38:30,536] [INFO] [config.py:1001:print]   prescale_gradients ........... False
+[2024-07-22 14:38:30,536] [INFO] [config.py:1001:print]   scheduler_name ............... None
+[2024-07-22 14:38:30,536] [INFO] [config.py:1001:print]   scheduler_params ............. None
+[2024-07-22 14:38:30,537] [INFO] [config.py:1001:print]   seq_parallel_communication_data_type  torch.float32
+[2024-07-22 14:38:30,537] [INFO] [config.py:1001:print]   sparse_attention ............. None
+[2024-07-22 14:38:30,537] [INFO] [config.py:1001:print]   sparse_gradients_enabled ..... False
+[2024-07-22 14:38:30,537] [INFO] [config.py:1001:print]   steps_per_print .............. 1000000000.0
+[2024-07-22 14:38:30,537] [INFO] [config.py:1001:print]   timers_config ................ enabled=True synchronized=True
+[2024-07-22 14:38:30,537] [INFO] [config.py:1001:print]   train_batch_size ............. 8192
+[2024-07-22 14:38:30,537] [INFO] [config.py:1001:print]   train_micro_batch_size_per_gpu  128
+[2024-07-22 14:38:30,537] [INFO] [config.py:1001:print]   use_data_before_expert_parallel_  False
+[2024-07-22 14:38:30,537] [INFO] [config.py:1001:print]   use_node_local_storage ....... False
+[2024-07-22 14:38:30,537] [INFO] [config.py:1001:print]   wall_clock_breakdown ......... False
+[2024-07-22 14:38:30,537] [INFO] [config.py:1001:print]   weight_quantization_config ... None
+[2024-07-22 14:38:30,537] [INFO] [config.py:1001:print]   world_size ................... 64
+[2024-07-22 14:38:30,537] [INFO] [config.py:1001:print]   zero_allow_untested_optimizer  False
+[2024-07-22 14:38:30,537] [INFO] [config.py:1001:print]   zero_config .................. stage=0 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500,000,000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500,000,000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=None offload_optimizer=None sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50,000,000 param_persistence_threshold=100,000 model_persistence_threshold=sys.maxsize max_live_parameters=1,000,000,000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True
+[2024-07-22 14:38:30,537] [INFO] [config.py:1001:print]   zero_enabled ................. False
+[2024-07-22 14:38:30,537] [INFO] [config.py:1001:print]   zero_force_ds_cpu_optimizer .. True
+[2024-07-22 14:38:30,537] [INFO] [config.py:1001:print]   zero_optimization_stage ...... 0
+[2024-07-22 14:38:30,537] [INFO] [config.py:987:print_user_config]   json = {
+    "train_micro_batch_size_per_gpu": 128, 
+    "gradient_accumulation_steps": 1, 
+    "steps_per_print": 1.000000e+09
+}
+Train:   0%|          | 0/380 [00:00<?, ?it/s]Train:   0%|          | 1/380 [00:06<41:23,  6.55s/it]Train:   1%|          | 2/380 [00:07<19:20,  3.07s/it]Train:   1%|          | 3/380 [00:08<13:45,  2.19s/it]Train:   1%|          | 4/380 [00:09<10:15,  1.64s/it]Train:   1%|▏         | 5/380 [00:10<08:31,  1.37s/it]Train:   2%|▏         | 6/380 [00:10<07:21,  1.18s/it]Train:   2%|▏         | 7/380 [00:11<06:24,  1.03s/it]Train:   2%|▏         | 8/380 [00:12<05:58,  1.04it/s]Train:   2%|▏         | 9/380 [00:12<05:19,  1.16it/s]Train:   3%|▎         | 10/380 [00:13<05:09,  1.20it/s]Train:   3%|▎         | 11/380 [00:14<05:15,  1.17it/s]Train:   3%|▎         | 12/380 [00:15<05:10,  1.19it/s]Train:   3%|▎         | 13/380 [00:16<04:56,  1.24it/s]Train:   4%|▎         | 14/380 [00:16<04:44,  1.28it/s]Train:   4%|▍         | 15/380 [00:17<04:33,  1.33it/s]Train:   4%|▍         | 16/380 [00:18<04:40,  1.30it/s]Train:   4%|▍         | 17/380 [00:19<04:42,  1.28it/s]Train:   5%|▍         | 18/380 [00:19<04:34,  1.32it/s]Train:   5%|▌         | 19/380 [00:20<04:41,  1.28it/s]Train:   5%|▌         | 20/380 [00:21<04:47,  1.25it/s]Train:   6%|▌         | 21/380 [00:22<04:42,  1.27it/s]Train:   6%|▌         | 22/380 [00:23<04:40,  1.28it/s]Train:   6%|▌         | 23/380 [00:24<04:48,  1.24it/s]Train:   6%|▋         | 24/380 [00:24<04:46,  1.24it/s]Train:   7%|▋         | 25/380 [00:25<04:38,  1.27it/s]Train:   7%|▋         | 26/380 [00:26<04:38,  1.27it/s]Train:   7%|▋         | 27/380 [00:27<04:37,  1.27it/s]Train:   7%|▋         | 28/380 [00:27<04:36,  1.27it/s]Train:   8%|▊         | 29/380 [00:28<04:42,  1.24it/s]Train:   8%|▊         | 30/380 [00:29<04:53,  1.19it/s]Train:   8%|▊         | 31/380 [00:30<04:49,  1.20it/s]Train:   8%|▊         | 32/380 [00:31<04:55,  1.18it/s]Train:   9%|▊         | 33/380 [00:32<05:07,  1.13it/s]Train:   9%|▉         | 34/380 [00:33<05:19,  1.08it/s]Train:   9%|▉         | 35/380 [00:34<05:05,  1.13it/s]Train:   9%|▉         | 36/380 [00:34<04:54,  1.17it/s]Train:  10%|▉         | 37/380 [00:35<04:48,  1.19it/s]Train:  10%|█         | 38/380 [00:36<04:48,  1.18it/s]Train:  10%|█         | 39/380 [00:37<05:11,  1.09it/s]Train:  11%|█         | 40/380 [00:38<05:16,  1.07it/s]Train:  11%|█         | 41/380 [00:39<05:19,  1.06it/s]Train:  11%|█         | 42/380 [00:43<10:01,  1.78s/it]Train:  11%|█▏        | 43/380 [00:44<09:18,  1.66s/it]Train:  12%|█▏        | 44/380 [00:45<08:11,  1.46s/it]Train:  12%|█▏        | 45/380 [00:47<07:53,  1.41s/it]Train:  12%|█▏        | 46/380 [00:51<12:08,  2.18s/it]Train:  12%|█▏        | 47/380 [00:52<10:18,  1.86s/it]Train:  13%|█▎        | 48/380 [00:53<08:46,  1.59s/it]Train:  13%|█▎        | 49/380 [00:54<07:48,  1.42s/it]Train:  13%|█▎        | 50/380 [00:54<06:47,  1.24s/it]Train:  13%|█▎        | 51/380 [00:55<06:08,  1.12s/it]Train:  14%|█▎        | 52/380 [00:56<05:40,  1.04s/it]Train:  14%|█▍        | 53/380 [00:57<05:26,  1.00it/s]Train:  14%|█▍        | 54/380 [00:58<05:35,  1.03s/it]Train:  14%|█▍        | 55/380 [00:59<05:29,  1.01s/it]Train:  15%|█▍        | 56/380 [01:00<05:19,  1.02it/s]Train:  15%|█▌        | 57/380 [01:01<05:02,  1.07it/s]Train:  15%|█▌        | 58/380 [01:02<05:02,  1.06it/s]Train:  16%|█▌        | 59/380 [01:03<04:43,  1.13it/s]Train:  16%|█▌        | 60/380 [01:03<04:39,  1.14it/s]Train:  16%|█▌        | 61/380 [01:04<04:52,  1.09it/s]Train:  16%|█▋        | 62/380 [01:05<05:06,  1.04it/s]Train:  17%|█▋        | 63/380 [01:06<04:56,  1.07it/s]Train:  17%|█▋        | 64/380 [01:07<05:10,  1.02it/s]Train:  17%|█▋        | 65/380 [01:08<05:09,  1.02it/s]Train:  17%|█▋        | 66/380 [01:10<05:33,  1.06s/it]Train:  18%|█▊        | 67/380 [01:11<05:26,  1.04s/it]Train:  18%|█▊        | 68/380 [01:12<05:21,  1.03s/it]Train:  18%|█▊        | 69/380 [01:13<05:19,  1.03s/it]Train:  18%|█▊        | 70/380 [01:14<05:17,  1.03s/it]Train:  19%|█▊        | 71/380 [01:14<04:55,  1.04it/s]Train:  19%|█▉        | 72/380 [01:15<04:48,  1.07it/s]Train:  19%|█▉        | 73/380 [01:16<04:43,  1.08it/s]Train:  19%|█▉        | 74/380 [01:17<05:00,  1.02it/s]Train:  20%|█▉        | 75/380 [01:19<05:12,  1.02s/it]Train:  20%|██        | 76/380 [01:20<05:15,  1.04s/it]Train:  20%|██        | 77/380 [01:20<04:58,  1.02it/s]Train:  21%|██        | 78/380 [01:21<04:57,  1.01it/s]Train:  21%|██        | 79/380 [01:22<04:52,  1.03it/s]Train:  21%|██        | 80/380 [01:23<04:55,  1.02it/s]Train:  21%|██▏       | 81/380 [01:25<05:09,  1.04s/it]Train:  22%|██▏       | 82/380 [01:26<05:11,  1.05s/it]Train:  22%|██▏       | 83/380 [01:27<05:15,  1.06s/it]Train:  22%|██▏       | 84/380 [01:28<05:02,  1.02s/it]Train:  22%|██▏       | 85/380 [01:29<04:58,  1.01s/it]Train:  23%|██▎       | 86/380 [01:30<05:12,  1.06s/it]Train:  23%|██▎       | 87/380 [01:31<05:17,  1.08s/it]Train:  23%|██▎       | 88/380 [01:32<05:24,  1.11s/it]Train:  23%|██▎       | 89/380 [01:33<05:13,  1.08s/it]Train:  24%|██▎       | 90/380 [01:34<05:10,  1.07s/it]Train:  24%|██▍       | 91/380 [01:35<05:00,  1.04s/it]Train:  24%|██▍       | 92/380 [01:36<04:53,  1.02s/it]Train:  24%|██▍       | 93/380 [01:37<05:04,  1.06s/it]Train:  25%|██▍       | 94/380 [01:39<05:36,  1.18s/it]Train:  25%|██▌       | 95/380 [01:40<05:22,  1.13s/it]Train:  25%|██▌       | 96/380 [01:41<05:18,  1.12s/it]Train:  26%|██▌       | 97/380 [01:42<05:12,  1.10s/it]Train:  26%|██▌       | 98/380 [01:46<09:27,  2.01s/it]Train:  26%|██▌       | 99/380 [01:48<08:45,  1.87s/it]Train:  26%|██▋       | 100/380 [01:49<07:48,  1.67s/it]Train:  27%|██▋       | 101/380 [01:50<06:57,  1.50s/it]Train:  27%|██▋       | 102/380 [01:51<06:23,  1.38s/it]Train:  27%|██▋       | 103/380 [01:52<06:04,  1.32s/it]Train:  27%|██▋       | 104/380 [01:53<05:50,  1.27s/it]Train:  28%|██▊       | 105/380 [01:54<05:34,  1.22s/it]Train:  28%|██▊       | 106/380 [01:56<05:25,  1.19s/it]Train:  28%|██▊       | 107/380 [01:57<05:18,  1.17s/it]Train:  28%|██▊       | 108/380 [01:58<05:31,  1.22s/it]Train:  29%|██▊       | 109/380 [01:59<05:16,  1.17s/it]Train:  29%|██▉       | 110/380 [02:00<05:22,  1.20s/it]Train:  29%|██▉       | 111/380 [02:01<05:10,  1.15s/it]Train:  29%|██▉       | 112/380 [02:03<05:10,  1.16s/it]Train:  30%|██▉       | 113/380 [02:06<08:44,  1.96s/it]Train:  30%|███       | 114/380 [02:08<07:56,  1.79s/it]Train:  30%|███       | 115/380 [02:09<07:14,  1.64s/it]Train:  31%|███       | 116/380 [02:10<06:32,  1.49s/it]Train:  31%|███       | 117/380 [02:11<06:07,  1.40s/it]Train:  31%|███       | 118/380 [02:13<05:48,  1.33s/it]Train:  31%|███▏      | 119/380 [02:14<05:50,  1.34s/it]Train:  32%|███▏      | 120/380 [02:15<05:43,  1.32s/it]Train:  32%|███▏      | 121/380 [02:16<05:28,  1.27s/it]Train:  32%|███▏      | 122/380 [02:17<05:18,  1.23s/it]Train:  32%|███▏      | 123/380 [02:18<04:57,  1.16s/it]Train:  33%|███▎      | 124/380 [02:20<04:57,  1.16s/it]Train:  33%|███▎      | 125/380 [02:21<04:54,  1.16s/it]Train:  33%|███▎      | 126/380 [02:24<08:07,  1.92s/it]Train:  33%|███▎      | 127/380 [02:26<07:18,  1.73s/it]Train:  34%|███▎      | 128/380 [02:27<06:25,  1.53s/it]Train:  34%|███▍      | 129/380 [02:28<06:08,  1.47s/it]Train:  34%|███▍      | 130/380 [02:29<05:40,  1.36s/it]Train:  34%|███▍      | 131/380 [02:30<05:15,  1.27s/it]Train:  35%|███▍      | 132/380 [02:32<05:22,  1.30s/it]Train:  35%|███▌      | 133/380 [02:33<05:14,  1.27s/it]Train:  35%|███▌      | 134/380 [02:34<05:03,  1.23s/it]Train:  36%|███▌      | 135/380 [02:35<04:55,  1.21s/it]Train:  36%|███▌      | 136/380 [02:36<04:44,  1.17s/it]Train:  36%|███▌      | 137/380 [02:37<04:48,  1.19s/it]Train:  36%|███▋      | 138/380 [02:38<04:34,  1.13s/it]Train:  37%|███▋      | 139/380 [02:39<04:19,  1.08s/it]Train:  37%|███▋      | 140/380 [02:40<04:07,  1.03s/it]Train:  37%|███▋      | 141/380 [02:41<04:02,  1.01s/it]Train:  37%|███▋      | 142/380 [02:43<04:27,  1.12s/it]Train:  38%|███▊      | 143/380 [02:44<04:28,  1.13s/it]Train:  38%|███▊      | 144/380 [02:45<04:27,  1.13s/it]Train:  38%|███▊      | 145/380 [02:46<04:19,  1.10s/it]Train:  38%|███▊      | 146/380 [02:47<04:15,  1.09s/it]Train:  39%|███▊      | 147/380 [02:48<04:07,  1.06s/it]Train:  39%|███▉      | 148/380 [02:49<04:11,  1.08s/it]Train:  39%|███▉      | 149/380 [02:50<04:04,  1.06s/it]Train:  39%|███▉      | 150/380 [02:51<03:57,  1.03s/it]Train:  40%|███▉      | 151/380 [02:52<03:53,  1.02s/it]Train:  40%|████      | 152/380 [02:53<03:59,  1.05s/it]Train:  40%|████      | 153/380 [02:54<03:56,  1.04s/it]Train:  41%|████      | 154/380 [02:56<04:16,  1.14s/it]Train:  41%|████      | 155/380 [02:57<04:15,  1.13s/it]Train:  41%|████      | 156/380 [02:58<04:08,  1.11s/it]Train:  41%|████▏     | 157/380 [02:59<04:07,  1.11s/it]Train:  42%|████▏     | 158/380 [03:00<04:19,  1.17s/it]Train:  42%|████▏     | 159/380 [03:01<03:59,  1.08s/it]Train:  42%|████▏     | 160/380 [03:02<03:51,  1.05s/it]Train:  42%|████▏     | 161/380 [03:03<03:54,  1.07s/it]Train:  43%|████▎     | 162/380 [03:05<04:04,  1.12s/it]Train:  43%|████▎     | 163/380 [03:06<04:00,  1.11s/it]Train:  43%|████▎     | 164/380 [03:06<03:46,  1.05s/it]Train:  43%|████▎     | 165/380 [03:08<03:47,  1.06s/it]Train:  44%|████▎     | 166/380 [03:09<04:08,  1.16s/it]Train:  44%|████▍     | 167/380 [03:10<04:00,  1.13s/it]Train:  44%|████▍     | 168/380 [03:11<04:00,  1.13s/it]Train:  44%|████▍     | 169/380 [03:13<04:12,  1.19s/it]Train:  45%|████▍     | 170/380 [03:14<04:01,  1.15s/it]Train:  45%|████▌     | 171/380 [03:15<03:54,  1.12s/it]Train:  45%|████▌     | 172/380 [03:16<03:41,  1.06s/it]Train:  46%|████▌     | 173/380 [03:17<03:50,  1.12s/it]Train:  46%|████▌     | 174/380 [03:18<03:45,  1.09s/it]Train:  46%|████▌     | 175/380 [03:19<03:48,  1.12s/it]Train:  46%|████▋     | 176/380 [03:20<03:46,  1.11s/it]Train:  47%|████▋     | 177/380 [03:21<03:37,  1.07s/it]Train:  47%|████▋     | 178/380 [03:22<03:22,  1.00s/it]Train:  47%|████▋     | 179/380 [03:23<03:20,  1.00it/s]Train:  47%|████▋     | 180/380 [03:24<03:31,  1.06s/it]Train:  48%|████▊     | 181/380 [03:25<03:36,  1.09s/it]Train:  48%|████▊     | 182/380 [03:26<03:42,  1.13s/it]Train:  48%|████▊     | 183/380 [03:27<03:32,  1.08s/it]Train:  48%|████▊     | 184/380 [03:29<03:37,  1.11s/it]Train:  49%|████▊     | 185/380 [03:30<03:34,  1.10s/it]Train:  49%|████▉     | 186/380 [03:31<03:32,  1.09s/it]Train:  49%|████▉     | 187/380 [03:32<03:36,  1.12s/it]Train:  49%|████▉     | 188/380 [03:33<03:45,  1.18s/it]Train:  50%|████▉     | 189/380 [03:34<03:38,  1.14s/it]Train:  50%|█████     | 190/380 [03:35<03:30,  1.11s/it]Train:  50%|█████     | 191/380 [03:37<03:33,  1.13s/it]Train:  51%|█████     | 192/380 [03:39<04:56,  1.58s/it]Train:  51%|█████     | 193/380 [03:40<04:32,  1.46s/it]Train:  51%|█████     | 194/380 [03:41<04:14,  1.37s/it]Train:  51%|█████▏    | 195/380 [03:43<03:58,  1.29s/it]Train:  52%|█████▏    | 196/380 [03:44<03:46,  1.23s/it]Train:  52%|█████▏    | 197/380 [03:45<03:36,  1.19s/it]Train:  52%|█████▏    | 198/380 [03:46<03:28,  1.14s/it]Train:  52%|█████▏    | 199/380 [03:47<03:12,  1.06s/it]Train:  53%|█████▎    | 200/380 [03:48<03:32,  1.18s/it]Train:  53%|█████▎    | 201/380 [03:49<03:36,  1.21s/it]Train:  53%|█████▎    | 202/380 [03:51<03:37,  1.22s/it]Train:  53%|█████▎    | 203/380 [03:52<03:38,  1.23s/it]Train:  54%|█████▎    | 204/380 [03:53<03:29,  1.19s/it]Train:  54%|█████▍    | 205/380 [03:54<03:23,  1.16s/it]Train:  54%|█████▍    | 206/380 [03:56<03:40,  1.27s/it]Train:  54%|█████▍    | 207/380 [03:57<03:30,  1.22s/it]Train:  55%|█████▍    | 208/380 [03:58<03:47,  1.32s/it]Train:  55%|█████▌    | 209/380 [04:00<04:07,  1.45s/it]Train:  55%|█████▌    | 210/380 [04:03<05:07,  1.81s/it]Train:  56%|█████▌    | 211/380 [04:04<04:35,  1.63s/it]Train:  56%|█████▌    | 212/380 [04:05<04:10,  1.49s/it]Train:  56%|█████▌    | 213/380 [04:06<03:56,  1.41s/it]Train:  56%|█████▋    | 214/380 [04:08<04:14,  1.54s/it]Train:  57%|█████▋    | 215/380 [04:09<03:54,  1.42s/it]Train:  57%|█████▋    | 216/380 [04:10<03:43,  1.36s/it]Train:  57%|█████▋    | 217/380 [04:12<03:51,  1.42s/it]Train:  57%|█████▋    | 218/380 [04:14<03:59,  1.48s/it]Train:  58%|█████▊    | 219/380 [04:15<03:38,  1.36s/it]Train:  58%|█████▊    | 220/380 [04:16<03:25,  1.29s/it]Train:  58%|█████▊    | 221/380 [04:17<03:19,  1.25s/it]Train:  58%|█████▊    | 222/380 [04:18<03:04,  1.17s/it]Train:  59%|█████▊    | 223/380 [04:20<03:40,  1.40s/it]Train:  59%|█████▉    | 224/380 [04:21<03:26,  1.32s/it]Train:  59%|█████▉    | 225/380 [04:22<03:14,  1.25s/it]Train:  59%|█████▉    | 226/380 [04:23<03:06,  1.21s/it]Train:  60%|█████▉    | 227/380 [04:24<02:57,  1.16s/it]Train:  60%|██████    | 228/380 [04:25<02:50,  1.12s/it]Train:  60%|██████    | 229/380 [04:27<02:54,  1.15s/it]Train:  61%|██████    | 230/380 [04:28<02:52,  1.15s/it]Train:  61%|██████    | 231/380 [04:29<02:49,  1.14s/it]Train:  61%|██████    | 232/380 [04:30<02:41,  1.09s/it]Train:  61%|██████▏   | 233/380 [04:31<02:54,  1.19s/it]Train:  62%|██████▏   | 234/380 [04:32<02:46,  1.14s/it]Train:  62%|██████▏   | 235/380 [04:33<02:40,  1.11s/it]Train:  62%|██████▏   | 236/380 [04:34<02:41,  1.12s/it]Train:  62%|██████▏   | 237/380 [04:35<02:33,  1.07s/it]Train:  63%|██████▎   | 238/380 [04:37<02:34,  1.09s/it]Train:  63%|██████▎   | 239/380 [04:38<02:38,  1.12s/it]Train:  63%|██████▎   | 240/380 [04:39<02:31,  1.08s/it]Train:  63%|██████▎   | 241/380 [04:40<02:34,  1.11s/it]Train:  64%|██████▎   | 242/380 [04:41<02:29,  1.09s/it]Train:  64%|██████▍   | 243/380 [04:42<02:26,  1.07s/it]Train:  64%|██████▍   | 244/380 [04:43<02:30,  1.11s/it]Train:  64%|██████▍   | 245/380 [04:44<02:31,  1.12s/it]Train:  65%|██████▍   | 246/380 [04:45<02:26,  1.09s/it]Train:  65%|██████▌   | 247/380 [04:47<02:27,  1.11s/it]Train:  65%|██████▌   | 248/380 [04:48<02:26,  1.11s/it]Train:  66%|██████▌   | 249/380 [04:50<03:03,  1.40s/it]Train:  66%|██████▌   | 250/380 [04:51<02:45,  1.27s/it]Train:  66%|██████▌   | 251/380 [04:52<02:37,  1.22s/it]Train:  66%|██████▋   | 252/380 [04:53<02:29,  1.17s/it]Train:  67%|██████▋   | 253/380 [04:54<02:27,  1.16s/it]Train:  67%|██████▋   | 254/380 [04:55<02:29,  1.19s/it]Train:  67%|██████▋   | 255/380 [04:56<02:27,  1.18s/it]Train:  67%|██████▋   | 256/380 [04:58<02:33,  1.24s/it]Train:  68%|██████▊   | 257/380 [04:59<02:25,  1.18s/it]Train:  68%|██████▊   | 258/380 [05:00<02:24,  1.18s/it]Train:  68%|██████▊   | 259/380 [05:01<02:18,  1.14s/it]Train:  68%|██████▊   | 260/380 [05:02<02:15,  1.13s/it]Train:  69%|██████▊   | 261/380 [05:03<02:18,  1.17s/it]Train:  69%|██████▉   | 262/380 [05:04<02:14,  1.14s/it]Train:  69%|██████▉   | 263/380 [05:05<02:07,  1.09s/it]Train:  69%|██████▉   | 264/380 [05:07<02:13,  1.15s/it]Train:  70%|██████▉   | 265/380 [05:08<02:17,  1.20s/it]Train:  70%|███████   | 266/380 [05:09<02:14,  1.18s/it]Train:  70%|███████   | 267/380 [05:10<02:09,  1.15s/it]Train:  71%|███████   | 268/380 [05:21<07:45,  4.16s/it]Train:  71%|███████   | 269/380 [05:23<06:03,  3.28s/it]Train:  71%|███████   | 270/380 [05:25<05:29,  2.99s/it]Train:  71%|███████▏  | 271/380 [05:26<04:26,  2.45s/it]Train:  72%|███████▏  | 272/380 [05:27<03:43,  2.07s/it]Train:  72%|███████▏  | 273/380 [05:30<03:58,  2.23s/it]Train:  72%|███████▏  | 274/380 [05:31<03:22,  1.91s/it]Train:  72%|███████▏  | 275/380 [05:32<02:59,  1.71s/it]Train:  73%|███████▎  | 276/380 [05:33<02:38,  1.52s/it]Train:  73%|███████▎  | 277/380 [05:35<02:27,  1.43s/it]Train:  73%|███████▎  | 278/380 [05:36<02:16,  1.34s/it]Train:  73%|███████▎  | 279/380 [05:37<02:13,  1.32s/it]Train:  74%|███████▎  | 280/380 [05:38<02:02,  1.23s/it]Train:  74%|███████▍  | 281/380 [05:39<01:58,  1.20s/it]Train:  74%|███████▍  | 282/380 [05:40<01:54,  1.17s/it]Train:  74%|███████▍  | 283/380 [05:42<01:56,  1.20s/it]Train:  75%|███████▍  | 284/380 [05:43<01:54,  1.19s/it]Train:  75%|███████▌  | 285/380 [05:44<01:49,  1.15s/it]Train:  75%|███████▌  | 286/380 [05:45<01:45,  1.12s/it]Train:  76%|███████▌  | 287/380 [05:46<01:44,  1.12s/it]Train:  76%|███████▌  | 288/380 [05:47<01:41,  1.11s/it]Train:  76%|███████▌  | 289/380 [05:48<01:43,  1.14s/it]Train:  76%|███████▋  | 290/380 [05:49<01:41,  1.13s/it]Train:  77%|███████▋  | 291/380 [05:51<01:43,  1.16s/it]Train:  77%|███████▋  | 292/380 [05:52<01:42,  1.17s/it]Train:  77%|███████▋  | 293/380 [05:53<01:35,  1.10s/it]Train:  77%|███████▋  | 294/380 [05:54<01:34,  1.10s/it]Train:  78%|███████▊  | 295/380 [05:55<01:32,  1.09s/it]Train:  78%|███████▊  | 296/380 [05:56<01:31,  1.09s/it]Train:  78%|███████▊  | 297/380 [05:57<01:31,  1.10s/it]Train:  78%|███████▊  | 298/380 [05:58<01:27,  1.07s/it]Train:  79%|███████▊  | 299/380 [05:59<01:28,  1.09s/it]Train:  79%|███████▉  | 300/380 [06:00<01:25,  1.07s/it]Train:  79%|███████▉  | 301/380 [06:01<01:26,  1.10s/it]Train:  79%|███████▉  | 302/380 [06:03<01:27,  1.12s/it]Train:  80%|███████▉  | 303/380 [06:04<01:27,  1.13s/it]Train:  80%|████████  | 304/380 [06:05<01:21,  1.07s/it]Train:  80%|████████  | 305/380 [06:06<01:20,  1.08s/it]Train:  81%|████████  | 306/380 [06:07<01:16,  1.04s/it]Train:  81%|████████  | 307/380 [06:08<01:19,  1.08s/it]Train:  81%|████████  | 308/380 [06:09<01:18,  1.09s/it]Train:  81%|████████▏ | 309/380 [06:10<01:16,  1.08s/it]Train:  82%|████████▏ | 310/380 [06:11<01:19,  1.13s/it]Train:  82%|████████▏ | 311/380 [06:13<01:20,  1.17s/it]Train:  82%|████████▏ | 312/380 [06:14<01:16,  1.12s/it]Train:  82%|████████▏ | 313/380 [06:14<01:09,  1.04s/it]Train:  83%|████████▎ | 314/380 [06:15<01:08,  1.04s/it]Train:  83%|████████▎ | 315/380 [06:16<01:06,  1.03s/it]Train:  83%|████████▎ | 316/380 [06:17<01:05,  1.03s/it]Train:  83%|████████▎ | 317/380 [06:18<01:02,  1.01it/s]Train:  84%|████████▎ | 318/380 [06:20<01:07,  1.09s/it]Train:  84%|████████▍ | 319/380 [06:21<01:06,  1.10s/it]Train:  84%|████████▍ | 320/380 [06:22<01:06,  1.11s/it]Train:  84%|████████▍ | 321/380 [06:23<01:06,  1.13s/it]Train:  85%|████████▍ | 322/380 [06:24<01:02,  1.08s/it]Train:  85%|████████▌ | 323/380 [06:25<01:04,  1.13s/it]Train:  85%|████████▌ | 324/380 [06:26<00:59,  1.07s/it]Train:  86%|████████▌ | 325/380 [06:27<00:58,  1.06s/it]Train:  86%|████████▌ | 326/380 [06:28<00:54,  1.01s/it]Train:  86%|████████▌ | 327/380 [06:29<00:54,  1.03s/it]Train:  86%|████████▋ | 328/380 [06:30<00:54,  1.05s/it]Train:  87%|████████▋ | 329/380 [06:35<01:46,  2.09s/it]Train:  87%|████████▋ | 330/380 [06:36<01:30,  1.81s/it]Train:  87%|████████▋ | 331/380 [06:37<01:17,  1.59s/it]Train:  87%|████████▋ | 332/380 [06:38<01:12,  1.51s/it]Train:  88%|████████▊ | 333/380 [06:40<01:05,  1.40s/it]Train:  88%|████████▊ | 334/380 [06:41<00:58,  1.26s/it]Train:  88%|████████▊ | 335/380 [06:42<00:53,  1.18s/it]Train:  88%|████████▊ | 336/380 [06:43<00:50,  1.15s/it]Train:  89%|████████▊ | 337/380 [06:44<00:48,  1.14s/it]Train:  89%|████████▉ | 338/380 [06:45<00:46,  1.12s/it]Train:  89%|████████▉ | 339/380 [06:46<00:44,  1.09s/it]Train:  89%|████████▉ | 340/380 [06:47<00:43,  1.08s/it]Train:  90%|████████▉ | 341/380 [06:48<00:40,  1.04s/it]Train:  90%|█████████ | 342/380 [06:49<00:39,  1.05s/it]Train:  90%|█████████ | 343/380 [06:50<00:39,  1.07s/it]Train:  91%|█████████ | 344/380 [06:51<00:38,  1.08s/it]Train:  91%|█████████ | 345/380 [06:52<00:37,  1.07s/it]Train:  91%|█████████ | 346/380 [06:53<00:35,  1.06s/it]Train:  91%|█████████▏| 347/380 [06:54<00:34,  1.06s/it]Train:  92%|█████████▏| 348/380 [06:55<00:33,  1.06s/it]Train:  92%|█████████▏| 349/380 [06:56<00:34,  1.10s/it]Train:  92%|█████████▏| 350/380 [06:57<00:31,  1.05s/it]Train:  92%|█████████▏| 351/380 [06:59<00:30,  1.06s/it]Train:  93%|█████████▎| 352/380 [07:00<00:30,  1.09s/it]Train:  93%|█████████▎| 353/380 [07:01<00:29,  1.10s/it]Train:  93%|█████████▎| 354/380 [07:02<00:27,  1.07s/it]Train:  93%|█████████▎| 355/380 [07:03<00:27,  1.08s/it]Train:  94%|█████████▎| 356/380 [07:04<00:26,  1.11s/it]Train:  94%|█████████▍| 357/380 [07:05<00:25,  1.12s/it]Train:  94%|█████████▍| 358/380 [07:06<00:24,  1.11s/it]Train:  94%|█████████▍| 359/380 [07:07<00:23,  1.12s/it]Train:  95%|█████████▍| 360/380 [07:09<00:22,  1.14s/it]Train:  95%|█████████▌| 361/380 [07:10<00:21,  1.11s/it]Train:  95%|█████████▌| 362/380 [07:11<00:20,  1.13s/it]Train:  96%|█████████▌| 363/380 [07:12<00:18,  1.11s/it]Train:  96%|█████████▌| 364/380 [07:13<00:18,  1.16s/it]Train:  96%|█████████▌| 365/380 [07:14<00:17,  1.15s/it]Train:  96%|█████████▋| 366/380 [07:15<00:15,  1.14s/it]Train:  97%|█████████▋| 367/380 [07:17<00:14,  1.12s/it]Train:  97%|█████████▋| 368/380 [07:18<00:14,  1.19s/it]Train:  97%|█████████▋| 369/380 [07:22<00:22,  2.00s/it]Train:  97%|█████████▋| 370/380 [07:23<00:17,  1.75s/it]Train:  98%|█████████▊| 371/380 [07:24<00:14,  1.56s/it]Train:  98%|█████████▊| 372/380 [07:25<00:11,  1.40s/it]Train:  98%|█████████▊| 373/380 [07:26<00:09,  1.37s/it]Train:  98%|█████████▊| 374/380 [07:27<00:07,  1.27s/it]Train:  99%|█████████▊| 375/380 [07:28<00:06,  1.21s/it]Train:  99%|█████████▉| 376/380 [07:30<00:04,  1.16s/it]Train:  99%|█████████▉| 377/380 [07:31<00:03,  1.14s/it]Train:  99%|█████████▉| 378/380 [07:32<00:02,  1.10s/it]Train: 100%|█████████▉| 379/380 [07:33<00:01,  1.04s/it]Train: 100%|██████████| 380/380 [07:34<00:00,  1.09s/it]Train: 100%|██████████| 380/380 [07:34<00:00,  1.20s/it]
+Train:   0%|          | 0/380 [00:00<?, ?it/s]Train:   0%|          | 1/380 [00:00<05:54,  1.07it/s]Train:   1%|          | 2/380 [00:01<06:09,  1.02it/s]Train:   1%|          | 3/380 [00:03<06:27,  1.03s/it]Train:   1%|          | 4/380 [00:04<06:44,  1.07s/it]Train:   1%|▏         | 5/380 [00:05<06:25,  1.03s/it]Train:   2%|▏         | 6/380 [00:06<06:30,  1.05s/it]Train:   2%|▏         | 7/380 [00:07<06:17,  1.01s/it]Train:   2%|▏         | 8/380 [00:08<06:16,  1.01s/it]Train:   2%|▏         | 9/380 [00:09<06:13,  1.01s/it]Train:   3%|▎         | 10/380 [00:10<06:20,  1.03s/it]Train:   3%|▎         | 11/380 [00:11<06:26,  1.05s/it]Train:   3%|▎         | 12/380 [00:12<06:16,  1.02s/it]Train:   3%|▎         | 13/380 [00:13<06:15,  1.02s/it]Train:   4%|▎         | 14/380 [00:14<06:27,  1.06s/it]Train:   4%|▍         | 15/380 [00:15<06:35,  1.08s/it]Train:   4%|▍         | 16/380 [00:16<06:42,  1.10s/it]Train:   4%|▍         | 17/380 [00:17<06:35,  1.09s/it]Train:   5%|▍         | 18/380 [00:18<06:24,  1.06s/it]Train:   5%|▌         | 19/380 [00:19<06:21,  1.06s/it]Train:   5%|▌         | 20/380 [00:20<06:25,  1.07s/it]Train:   6%|▌         | 21/380 [00:22<06:25,  1.07s/it]Train:   6%|▌         | 22/380 [00:23<06:21,  1.06s/it]Train:   6%|▌         | 23/380 [00:24<06:09,  1.03s/it]Train:   6%|▋         | 24/380 [00:25<06:06,  1.03s/it]Train:   7%|▋         | 25/380 [00:26<06:19,  1.07s/it]Train:   7%|▋         | 26/380 [00:27<06:25,  1.09s/it]Train:   7%|▋         | 27/380 [00:28<06:25,  1.09s/it]Train:   7%|▋         | 28/380 [00:29<06:11,  1.05s/it]Train:   8%|▊         | 29/380 [00:30<05:55,  1.01s/it]Train:   8%|▊         | 30/380 [00:31<06:16,  1.08s/it]Train:   8%|▊         | 31/380 [00:32<06:13,  1.07s/it]Train:   8%|▊         | 32/380 [00:33<06:02,  1.04s/it]Train:   9%|▊         | 33/380 [00:34<05:50,  1.01s/it]Train:   9%|▉         | 34/380 [00:35<05:50,  1.01s/it]Train:   9%|▉         | 35/380 [00:36<05:42,  1.01it/s]Train:   9%|▉         | 36/380 [00:37<05:46,  1.01s/it]Train:  10%|▉         | 37/380 [00:38<05:46,  1.01s/it]Train:  10%|█         | 38/380 [00:39<05:59,  1.05s/it]Train:  10%|█         | 39/380 [00:40<05:53,  1.04s/it]Train:  11%|█         | 40/380 [00:41<05:59,  1.06s/it]Train:  11%|█         | 41/380 [00:42<05:48,  1.03s/it]Train:  11%|█         | 42/380 [00:43<05:38,  1.00s/it]Train:  11%|█▏        | 43/380 [00:44<05:26,  1.03it/s]Train:  12%|█▏        | 44/380 [00:45<05:25,  1.03it/s]Train:  12%|█▏        | 45/380 [00:46<05:21,  1.04it/s]Train:  12%|█▏        | 46/380 [00:47<05:30,  1.01it/s]Train:  12%|█▏        | 47/380 [00:48<05:39,  1.02s/it]Train:  13%|█▎        | 48/380 [00:49<05:56,  1.07s/it]Train:  13%|█▎        | 49/380 [00:50<05:51,  1.06s/it]Train:  13%|█▎        | 50/380 [00:52<05:58,  1.09s/it]Train:  13%|█▎        | 51/380 [00:53<06:00,  1.10s/it]Train:  14%|█▎        | 52/380 [00:54<05:55,  1.08s/it]Train:  14%|█▍        | 53/380 [00:55<05:56,  1.09s/it]Train:  14%|█▍        | 54/380 [00:56<05:52,  1.08s/it]Train:  14%|█▍        | 55/380 [00:57<06:06,  1.13s/it]Train:  15%|█▍        | 56/380 [00:58<06:04,  1.13s/it]Train:  15%|█▌        | 57/380 [00:59<05:50,  1.09s/it]Train:  15%|█▌        | 58/380 [01:00<05:46,  1.08s/it]Train:  16%|█▌        | 59/380 [01:01<05:42,  1.07s/it]Train:  16%|█▌        | 60/380 [01:02<05:39,  1.06s/it]Train:  16%|█▌        | 61/380 [01:03<05:42,  1.07s/it]Train:  16%|█▋        | 62/380 [01:04<05:37,  1.06s/it]Train:  17%|█▋        | 63/380 [01:06<05:32,  1.05s/it]Train:  17%|█▋        | 64/380 [01:07<05:35,  1.06s/it]Train:  17%|█▋        | 65/380 [01:08<05:48,  1.11s/it]Train:  17%|█▋        | 66/380 [01:09<05:43,  1.09s/it]Train:  18%|█▊        | 67/380 [01:10<05:27,  1.05s/it]Train:  18%|█▊        | 68/380 [01:11<05:16,  1.01s/it]Train:  18%|█▊        | 69/380 [01:12<05:31,  1.07s/it]Train:  18%|█▊        | 70/380 [01:16<09:32,  1.85s/it]Train:  19%|█▊        | 71/380 [01:17<08:20,  1.62s/it]Train:  19%|█▉        | 72/380 [01:18<07:37,  1.48s/it]Train:  19%|█▉        | 73/380 [01:19<06:58,  1.36s/it]Train:  19%|█▉        | 74/380 [01:20<06:26,  1.26s/it]Train:  20%|█▉        | 75/380 [01:21<06:02,  1.19s/it]Train:  20%|██        | 76/380 [01:22<05:48,  1.15s/it]Train:  20%|██        | 77/380 [01:23<05:19,  1.05s/it]Train:  21%|██        | 78/380 [01:24<05:09,  1.02s/it]Train:  21%|██        | 79/380 [01:25<04:58,  1.01it/s]Train:  21%|██        | 80/380 [01:26<05:04,  1.01s/it]Train:  21%|██▏       | 81/380 [01:27<04:58,  1.00it/s]Train:  22%|██▏       | 82/380 [01:28<04:58,  1.00s/it]Train:  22%|██▏       | 83/380 [01:29<05:07,  1.04s/it]Train:  22%|██▏       | 84/380 [01:30<05:12,  1.06s/it]Train:  22%|██▏       | 85/380 [01:31<05:21,  1.09s/it]Train:  23%|██▎       | 86/380 [01:32<05:03,  1.03s/it]Train:  23%|██▎       | 87/380 [01:33<04:45,  1.03it/s]Train:  23%|██▎       | 88/380 [01:34<04:41,  1.04it/s]Train:  23%|██▎       | 89/380 [01:35<04:31,  1.07it/s]Train:  24%|██▎       | 90/380 [01:36<04:39,  1.04it/s]Train:  24%|██▍       | 91/380 [01:37<04:48,  1.00it/s]Train:  24%|██▍       | 92/380 [01:38<04:54,  1.02s/it]Train:  24%|██▍       | 93/380 [01:39<05:02,  1.05s/it]Train:  25%|██▍       | 94/380 [01:40<05:12,  1.09s/it]Train:  25%|██▌       | 95/380 [01:41<05:10,  1.09s/it]Train:  25%|██▌       | 96/380 [01:43<05:20,  1.13s/it]Train:  26%|██▌       | 97/380 [01:44<05:07,  1.09s/it]Train:  26%|██▌       | 98/380 [01:45<05:01,  1.07s/it]Train:  26%|██▌       | 99/380 [01:46<04:59,  1.07s/it]Train:  26%|██▋       | 100/380 [01:47<04:53,  1.05s/it]Train:  27%|██▋       | 101/380 [01:48<05:02,  1.08s/it]Train:  27%|██▋       | 102/380 [01:49<04:52,  1.05s/it]Train:  27%|██▋       | 103/380 [01:50<04:45,  1.03s/it]Train:  27%|██▋       | 104/380 [01:51<04:35,  1.00it/s]Train:  28%|██▊       | 105/380 [01:52<04:43,  1.03s/it]Train:  28%|██▊       | 106/380 [01:53<04:51,  1.06s/it]Train:  28%|██▊       | 107/380 [01:54<05:12,  1.14s/it]Train:  28%|██▊       | 108/380 [01:55<05:10,  1.14s/it]Train:  29%|██▊       | 109/380 [01:56<04:57,  1.10s/it]Train:  29%|██▉       | 110/380 [01:57<04:43,  1.05s/it]Train:  29%|██▉       | 111/380 [01:58<04:46,  1.06s/it]Train:  29%|██▉       | 112/380 [02:00<04:49,  1.08s/it]Train:  30%|██▉       | 113/380 [02:01<04:50,  1.09s/it]Train:  30%|███       | 114/380 [02:02<04:50,  1.09s/it]Train:  30%|███       | 115/380 [02:03<04:56,  1.12s/it]Train:  31%|███       | 116/380 [02:04<04:35,  1.04s/it]Train:  31%|███       | 117/380 [02:05<04:30,  1.03s/it]Train:  31%|███       | 118/380 [02:06<04:51,  1.11s/it]Train:  31%|███▏      | 119/380 [02:07<04:48,  1.10s/it]Train:  32%|███▏      | 120/380 [02:08<04:53,  1.13s/it]Train:  32%|███▏      | 121/380 [02:09<04:47,  1.11s/it]Train:  32%|███▏      | 122/380 [02:10<04:33,  1.06s/it]Train:  32%|███▏      | 123/380 [02:11<04:18,  1.01s/it]Train:  33%|███▎      | 124/380 [02:12<04:07,  1.04it/s]Train:  33%|███▎      | 125/380 [02:13<04:15,  1.00s/it]Train:  33%|███▎      | 126/380 [02:14<03:58,  1.06it/s]Train:  33%|███▎      | 127/380 [02:15<03:54,  1.08it/s]Train:  34%|███▎      | 128/380 [02:16<04:02,  1.04it/s]Train:  34%|███▍      | 129/380 [02:17<04:09,  1.01it/s]Train:  34%|███▍      | 130/380 [02:18<04:08,  1.01it/s]Train:  34%|███▍      | 131/380 [02:19<04:05,  1.01it/s]Train:  35%|███▍      | 132/380 [02:20<04:09,  1.00s/it]Train:  35%|███▌      | 133/380 [02:21<04:18,  1.05s/it]Train:  35%|███▌      | 134/380 [02:22<04:18,  1.05s/it]Train:  36%|███▌      | 135/380 [02:23<04:21,  1.07s/it]Train:  36%|███▌      | 136/380 [02:24<04:25,  1.09s/it]Train:  36%|███▌      | 137/380 [02:25<04:11,  1.03s/it]Train:  36%|███▋      | 138/380 [02:26<04:11,  1.04s/it]Train:  37%|███▋      | 139/380 [02:27<04:08,  1.03s/it]Train:  37%|███▋      | 140/380 [02:28<04:08,  1.04s/it]Train:  37%|███▋      | 141/380 [02:31<05:23,  1.35s/it]Train:  37%|███▋      | 142/380 [02:41<16:26,  4.15s/it]Train:  38%|███▊      | 143/380 [02:42<12:46,  3.24s/it]Train:  38%|███▊      | 144/380 [02:44<10:18,  2.62s/it]Train:  38%|███▊      | 145/380 [02:45<09:21,  2.39s/it]Train:  38%|███▊      | 146/380 [02:47<07:53,  2.02s/it]Train:  39%|███▊      | 147/380 [02:48<06:39,  1.71s/it]Train:  39%|███▉      | 148/380 [02:49<05:53,  1.52s/it]Train:  39%|███▉      | 149/380 [02:50<05:18,  1.38s/it]Train:  39%|███▉      | 150/380 [02:51<04:57,  1.29s/it]Train:  40%|███▉      | 151/380 [02:52<04:43,  1.24s/it]Train:  40%|████      | 152/380 [02:53<04:25,  1.16s/it]Train:  40%|████      | 153/380 [02:54<04:26,  1.17s/it]Train:  41%|████      | 154/380 [02:55<04:16,  1.14s/it]Train:  41%|████      | 155/380 [02:56<04:11,  1.12s/it]Train:  41%|████      | 156/380 [02:57<04:06,  1.10s/it]Train:  41%|████▏     | 157/380 [02:58<03:58,  1.07s/it]Train:  42%|████▏     | 158/380 [02:59<03:56,  1.07s/it]Train:  42%|████▏     | 159/380 [03:00<03:40,  1.00it/s]Train:  42%|████▏     | 160/380 [03:01<03:39,  1.00it/s]Train:  42%|████▏     | 161/380 [03:02<03:41,  1.01s/it]Train:  43%|████▎     | 162/380 [03:03<03:39,  1.01s/it]Train:  43%|████▎     | 163/380 [03:04<03:37,  1.00s/it]Train:  43%|████▎     | 164/380 [03:05<03:38,  1.01s/it]Train:  43%|████▎     | 165/380 [03:06<03:40,  1.03s/it]Train:  44%|████▎     | 166/380 [03:07<03:41,  1.04s/it]Train:  44%|████▍     | 167/380 [03:08<03:40,  1.04s/it]Train:  44%|████▍     | 168/380 [03:09<03:37,  1.03s/it]Train:  44%|████▍     | 169/380 [03:10<03:36,  1.02s/it]Train:  45%|████▍     | 170/380 [03:11<03:36,  1.03s/it]Train:  45%|████▌     | 171/380 [03:12<03:35,  1.03s/it]Train:  45%|████▌     | 172/380 [03:13<03:35,  1.03s/it]Train:  46%|████▌     | 173/380 [03:15<03:33,  1.03s/it]Train:  46%|████▌     | 174/380 [03:16<03:32,  1.03s/it]Train:  46%|████▌     | 175/380 [03:17<03:41,  1.08s/it]Train:  46%|████▋     | 176/380 [03:18<03:30,  1.03s/it]Train:  47%|████▋     | 177/380 [03:19<03:28,  1.03s/it]Train:  47%|████▋     | 178/380 [03:20<03:31,  1.05s/it]Train:  47%|████▋     | 179/380 [03:21<03:41,  1.10s/it]Train:  47%|████▋     | 180/380 [03:22<03:49,  1.15s/it]Train:  48%|████▊     | 181/380 [03:23<03:27,  1.04s/it]Train:  48%|████▊     | 182/380 [03:24<03:24,  1.03s/it]Train:  48%|████▊     | 183/380 [03:25<03:15,  1.01it/s]Train:  48%|████▊     | 184/380 [03:26<03:14,  1.01it/s]Train:  49%|████▊     | 185/380 [03:27<03:09,  1.03it/s]Train:  49%|████▉     | 186/380 [03:28<03:12,  1.01it/s]Train:  49%|████▉     | 187/380 [03:29<03:12,  1.00it/s]Train:  49%|████▉     | 188/380 [03:30<03:03,  1.04it/s]Train:  50%|████▉     | 189/380 [03:31<02:59,  1.06it/s]Train:  50%|█████     | 190/380 [03:32<03:01,  1.05it/s]Train:  50%|█████     | 191/380 [03:33<03:05,  1.02it/s]Train:  51%|█████     | 192/380 [03:34<03:10,  1.02s/it]Train:  51%|█████     | 193/380 [03:35<03:17,  1.06s/it]Train:  51%|█████     | 194/380 [03:36<03:16,  1.06s/it]Train:  51%|█████▏    | 195/380 [03:37<03:12,  1.04s/it]Train:  52%|█████▏    | 196/380 [03:38<03:10,  1.03s/it]Train:  52%|█████▏    | 197/380 [03:39<03:07,  1.03s/it]Train:  52%|█████▏    | 198/380 [03:40<03:12,  1.06s/it]Train:  52%|█████▏    | 199/380 [03:41<03:09,  1.05s/it]Train:  53%|█████▎    | 200/380 [03:42<03:12,  1.07s/it]Train:  53%|█████▎    | 201/380 [03:43<03:05,  1.04s/it]Train:  53%|█████▎    | 202/380 [03:44<03:08,  1.06s/it]Train:  53%|█████▎    | 203/380 [03:46<03:10,  1.08s/it]Train:  54%|█████▎    | 204/380 [03:47<03:08,  1.07s/it]Train:  54%|█████▍    | 205/380 [03:48<03:09,  1.08s/it]Train:  54%|█████▍    | 206/380 [03:49<03:06,  1.07s/it]Train:  54%|█████▍    | 207/380 [03:50<03:04,  1.07s/it]Train:  55%|█████▍    | 208/380 [03:51<03:02,  1.06s/it]Train:  55%|█████▌    | 209/380 [03:52<02:58,  1.04s/it]Train:  55%|█████▌    | 210/380 [03:53<02:55,  1.03s/it]Train:  56%|█████▌    | 211/380 [03:54<02:42,  1.04it/s]Train:  56%|█████▌    | 212/380 [03:55<02:50,  1.01s/it]Train:  56%|█████▌    | 213/380 [03:56<02:52,  1.03s/it]Train:  56%|█████▋    | 214/380 [03:57<03:00,  1.09s/it]Train:  57%|█████▋    | 215/380 [03:58<02:57,  1.07s/it]Train:  57%|█████▋    | 216/380 [03:59<02:56,  1.07s/it]Train:  57%|█████▋    | 217/380 [04:00<03:00,  1.11s/it]Train:  57%|█████▋    | 218/380 [04:01<02:59,  1.11s/it]Train:  58%|█████▊    | 219/380 [04:03<02:56,  1.10s/it]Train:  58%|█████▊    | 220/380 [04:04<02:50,  1.07s/it]Train:  58%|█████▊    | 221/380 [04:05<02:48,  1.06s/it]Train:  58%|█████▊    | 222/380 [04:06<02:50,  1.08s/it]Train:  59%|█████▊    | 223/380 [04:07<02:47,  1.07s/it]Train:  59%|█████▉    | 224/380 [04:08<02:53,  1.11s/it]Train:  59%|█████▉    | 225/380 [04:09<02:50,  1.10s/it]Train:  59%|█████▉    | 226/380 [04:10<02:48,  1.09s/it]Train:  60%|█████▉    | 227/380 [04:11<02:49,  1.11s/it]Train:  60%|██████    | 228/380 [04:12<02:44,  1.08s/it]Train:  60%|██████    | 229/380 [04:13<02:41,  1.07s/it]Train:  61%|██████    | 230/380 [04:14<02:40,  1.07s/it]Train:  61%|██████    | 231/380 [04:15<02:37,  1.06s/it]Train:  61%|██████    | 232/380 [04:16<02:34,  1.05s/it]Train:  61%|██████▏   | 233/380 [04:17<02:33,  1.05s/it]Train:  62%|██████▏   | 234/380 [04:19<02:33,  1.05s/it]Train:  62%|██████▏   | 235/380 [04:20<02:35,  1.07s/it]Train:  62%|██████▏   | 236/380 [04:21<02:30,  1.05s/it]Train:  62%|██████▏   | 237/380 [04:22<02:32,  1.07s/it]Train:  63%|██████▎   | 238/380 [04:23<02:33,  1.08s/it]Train:  63%|██████▎   | 239/380 [04:24<02:22,  1.01s/it]Train:  63%|██████▎   | 240/380 [04:25<02:27,  1.05s/it]Train:  63%|██████▎   | 241/380 [04:29<04:22,  1.89s/it]Train:  64%|██████▎   | 242/380 [04:30<03:48,  1.65s/it]Train:  64%|██████▍   | 243/380 [04:31<03:22,  1.48s/it]Train:  64%|██████▍   | 244/380 [04:32<03:07,  1.38s/it]Train:  64%|██████▍   | 245/380 [04:33<02:57,  1.31s/it]Train:  65%|██████▍   | 246/380 [04:34<02:47,  1.25s/it]Train:  65%|██████▌   | 247/380 [04:35<02:34,  1.16s/it]Train:  65%|██████▌   | 248/380 [04:36<02:33,  1.17s/it]Train:  66%|██████▌   | 249/380 [04:37<02:23,  1.10s/it]Train:  66%|██████▌   | 250/380 [04:38<02:17,  1.05s/it]Train:  66%|██████▌   | 251/380 [04:39<02:11,  1.02s/it]Train:  66%|██████▋   | 252/380 [04:40<02:10,  1.02s/it]Train:  67%|██████▋   | 253/380 [04:41<02:07,  1.00s/it]Train:  67%|██████▋   | 254/380 [04:42<02:08,  1.02s/it]Train:  67%|██████▋   | 255/380 [04:43<02:10,  1.05s/it]Train:  67%|██████▋   | 256/380 [04:44<02:10,  1.05s/it]Train:  68%|██████▊   | 257/380 [04:46<02:15,  1.10s/it]Train:  68%|██████▊   | 258/380 [04:47<02:10,  1.07s/it]Train:  68%|██████▊   | 259/380 [04:48<02:08,  1.06s/it]Train:  68%|██████▊   | 260/380 [04:49<02:07,  1.06s/it]Train:  69%|██████▊   | 261/380 [04:50<02:05,  1.05s/it]Train:  69%|██████▉   | 262/380 [04:51<02:01,  1.03s/it]Train:  69%|██████▉   | 263/380 [04:52<02:02,  1.05s/it]Train:  69%|██████▉   | 264/380 [04:53<02:05,  1.09s/it]Train:  70%|██████▉   | 265/380 [04:54<02:04,  1.08s/it]Train:  70%|███████   | 266/380 [04:55<02:02,  1.08s/it]Train:  70%|███████   | 267/380 [04:56<02:01,  1.07s/it]Train:  71%|███████   | 268/380 [04:57<01:58,  1.05s/it]Train:  71%|███████   | 269/380 [04:58<01:57,  1.06s/it]Train:  71%|███████   | 270/380 [04:59<01:55,  1.05s/it]Train:  71%|███████▏  | 271/380 [05:00<01:54,  1.05s/it]Train:  72%|███████▏  | 272/380 [05:01<01:52,  1.04s/it]Train:  72%|███████▏  | 273/380 [05:02<01:50,  1.04s/it]Train:  72%|███████▏  | 274/380 [05:03<01:47,  1.01s/it]Train:  72%|███████▏  | 275/380 [05:04<01:41,  1.03it/s]Train:  73%|███████▎  | 276/380 [05:05<01:41,  1.03it/s]Train:  73%|███████▎  | 277/380 [05:06<01:41,  1.01it/s]Train:  73%|███████▎  | 278/380 [05:07<01:42,  1.00s/it]Train:  73%|███████▎  | 279/380 [05:08<01:44,  1.04s/it]Train:  74%|███████▎  | 280/380 [05:09<01:40,  1.01s/it]Train:  74%|███████▍  | 281/380 [05:10<01:40,  1.02s/it]Train:  74%|███████▍  | 282/380 [05:12<01:43,  1.05s/it]Train:  74%|███████▍  | 283/380 [05:13<01:41,  1.05s/it]Train:  75%|███████▍  | 284/380 [05:14<01:36,  1.01s/it]Train:  75%|███████▌  | 285/380 [05:15<01:37,  1.03s/it]Train:  75%|███████▌  | 286/380 [05:16<01:37,  1.04s/it]Train:  76%|███████▌  | 287/380 [05:17<01:36,  1.03s/it]Train:  76%|███████▌  | 288/380 [05:18<01:34,  1.03s/it]Train:  76%|███████▌  | 289/380 [05:19<01:30,  1.00it/s]Train:  76%|███████▋  | 290/380 [05:20<01:32,  1.02s/it]Train:  77%|███████▋  | 291/380 [05:21<01:33,  1.05s/it]Train:  77%|███████▋  | 292/380 [05:22<01:27,  1.00it/s]Train:  77%|███████▋  | 293/380 [05:23<01:28,  1.02s/it]Train:  77%|███████▋  | 294/380 [05:24<01:32,  1.08s/it]Train:  78%|███████▊  | 295/380 [05:25<01:29,  1.05s/it]Train:  78%|███████▊  | 296/380 [05:26<01:23,  1.01it/s]Train:  78%|███████▊  | 297/380 [05:27<01:20,  1.04it/s]Train:  78%|███████▊  | 298/380 [05:28<01:21,  1.00it/s]Train:  79%|███████▊  | 299/380 [05:29<01:22,  1.02s/it]Train:  79%|███████▉  | 300/380 [05:33<02:40,  2.01s/it]Train:  79%|███████▉  | 301/380 [05:38<03:45,  2.86s/it]Train:  79%|███████▉  | 302/380 [05:42<03:57,  3.05s/it]Train:  80%|███████▉  | 303/380 [05:50<05:54,  4.60s/it]Train:  80%|████████  | 304/380 [05:56<06:17,  4.97s/it]Train:  80%|████████  | 305/380 [05:58<05:17,  4.24s/it]Train:  81%|████████  | 306/380 [06:06<06:27,  5.23s/it]Train:  81%|████████  | 307/380 [06:07<04:52,  4.01s/it]Train:  81%|████████  | 308/380 [06:14<05:55,  4.93s/it]Train:  81%|████████▏ | 309/380 [06:18<05:28,  4.63s/it]Train:  82%|████████▏ | 310/380 [06:19<04:15,  3.65s/it]Train:  82%|████████▏ | 311/380 [06:22<04:00,  3.49s/it]Train:  82%|████████▏ | 312/380 [06:26<04:08,  3.65s/it]Train:  82%|████████▏ | 313/380 [06:30<04:11,  3.75s/it]Train:  83%|████████▎ | 314/380 [06:34<04:12,  3.82s/it]Train:  83%|████████▎ | 315/380 [06:36<03:25,  3.16s/it]Train:  83%|████████▎ | 316/380 [06:41<03:56,  3.70s/it]Train:  83%|████████▎ | 317/380 [06:42<03:04,  2.93s/it]Train:  84%|████████▎ | 318/380 [06:43<02:27,  2.37s/it]Train:  84%|████████▍ | 319/380 [06:44<01:57,  1.93s/it]Train:  84%|████████▍ | 320/380 [06:45<01:41,  1.70s/it]Train:  84%|████████▍ | 321/380 [06:46<01:30,  1.53s/it]Train:  85%|████████▍ | 322/380 [06:47<01:21,  1.40s/it]Train:  85%|████████▌ | 323/380 [06:50<01:42,  1.80s/it]Train:  85%|████████▌ | 324/380 [06:54<02:23,  2.56s/it]Train:  86%|████████▌ | 325/380 [07:01<03:20,  3.64s/it]Train:  86%|████████▌ | 326/380 [07:03<03:03,  3.40s/it]Train:  86%|████████▌ | 327/380 [07:07<02:59,  3.38s/it]Train:  86%|████████▋ | 328/380 [07:12<03:28,  4.01s/it]Train:  87%|████████▋ | 329/380 [07:16<03:17,  3.87s/it]Train:  87%|████████▋ | 330/380 [07:19<03:01,  3.62s/it]Train:  87%|████████▋ | 331/380 [07:24<03:24,  4.17s/it]Train:  87%|████████▋ | 332/380 [07:28<03:17,  4.12s/it]Train:  88%|████████▊ | 333/380 [07:33<03:18,  4.23s/it]Train:  88%|████████▊ | 334/380 [07:38<03:32,  4.63s/it]Train:  88%|████████▊ | 335/380 [07:43<03:33,  4.75s/it]Train:  88%|████████▊ | 336/380 [07:45<02:51,  3.91s/it]Train:  89%|████████▊ | 337/380 [07:46<02:11,  3.07s/it]Train:  89%|████████▉ | 338/380 [07:47<01:44,  2.48s/it]Train:  89%|████████▉ | 339/380 [07:51<01:51,  2.72s/it]Train:  89%|████████▉ | 340/380 [07:52<01:35,  2.40s/it]Train:  90%|████████▉ | 341/380 [07:54<01:20,  2.07s/it]Train:  90%|█████████ | 342/380 [08:02<02:30,  3.96s/it]Train:  90%|█████████ | 343/380 [08:16<04:19,  7.01s/it]Train:  91%|█████████ | 344/380 [08:36<06:34, 10.97s/it]Train:  91%|█████████ | 345/380 [08:54<07:31, 12.89s/it]Train:  91%|█████████ | 346/380 [09:02<06:28, 11.43s/it]Train:  91%|█████████▏| 347/380 [09:03<04:35,  8.34s/it]Train:  92%|█████████▏| 348/380 [09:04<03:17,  6.17s/it]Train:  92%|█████████▏| 349/380 [09:05<02:22,  4.60s/it]Train:  92%|█████████▏| 350/380 [09:06<01:44,  3.49s/it]Train:  92%|█████████▏| 351/380 [09:07<01:19,  2.73s/it]Train:  93%|█████████▎| 352/380 [09:08<01:02,  2.23s/it]Train:  93%|█████████▎| 353/380 [09:09<00:51,  1.92s/it]Train:  93%|█████████▎| 354/380 [09:10<00:44,  1.69s/it]Train:  93%|█████████▎| 355/380 [09:12<00:38,  1.56s/it]Train:  94%|█████████▎| 356/380 [09:12<00:32,  1.35s/it]Train:  94%|█████████▍| 357/380 [09:13<00:28,  1.24s/it]Train:  94%|█████████▍| 358/380 [09:15<00:26,  1.23s/it]Train:  94%|█████████▍| 359/380 [09:16<00:26,  1.26s/it]Train:  95%|█████████▍| 360/380 [09:17<00:24,  1.21s/it]Train:  95%|█████████▌| 361/380 [09:18<00:21,  1.16s/it]Train:  95%|█████████▌| 362/380 [09:19<00:20,  1.16s/it]Train:  96%|█████████▌| 363/380 [09:20<00:18,  1.10s/it]Train:  96%|█████████▌| 364/380 [09:21<00:17,  1.07s/it]Train:  96%|█████████▌| 365/380 [09:22<00:15,  1.07s/it]Train:  96%|█████████▋| 366/380 [09:23<00:15,  1.08s/it]Train:  97%|█████████▋| 367/380 [09:24<00:14,  1.10s/it]Train:  97%|█████████▋| 368/380 [09:26<00:13,  1.10s/it]Train:  97%|█████████▋| 369/380 [09:27<00:11,  1.07s/it]Train:  97%|█████████▋| 370/380 [09:28<00:10,  1.06s/it]Train:  98%|█████████▊| 371/380 [09:29<00:09,  1.07s/it]Train:  98%|█████████▊| 372/380 [09:30<00:07,  1.00it/s]Train:  98%|█████████▊| 373/380 [09:31<00:07,  1.06s/it]Train:  98%|█████████▊| 374/380 [09:32<00:06,  1.06s/it]Train:  99%|█████████▊| 375/380 [09:33<00:05,  1.02s/it]Train:  99%|█████████▉| 376/380 [09:34<00:04,  1.07s/it]Train:  99%|█████████▉| 377/380 [09:35<00:03,  1.08s/it]Train:  99%|█████████▉| 378/380 [09:36<00:02,  1.04s/it]Train: 100%|█████████▉| 379/380 [09:37<00:01,  1.04s/it]Train: 100%|██████████| 380/380 [09:38<00:00,  1.08s/it]Train: 100%|██████████| 380/380 [09:38<00:00,  1.52s/it]
+0: Process 0 - Local timer:  train_validate_test  :  1032.84
+0: Process 0 - Local timer:  load_data  :  129.23
+0: Process 0 - Local timer:  create_model  :  0.35
+0: Minimum timers: 
+0: train_validate_test  :  1032.82
+0: load_data  :  129.23
+0: create_model  :  0.35
+0: Maximum timers: 
+0: train_validate_test  :  1032.89
+0: load_data  :  129.29
+0: create_model  :  0.36
+0: Average timers: 
+0: train_validate_test  :  1032.85
+0: load_data  :  129.25
+0: create_model  :  0.35
+0: Number of calls to timers: 
+0: {'load_data': 1, 'create_model': 1, 'train_validate_test': 1}

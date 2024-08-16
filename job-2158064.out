@@ -1,0 +1,501 @@
+MINICOM=-c on
+MIOPEN_DISABLE_CACHE=1
+MPICH_ENV_DISPLAY=0
+MPICH_OFI_NIC_POLICY=NUMA
+MPICH_VERSION_DISPLAY=0
+MPICH_DIR=/opt/cray/pe/mpich/8.1.28/ofi/crayclang/17.0
+HYDRA_LAUNCHER_EXTRA_ARGS=--external-launcher
+HYDRAGNN_VALTEST=0
+HYDRAGNN_AGGR_BACKEND=mpi
+HYDRAGNN_NUM_WORKERS=0
+HYDRA_BOOTSTRAP=slurm
+HYDRAGNN_USE_VARIABLE_GRAPH_SIZE=1
+NCCL_P2P_LEVEL=NVL
+NCCL_PROTO=Simple
+NCCL_P2P_DISABLE=1
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+-------------------------------------------------------------------------------
+There are messages associated with the following module(s):
+-------------------------------------------------------------------------------
+
+DefApps:
+   The software stack on Frontier had updates on July 9th & 16th, 2024.
+   Retired modules: https://docs.olcf.ornl.gov/software/software-news.html#frontier-user-environment-changes-july-9-2024
+   New defaults: https://docs.olcf.ornl.gov/software/software-news.html#frontier-system-software-update-july-16-2024
+
+-------------------------------------------------------------------------------
+
+
+Lmod is automatically replacing "cce/17.0.0" with "gcc-native/12.3".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.5.0" with "PrgEnv-gnu/8.5.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/23.12.5     2) cray-mpich/8.1.28     3) darshan-runtime/3.4.0-mpi
+
+
+EnvironmentNameNotFound: Could not find conda environment: hydragnn
+You can list all discoverable environments with `conda info --envs`.
+
+
++ export HYDRAGNN_TRACE_LEVEL=2
++ HYDRAGNN_TRACE_LEVEL=2
++ for MS in XLARGE
++ for NN in 16
++ srun -N16 -n128 -c7 --gres=gpu:8 python -u ./examples/multidataset/train_deepspeed.py --multi_model_list=OC2022 --multi --num_epoch=3 --everyone --ddstore --log=exp-strongfull-XLARGE-2158064-NN16-VANILLA --inputfile=XLARGE_MTL.json --use_deepspeed
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+    from mpi4py import MPI
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+ModuleNotFoundError: No module named 'mpi4py'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+    from mpi4py import MPI
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+    from mpi4py import MPI
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+    from mpi4py import MPI
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+ModuleNotFoundError: No module named 'mpi4py'
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+srun: error: frontier03625: tasks 0-7: Exited with exit code 1
+srun: Terminating StepId=2158064.0
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed.py", line 4, in <module>
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+srun: error: frontier03628: tasks 24-31: Exited with exit code 1
+srun: error: frontier03629: tasks 32-39: Exited with exit code 1
+srun: error: frontier03627: tasks 16-23: Exited with exit code 1
+srun: error: frontier03635: tasks 80-87: Exited with exit code 1
+srun: error: frontier03634: tasks 72-79: Exited with exit code 1
+srun: error: frontier03630: tasks 40-47: Exited with exit code 1
+srun: error: frontier03626: tasks 8-15: Exited with exit code 1
+srun: error: frontier03640: tasks 120-127: Exited with exit code 1
+srun: error: frontier03633: tasks 64-71: Exited with exit code 1
+srun: error: frontier03638: tasks 104-111: Exited with exit code 1
+srun: error: frontier03636: tasks 88-95: Exited with exit code 1
+srun: error: frontier03637: tasks 96-103: Exited with exit code 1
+srun: error: frontier03632: tasks 56-63: Terminated
+srun: error: frontier03639: tasks 112-119: Terminated
+srun: error: frontier03631: tasks 48-55: Terminated
+srun: Force Terminated StepId=2158064.0
+/var/spool/slurmd/job2158064/slurm_script: line 56: syntax error near unexpected token `done'
+/var/spool/slurmd/job2158064/slurm_script: line 56: `done'

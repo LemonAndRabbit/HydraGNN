@@ -9,13 +9,14 @@ import numpy as np
 
 import hydragnn
 from hydragnn.utils.time_utils import Timer
+from hydragnn.utils.print_utils import print_master
 from hydragnn.utils.model import print_model
 from hydragnn.utils.distdataset import DistDataset
 from hydragnn.utils.pickledataset import SimplePickleDataset
 
 import hydragnn.utils.tracer as tr
 
-from hydragnn.utils.print_utils import log, log0
+from hydragnn.utils.print_utils import log, log0, print_distributed
 from hydragnn.utils import nsplit
 
 try:
@@ -370,6 +371,8 @@ if __name__ == "__main__":
 
     ##################################################################################################################
 
+    torch.cuda.reset_peak_memory_stats(device='cuda:0')
+
     hydragnn.train.train_validate_test(
         model,
         optimizer,
@@ -383,6 +386,9 @@ if __name__ == "__main__":
         verbosity,
         create_plots=False,
     )
+
+    print_master("Peak Memory Usage")
+    print_master(str(torch.cuda.max_memory_allocated(device='cuda:0')))
 
     hydragnn.utils.save_model(model, optimizer, log_name)
     hydragnn.utils.print_timers(verbosity)

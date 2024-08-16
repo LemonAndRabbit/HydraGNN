@@ -1,0 +1,634 @@
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+-------------------------------------------------------------------------------
+There are messages associated with the following module(s):
+-------------------------------------------------------------------------------
+
+DefApps:
+   The software stack on Frontier had updates on July 9th & 16th, 2024.
+   Retired modules: https://docs.olcf.ornl.gov/software/software-news.html#frontier-user-environment-changes-july-9-2024
+   New defaults: https://docs.olcf.ornl.gov/software/software-news.html#frontier-system-software-update-july-16-2024
+
+-------------------------------------------------------------------------------
+
+
+Lmod is automatically replacing "cce/17.0.0" with "gcc-native/12.3".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.5.0" with "PrgEnv-gnu/8.5.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/23.12.5     2) cray-mpich/8.1.28     3) darshan-runtime/3.4.0-mpi
+
+
+Lmod is automatically replacing "gcc-native/12.3" with "amd-mixed/5.4.3".
+
+Lmod has detected the following error: The following module(s) are unknown:
+"amd-mixed/5.4.3" "darshan-runtime"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "amd-mixed/5.4.3" "darshan-runtime"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"cray-mpich/8.1.26"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "cray-mpich/8.1.26"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+[2024-07-22 21:33:09,613] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:09,613] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:09,622] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:10,171] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:10,171] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:10,298] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:10,298] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:10,298] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:10,298] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:10,298] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:10,298] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:10,298] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:10,298] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[2024-07-22 21:33:11,681] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:11,682] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:11,682] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:11,682] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:11,682] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:11,682] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:11,692] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:11,692] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:11,692] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:11,692] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:11,692] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:11,692] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:11,742] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:11,742] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:11,742] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:11,742] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:11,742] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:11,742] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:11,742] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[2024-07-22 21:33:12,125] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,125] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,125] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,125] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,125] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,125] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,125] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,125] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,131] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,131] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,131] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,131] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,131] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,131] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,131] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,131] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,137] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,138] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,137] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,138] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,138] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,137] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,138] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,138] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,139] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,139] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,139] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,139] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,139] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,139] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,139] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 21:33:12,139] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+NameError: name 'use_deepspeed' is not defined
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+NameError: name 'use_deepspeed' is not defined
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+Traceback (most recent call last):
+  File "./examples/open_catalyst_2020/train.py", line 222, in <module>
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+    comm_size, rank = hydragnn.utils.setup_ddp(use_deepspeed=use_deepspeed)
+NameError: name 'use_deepspeed' is not defined
+srun: error: frontier06011: tasks 48-55: Exited with exit code 1
+srun: Terminating StepId=2121367.0
+srun: error: frontier05990: tasks 8-15: Exited with exit code 1
+srun: error: frontier05950: tasks 0-7: Exited with exit code 1
+srun: error: frontier05996: tasks 24-31: Exited with exit code 1
+srun: error: frontier06003: tasks 32-39: Exited with exit code 1
+srun: error: frontier05994: tasks 16-23: Exited with exit code 1
+srun: error: frontier06015: tasks 56-63: Exited with exit code 1
+srun: error: frontier06008: tasks 40-47: Exited with exit code 1

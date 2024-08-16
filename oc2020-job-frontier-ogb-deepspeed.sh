@@ -43,4 +43,4 @@ export PYTHONPATH=$PWD:$PYTHONPATH
 # srun -N$SLURM_JOB_NUM_NODES -n$((SLURM_JOB_NUM_NODES*8)) -c7 --gres=gpu:8 \
 #    python -u ./examples/ogb/train_gap.py gap --adios --use_deepspeed
 srun -N$SLURM_JOB_NUM_NODES -n$((SLURM_JOB_NUM_NODES*8)) -c7 --gpus-per-task=1 --gpu-bind=closest \
-    python -u ./examples/ogb/train_gap.py gap --adios --use_deepspeed
+    python -u ./examples/open_catalyst_2020/train.py --adios --use_deepspeed --modelname OC2020_entire_dataset

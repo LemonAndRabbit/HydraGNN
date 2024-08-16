@@ -1,0 +1,1596 @@
+MINICOM=-c on
+MIOPEN_DISABLE_CACHE=1
+MPICH_ENV_DISPLAY=0
+MPICH_OFI_NIC_POLICY=NUMA
+MPICH_VERSION_DISPLAY=0
+MPICH_DIR=/opt/cray/pe/mpich/8.1.28/ofi/crayclang/17.0
+HYDRA_LAUNCHER_EXTRA_ARGS=--external-launcher
+HYDRAGNN_VALTEST=0
+HYDRAGNN_AGGR_BACKEND=mpi
+HYDRAGNN_NUM_WORKERS=0
+HYDRA_BOOTSTRAP=slurm
+HYDRAGNN_USE_VARIABLE_GRAPH_SIZE=1
+NCCL_P2P_LEVEL=NVL
+NCCL_PROTO=Simple
+NCCL_P2P_DISABLE=1
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+
+Lmod is automatically replacing "cce/17.0.0" with "gcc-native/12.3".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.5.0" with "PrgEnv-gnu/8.5.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/23.12.5     2) cray-mpich/8.1.28     3) darshan-runtime/3.4.0-mpi
+
++ export HYDRAGNN_TRACE_LEVEL=2
++ HYDRAGNN_TRACE_LEVEL=2
++ for MS in LARGE_H3000_L12
++ for NN in 16
++ srun -N16 -n128 -c7 --gres=gpu:8 python -u ./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py --multi_model_list=OC2022 --multi --num_epoch=1 --everyone --ddstore --log=exp-strongfull-LARGE_H3000_L12-2206948-NN16-CHECKPOINT --inputfile=LARGE_H3000_L12_MTL.json --use_deepspeed --conv_checkpoint
+[2024-08-08 18:09:04,636] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:04,636] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:04,636] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:04,636] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:04,636] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:04,636] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:04,636] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:04,637] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,224] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,224] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,224] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,224] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,224] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,224] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,224] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,224] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,408] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,408] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,408] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,408] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,408] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,408] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,408] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,408] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,565] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,565] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,565] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,565] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,565] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,565] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,565] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,565] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,727] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,727] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,727] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,727] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,727] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,727] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,728] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,729] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,952] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,952] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,952] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,955] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,993] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,995] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:05,998] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,025] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,160] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,199] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,199] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,199] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,199] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,199] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,199] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,200] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,201] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,213] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,214] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,216] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,216] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,219] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,220] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,221] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,332] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,332] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,332] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,332] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,332] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,332] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,332] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,332] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,667] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,667] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,667] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,667] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,668] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,668] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,668] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:06,671] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[2024-08-08 18:09:11,307] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,313] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,313] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,316] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,318] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,319] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,320] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,360] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,567] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,569] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[2024-08-08 18:09:11,773] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,780] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,780] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,784] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,789] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,791] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,798] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,798] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,798] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,798] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,798] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,802] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,807] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,811] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,929] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,947] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,947] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,948] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,951] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,954] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:11,958] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:12,001] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:12,004] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[2024-08-08 18:09:12,032] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[2024-08-08 18:09:12,238] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:12,250] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:12,250] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:12,254] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:12,257] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:12,258] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[2024-08-08 18:09:12,417] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:12,417] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:12,417] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:12,417] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:12,417] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:12,417] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:12,417] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 18:09:12,419] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[2024-08-08 18:09:23,443] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:23,443] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:23,443] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:23,443] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:23,443] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:23,443] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:23,443] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:23,443] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[2024-08-08 18:09:34,258] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:34,258] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:34,258] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:34,258] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:34,258] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:34,258] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:34,258] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:34,258] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[2024-08-08 18:09:37,163] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:37,163] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:37,163] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:37,163] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:37,163] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:37,163] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:37,163] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:37,163] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-08-08 18:09:38,111] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:38,111] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:38,111] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:38,111] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:38,111] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:38,111] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:38,111] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:38,111] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[2024-08-08 18:09:40,130] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:40,131] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:40,131] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:40,131] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:40,131] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:40,131] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:40,131] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:40,131] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-08-08 18:09:45,970] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:45,970] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:45,970] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:45,970] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:45,970] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:45,970] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:45,970] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:45,970] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+Distributed data parallel: nccl master at frontier01915:8889
+[2024-08-08 18:09:46,532] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:46,532] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:46,532] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:46,532] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:46,532] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:46,532] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:46,532] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2024-08-08 18:09:46,532] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:46,532] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:464] [c10d] The server socket cannot be initialized on [::]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-08-08 18:09:46,598] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:46,598] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:46,598] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:46,598] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:46,598] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:46,598] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:46,598] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:46,598] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-08-08 18:09:49,832] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:49,832] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:49,832] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:49,833] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:49,833] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:49,833] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:49,833] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:49,833] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-08-08 18:09:52,441] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:52,441] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:52,441] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:52,441] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:52,441] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:52,441] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:52,441] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:09:52,441] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-08-08 18:10:54,936] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:10:54,936] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:10:54,936] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:10:54,936] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:10:54,936] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:10:54,936] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:10:54,936] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:10:54,936] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:10:54,963] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:10:54,964] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:10:54,964] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:10:54,964] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:10:54,964] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:10:54,964] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:10:54,964] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:10:54,964] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-08-08 18:10:59,253] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:10:59,253] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-08-08 18:11:00,653] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:00,653] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:00,653] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:00,661] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-08-08 18:11:00,673] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-08-08 18:11:00,735] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-08-08 18:11:01,549] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:01,549] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:01,549] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:01,550] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:01,550] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:01,587] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:01,588] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-08-08 18:11:01,610] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-08-08 18:11:01,994] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:01,994] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:01,994] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:01,994] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:01,994] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:01,994] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:01,994] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:01,994] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-08-08 18:11:05,768] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:05,768] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:05,768] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:05,768] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:05,768] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:05,768] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:05,768] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-08-08 18:11:05,790] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [frontier01915.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+0: Command: ./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py --multi_model_list=OC2022 --multi --num_epoch=1 --everyone --ddstore --log=exp-strongfull-LARGE_H3000_L12-2206948-NN16-CHECKPOINT --inputfile=LARGE_H3000_L12_MTL.json --use_deepspeed --conv_checkpoint
+
+0: Adios reading: /lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/./dataset/OC2022.bp
+0: Read attr time (sec):  0.01369333267211914
+0: read and bcast: trainset/x/variable_count 5.063416242599487
+0: read and bcast: trainset/x/variable_offset 5.634963274002075
+0: read and bcast: trainset/x/variable_dim 5.635256290435791
+0: read and bcast: trainset/edge_index/variable_count 10.68285322189331
+0: read and bcast: trainset/edge_index/variable_offset 11.216524362564087
+0: read and bcast: trainset/edge_index/variable_dim 11.236145734786987
+0: read and bcast: trainset/edge_attr/variable_count 16.352914571762085
+0: read and bcast: trainset/edge_attr/variable_offset 16.947609186172485
+0: read and bcast: trainset/edge_attr/variable_dim 16.966837644577026
+0: read and bcast: trainset/pos/variable_count 21.914974689483643
+0: read and bcast: trainset/pos/variable_offset 22.516298532485962
+0: read and bcast: trainset/pos/variable_dim 22.53526210784912
+0: read and bcast: trainset/y/variable_count 23.34567666053772
+0: read and bcast: trainset/y/variable_offset 24.0010027885437
+0: read and bcast: trainset/y/variable_dim 24.01994800567627
+0: Overall time (sec):  24.033807039260864
+0: DDStore adding time (sec):  0.0
+0: Data loading time (sec):  24.04659867286682
+0: Adios reading: /lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/./dataset/OC2022.bp
+0: Read attr time (sec):  0.005377292633056641
+0: read and bcast: valset/x/variable_count 4.768099069595337
+0: read and bcast: valset/x/variable_offset 4.887505292892456
+0: read and bcast: valset/x/variable_dim 4.887776851654053
+0: read and bcast: valset/edge_index/variable_count 9.324681282043457
+0: read and bcast: valset/edge_index/variable_offset 9.392291069030762
+0: read and bcast: valset/edge_index/variable_dim 9.392572402954102
+0: read and bcast: valset/edge_attr/variable_count 14.246023893356323
+0: read and bcast: valset/edge_attr/variable_offset 14.328159809112549
+0: read and bcast: valset/edge_attr/variable_dim 14.32840895652771
+0: read and bcast: valset/pos/variable_count 18.40006709098816
+0: read and bcast: valset/pos/variable_offset 18.48068642616272
+0: read and bcast: valset/pos/variable_dim 18.48094868659973
+0: read and bcast: valset/y/variable_count 18.576504230499268
+0: read and bcast: valset/y/variable_offset 18.658246994018555
+0: read and bcast: valset/y/variable_dim 18.65848469734192
+0: Overall time (sec):  18.663989305496216
+0: DDStore adding time (sec):  0.0
+0: Data loading time (sec):  18.66922640800476
+0: Adios reading: /lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/./dataset/OC2022.bp
+0: Read attr time (sec):  0.005736112594604492
+0: read and bcast: testset/x/variable_count 4.636821269989014
+0: read and bcast: testset/x/variable_offset 4.678802967071533
+0: read and bcast: testset/x/variable_dim 4.678982496261597
+0: read and bcast: testset/edge_index/variable_count 9.17189621925354
+0: read and bcast: testset/edge_index/variable_offset 9.210668802261353
+0: read and bcast: testset/edge_index/variable_dim 9.210831880569458
+0: read and bcast: testset/edge_attr/variable_count 14.522912502288818
+0: read and bcast: testset/edge_attr/variable_offset 14.583940029144287
+0: read and bcast: testset/edge_attr/variable_dim 14.584112644195557
+0: read and bcast: testset/pos/variable_count 17.27566695213318
+0: read and bcast: testset/pos/variable_offset 17.337934017181396
+0: read and bcast: testset/pos/variable_dim 17.3380925655365
+0: read and bcast: testset/y/variable_count 17.37954568862915
+0: read and bcast: testset/y/variable_offset 17.417214393615723
+0: read and bcast: testset/y/variable_dim 17.417379140853882
+0: Overall time (sec):  17.423255443572998
+0: DDStore adding time (sec):  0.0
+0: Data loading time (sec):  17.42770528793335
+0: Adios preloading: /lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/./dataset/OC2022.bp
+0: Adios reading time (sec):  16.151121139526367
+0: Adios preloading: /lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/./dataset/OC2022.bp
+0: Adios reading time (sec):  1.4847512245178223
+0: Adios preloading: /lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/./dataset/OC2022.bp
+0: Adios reading time (sec):  0.7798447608947754
+Loading:   0%|          | 0/59255 [00:00<?, ?it/s]Loading:   0%|          | 226/59255 [00:00<00:26, 2259.89it/s]Loading:   1%|          | 528/59255 [00:00<00:21, 2703.94it/s]Loading:   1%|▏         | 822/59255 [00:00<00:20, 2808.46it/s]Loading:   2%|▏         | 1126/59255 [00:00<00:20, 2898.64it/s]Loading:   2%|▏         | 1416/59255 [00:00<00:30, 1893.89it/s]Loading:   3%|▎         | 1710/59255 [00:00<00:26, 2156.91it/s]Loading:   3%|▎         | 2015/59255 [00:00<00:23, 2392.19it/s]Loading:   4%|▍         | 2315/59255 [00:00<00:22, 2556.60it/s]Loading:   4%|▍         | 2626/59255 [00:01<00:20, 2710.41it/s]Loading:   5%|▍         | 2944/59255 [00:01<00:19, 2843.75it/s]Loading:   5%|▌         | 3255/59255 [00:01<00:19, 2918.81it/s]Loading:   6%|▌         | 3568/59255 [00:01<00:18, 2977.95it/s]Loading:   7%|▋         | 3884/59255 [00:01<00:18, 3031.30it/s]Loading:   7%|▋         | 4192/59255 [00:01<00:18, 3039.68it/s]Loading:   8%|▊         | 4500/59255 [00:01<00:18, 3026.61it/s]Loading:   8%|▊         | 4819/59255 [00:01<00:17, 3073.88it/s]Loading:   9%|▊         | 5129/59255 [00:01<00:17, 3071.33it/s]Loading:   9%|▉         | 5438/59255 [00:01<00:17, 3068.70it/s]Loading:  10%|▉         | 5753/59255 [00:02<00:17, 3091.12it/s]Loading:  10%|█         | 6069/59255 [00:02<00:17, 3110.58it/s]Loading:  11%|█         | 6381/59255 [00:02<00:17, 3085.26it/s]Loading:  11%|█▏        | 6690/59255 [00:02<00:17, 3055.71it/s]Loading:  12%|█▏        | 7004/59255 [00:02<00:16, 3078.06it/s]Loading:  12%|█▏        | 7313/59255 [00:02<00:16, 3072.16it/s]Loading:  13%|█▎        | 7625/59255 [00:02<00:16, 3084.08it/s]Loading:  13%|█▎        | 7934/59255 [00:02<00:16, 3049.91it/s]Loading:  14%|█▍        | 8241/59255 [00:02<00:16, 3053.33it/s]Loading:  14%|█▍        | 8547/59255 [00:02<00:16, 3049.33it/s]Loading:  15%|█▍        | 8854/59255 [00:03<00:16, 3054.84it/s]Loading:  15%|█▌        | 9163/59255 [00:03<00:16, 3064.43it/s]Loading:  16%|█▌        | 9470/59255 [00:03<00:16, 3063.12it/s]Loading:  17%|█▋        | 9788/59255 [00:03<00:15, 3095.91it/s]Loading:  17%|█▋        | 10098/59255 [00:03<00:15, 3087.12it/s]Loading:  18%|█▊        | 10407/59255 [00:03<00:15, 3054.15it/s]Loading:  18%|█▊        | 10713/59255 [00:03<00:16, 3017.91it/s]Loading:  19%|█▊        | 11023/59255 [00:03<00:15, 3040.17it/s]Loading:  19%|█▉        | 11330/59255 [00:03<00:15, 3047.74it/s]Loading:  20%|█▉        | 11643/59255 [00:03<00:15, 3070.03it/s]Loading:  20%|██        | 11957/59255 [00:04<00:15, 3088.72it/s]Loading:  21%|██        | 12266/59255 [00:04<00:22, 2135.19it/s]Loading:  21%|██        | 12572/59255 [00:04<00:19, 2345.39it/s]Loading:  22%|██▏       | 12887/59255 [00:04<00:18, 2540.99it/s]Loading:  22%|██▏       | 13208/59255 [00:04<00:16, 2713.64it/s]Loading:  23%|██▎       | 13506/59255 [00:04<00:16, 2785.11it/s]Loading:  23%|██▎       | 13806/59255 [00:04<00:15, 2843.17it/s]Loading:  24%|██▍       | 14105/59255 [00:04<00:15, 2883.47it/s]Loading:  24%|██▍       | 14416/59255 [00:05<00:15, 2948.65it/s]Loading:  25%|██▍       | 14718/59255 [00:05<00:15, 2967.95it/s]Loading:  25%|██▌       | 15028/59255 [00:05<00:14, 3006.53it/s]Loading:  26%|██▌       | 15335/59255 [00:05<00:14, 3022.79it/s]Loading:  26%|██▋       | 15647/59255 [00:05<00:14, 3051.27it/s]Loading:  27%|██▋       | 15954/59255 [00:05<00:14, 3047.72it/s]Loading:  27%|██▋       | 16260/59255 [00:05<00:14, 3048.91it/s]Loading:  28%|██▊       | 16566/59255 [00:05<00:14, 3039.69it/s]Loading:  28%|██▊       | 16871/59255 [00:05<00:14, 2992.23it/s]Loading:  29%|██▉       | 17173/59255 [00:05<00:14, 2998.49it/s]Loading:  30%|██▉       | 17487/59255 [00:06<00:13, 3037.91it/s]Loading:  30%|███       | 17792/59255 [00:06<00:13, 3024.36it/s]Loading:  31%|███       | 18095/59255 [00:06<00:13, 3025.46it/s]Loading:  31%|███       | 18398/59255 [00:06<00:13, 3018.79it/s]Loading:  32%|███▏      | 18701/59255 [00:06<00:13, 3021.07it/s]Loading:  32%|███▏      | 19004/59255 [00:06<00:13, 3022.28it/s]Loading:  33%|███▎      | 19307/59255 [00:06<00:13, 3014.96it/s]Loading:  33%|███▎      | 19609/59255 [00:06<00:13, 3015.92it/s]Loading:  34%|███▎      | 19918/59255 [00:06<00:12, 3036.86it/s]Loading:  34%|███▍      | 20222/59255 [00:06<00:12, 3035.04it/s]Loading:  35%|███▍      | 20526/59255 [00:07<00:12, 3013.50it/s]Loading:  35%|███▌      | 20834/59255 [00:07<00:12, 3033.07it/s]Loading:  36%|███▌      | 21150/59255 [00:07<00:12, 3068.20it/s]Loading:  36%|███▌      | 21458/59255 [00:07<00:12, 3071.05it/s]Loading:  37%|███▋      | 21768/59255 [00:07<00:12, 3076.76it/s]Loading:  37%|███▋      | 22077/59255 [00:07<00:12, 3078.45it/s]Loading:  38%|███▊      | 22394/59255 [00:07<00:11, 3105.81it/s]Loading:  38%|███▊      | 22711/59255 [00:07<00:11, 3122.21it/s]Loading:  39%|███▉      | 23024/59255 [00:07<00:11, 3115.25it/s]Loading:  39%|███▉      | 23336/59255 [00:07<00:11, 3115.65it/s]Loading:  40%|███▉      | 23648/59255 [00:08<00:11, 3070.88it/s]Loading:  40%|████      | 23956/59255 [00:08<00:11, 3052.55it/s]Loading:  41%|████      | 24262/59255 [00:08<00:11, 3014.75it/s]Loading:  41%|████▏     | 24564/59255 [00:08<00:11, 2992.65it/s]Loading:  42%|████▏     | 24870/59255 [00:08<00:11, 3012.15it/s]Loading:  42%|████▏     | 25182/59255 [00:08<00:11, 3042.14it/s]Loading:  43%|████▎     | 25490/59255 [00:08<00:11, 3050.72it/s]Loading:  44%|████▎     | 25802/59255 [00:08<00:10, 3070.63it/s]Loading:  44%|████▍     | 26110/59255 [00:09<00:16, 2039.52it/s]Loading:  45%|████▍     | 26417/59255 [00:09<00:14, 2266.64it/s]Loading:  45%|████▌     | 26710/59255 [00:09<00:13, 2425.31it/s]Loading:  46%|████▌     | 27009/59255 [00:09<00:12, 2567.14it/s]Loading:  46%|████▌     | 27317/59255 [00:09<00:11, 2702.32it/s]Loading:  47%|████▋     | 27623/59255 [00:09<00:11, 2800.17it/s]Loading:  47%|████▋     | 27918/59255 [00:09<00:11, 2840.98it/s]Loading:  48%|████▊     | 28219/59255 [00:09<00:10, 2888.75it/s]Loading:  48%|████▊     | 28526/59255 [00:09<00:10, 2940.36it/s]Loading:  49%|████▊     | 28839/59255 [00:09<00:10, 2995.40it/s]Loading:  49%|████▉     | 29143/59255 [00:10<00:10, 2983.19it/s]Loading:  50%|████▉     | 29448/59255 [00:10<00:09, 3000.21it/s]Loading:  50%|█████     | 29763/59255 [00:10<00:09, 3042.27it/s]Loading:  51%|█████     | 30073/59255 [00:10<00:09, 3057.51it/s]Loading:  51%|█████▏    | 30380/59255 [00:10<00:09, 3054.90it/s]Loading:  52%|█████▏    | 30696/59255 [00:10<00:09, 3085.93it/s]Loading:  52%|█████▏    | 31018/59255 [00:10<00:09, 3124.04it/s]Loading:  53%|█████▎    | 31337/59255 [00:10<00:08, 3143.60it/s]Loading:  53%|█████▎    | 31652/59255 [00:10<00:08, 3100.19it/s]Loading:  54%|█████▍    | 31963/59255 [00:10<00:08, 3073.97it/s]Loading:  54%|█████▍    | 32272/59255 [00:11<00:08, 3078.36it/s]Loading:  55%|█████▍    | 32581/59255 [00:11<00:08, 3076.53it/s]Loading:  56%|█████▌    | 32898/59255 [00:11<00:08, 3103.27it/s]Loading:  56%|█████▌    | 33209/59255 [00:11<00:08, 3044.44it/s]Loading:  57%|█████▋    | 33514/59255 [00:11<00:08, 3014.78it/s]Loading:  57%|█████▋    | 33816/59255 [00:11<00:08, 2991.83it/s]Loading:  58%|█████▊    | 34121/59255 [00:11<00:08, 3008.50it/s]Loading:  58%|█████▊    | 34428/59255 [00:11<00:08, 3024.18it/s]Loading:  59%|█████▊    | 34743/59255 [00:11<00:08, 3060.17it/s]Loading:  59%|█████▉    | 35054/59255 [00:11<00:07, 3073.89it/s]Loading:  60%|█████▉    | 35366/59255 [00:12<00:07, 3085.22it/s]Loading:  60%|██████    | 35675/59255 [00:12<00:07, 3075.41it/s]Loading:  61%|██████    | 35983/59255 [00:12<00:07, 3041.26it/s]Loading:  61%|██████    | 36292/59255 [00:12<00:07, 3054.21it/s]Loading:  62%|██████▏   | 36599/59255 [00:12<00:07, 3056.88it/s]Loading:  62%|██████▏   | 36909/59255 [00:12<00:07, 3069.64it/s]Loading:  63%|██████▎   | 37218/59255 [00:12<00:07, 3074.75it/s]Loading:  63%|██████▎   | 37527/59255 [00:12<00:07, 3078.08it/s]Loading:  64%|██████▍   | 37835/59255 [00:12<00:06, 3074.83it/s]Loading:  64%|██████▍   | 38143/59255 [00:12<00:06, 3044.14it/s]Loading:  65%|██████▍   | 38450/59255 [00:13<00:06, 3050.12it/s]Loading:  65%|██████▌   | 38759/59255 [00:13<00:06, 3059.80it/s]Loading:  66%|██████▌   | 39066/59255 [00:13<00:06, 3045.51it/s]Loading:  66%|██████▋   | 39373/59255 [00:13<00:06, 3051.32it/s]Loading:  67%|██████▋   | 39681/59255 [00:13<00:06, 3059.10it/s]Loading:  67%|██████▋   | 39992/59255 [00:13<00:06, 3072.09it/s]Loading:  68%|██████▊   | 40303/59255 [00:13<00:06, 3081.61it/s]Loading:  69%|██████▊   | 40615/59255 [00:13<00:06, 3092.09it/s]Loading:  69%|██████▉   | 40930/59255 [00:13<00:05, 3108.45it/s]Loading:  70%|██████▉   | 41241/59255 [00:13<00:05, 3095.44it/s]Loading:  70%|███████   | 41551/59255 [00:14<00:05, 3071.33it/s]Loading:  71%|███████   | 41864/59255 [00:14<00:05, 3086.04it/s]Loading:  71%|███████   | 42176/59255 [00:14<00:05, 3093.84it/s]Loading:  72%|███████▏  | 42486/59255 [00:14<00:05, 3095.14it/s]Loading:  72%|███████▏  | 42796/59255 [00:14<00:05, 3086.07it/s]Loading:  73%|███████▎  | 43105/59255 [00:14<00:05, 3071.63it/s]Loading:  73%|███████▎  | 43413/59255 [00:14<00:08, 1890.14it/s]Loading:  74%|███████▍  | 43718/59255 [00:14<00:07, 2130.47it/s]Loading:  74%|███████▍  | 44023/59255 [00:15<00:06, 2339.36it/s]Loading:  75%|███████▍  | 44322/59255 [00:15<00:05, 2498.24it/s]Loading:  75%|███████▌  | 44623/59255 [00:15<00:05, 2629.26it/s]Loading:  76%|███████▌  | 44928/59255 [00:15<00:05, 2741.83it/s]Loading:  76%|███████▋  | 45235/59255 [00:15<00:04, 2831.17it/s]Loading:  77%|███████▋  | 45537/59255 [00:15<00:04, 2884.83it/s]Loading:  77%|███████▋  | 45839/59255 [00:15<00:04, 2921.99it/s]Loading:  78%|███████▊  | 46149/59255 [00:15<00:04, 2973.29it/s]Loading:  78%|███████▊  | 46459/59255 [00:15<00:04, 3010.03it/s]Loading:  79%|███████▉  | 46774/59255 [00:15<00:04, 3050.65it/s]Loading:  79%|███████▉  | 47086/59255 [00:16<00:03, 3070.14it/s]Loading:  80%|███████▉  | 47395/59255 [00:16<00:03, 3073.11it/s]Loading:  81%|████████  | 47706/59255 [00:16<00:03, 3083.95it/s]Loading:  81%|████████  | 48016/59255 [00:16<00:03, 3084.30it/s]Loading:  82%|████████▏ | 48329/59255 [00:16<00:03, 3095.23it/s]Loading:  82%|████████▏ | 48639/59255 [00:16<00:03, 3081.61it/s]Loading:  83%|████████▎ | 48948/59255 [00:16<00:03, 3069.06it/s]Loading:  83%|████████▎ | 49258/59255 [00:16<00:03, 3077.54it/s]Loading:  84%|████████▎ | 49571/59255 [00:16<00:03, 3092.12it/s]Loading:  84%|████████▍ | 49881/59255 [00:17<00:03, 3083.66it/s]Loading:  85%|████████▍ | 50190/59255 [00:17<00:02, 3053.83it/s]Loading:  85%|████████▌ | 50496/59255 [00:17<00:02, 3043.92it/s]Loading:  86%|████████▌ | 50814/59255 [00:17<00:02, 3081.91it/s]Loading:  86%|████████▋ | 51123/59255 [00:17<00:02, 3027.68it/s]Loading:  87%|████████▋ | 51427/59255 [00:17<00:02, 3008.43it/s]Loading:  87%|████████▋ | 51736/59255 [00:17<00:02, 3031.52it/s]Loading:  88%|████████▊ | 52041/59255 [00:17<00:02, 3033.69it/s]Loading:  88%|████████▊ | 52345/59255 [00:17<00:02, 3016.17it/s]Loading:  89%|████████▉ | 52652/59255 [00:17<00:02, 3029.40it/s]Loading:  89%|████████▉ | 52964/59255 [00:18<00:02, 3053.98it/s]Loading:  90%|████████▉ | 53270/59255 [00:18<00:01, 3048.12it/s]Loading:  90%|█████████ | 53576/59255 [00:18<00:01, 3050.39it/s]Loading:  91%|█████████ | 53889/59255 [00:18<00:01, 3073.07it/s]Loading:  91%|█████████▏| 54199/59255 [00:18<00:01, 3079.74it/s]Loading:  92%|█████████▏| 54517/59255 [00:18<00:01, 3108.02it/s]Loading:  93%|█████████▎| 54828/59255 [00:18<00:01, 3108.41it/s]Loading:  93%|█████████▎| 55139/59255 [00:18<00:01, 3100.67it/s]Loading:  94%|█████████▎| 55450/59255 [00:18<00:01, 3061.15it/s]Loading:  94%|█████████▍| 55757/59255 [00:18<00:01, 3039.61it/s]Loading:  95%|█████████▍| 56062/59255 [00:19<00:01, 3028.00it/s]Loading:  95%|█████████▌| 56365/59255 [00:19<00:00, 3021.46it/s]Loading:  96%|█████████▌| 56668/59255 [00:19<00:00, 3009.91it/s]Loading:  96%|█████████▌| 56970/59255 [00:19<00:00, 3002.64it/s]Loading:  97%|█████████▋| 57278/59255 [00:19<00:00, 3022.77it/s]Loading:  97%|█████████▋| 57581/59255 [00:19<00:00, 3014.55it/s]Loading:  98%|█████████▊| 57883/59255 [00:19<00:00, 2998.56it/s]Loading:  98%|█████████▊| 58196/59255 [00:19<00:00, 3036.79it/s]Loading:  99%|█████████▊| 58506/59255 [00:19<00:00, 3055.53it/s]Loading:  99%|█████████▉| 58812/59255 [00:19<00:00, 3016.14it/s]Loading: 100%|█████████▉| 59114/59255 [00:20<00:00, 2987.79it/s]Loading: 100%|██████████| 59255/59255 [00:20<00:00, 2949.18it/s]
+0: DDStore add: ('trainset/edge_attr', 0, dtype('float32'), (128224860, 1), 547075400.0, 0.47767482697963715)
+0: DDStore add: ('trainset/edge_index', 1, dtype('int64'), (128224860, 2), 11878652361, 1.9106993079185486)
+0: DDStore add: ('trainset/pos', 0, dtype('float32'), (4795746, 3), 150768850.0, 0.05359663814306259)
+0: DDStore add: ('trainset/x', 0, dtype('float32'), (4795746, 4), 252415140.0, 0.07146218419075012)
+0: DDStore add: ('trainset/y', 0, dtype('float32'), (14446493, 1), -357729.47, 0.05381738021969795)
+0: DDStore add: ('trainset/y_loc', 0, dtype('int64'), (59255, 3), 14505748, 0.0013244524598121643)
+0: DDStore total (GB): 2.5685747899115086
+Loading:   0%|          | 0/6585 [00:00<?, ?it/s]Loading:   5%|▍         | 329/6585 [00:00<00:01, 3283.15it/s]Loading:  10%|█         | 666/6585 [00:00<00:01, 3333.37it/s]Loading:  15%|█▌        | 1001/6585 [00:00<00:01, 3336.91it/s]Loading:  20%|██        | 1335/6585 [00:00<00:01, 3319.79it/s]Loading:  25%|██▌       | 1667/6585 [00:00<00:01, 3265.76it/s]Loading:  30%|███       | 1994/6585 [00:00<00:01, 3162.23it/s]Loading:  35%|███▌      | 2311/6585 [00:00<00:01, 3143.14it/s]Loading:  40%|███▉      | 2626/6585 [00:00<00:01, 3137.89it/s]Loading:  45%|████▍     | 2945/6585 [00:00<00:01, 3152.49it/s]Loading:  50%|████▉     | 3261/6585 [00:01<00:01, 1782.76it/s]Loading:  54%|█████▍    | 3581/6585 [00:01<00:01, 2061.13it/s]Loading:  59%|█████▉    | 3890/6585 [00:01<00:01, 2286.28it/s]Loading:  64%|██████▎   | 4197/6585 [00:01<00:00, 2473.23it/s]Loading:  68%|██████▊   | 4494/6585 [00:01<00:00, 2598.62it/s]Loading:  73%|███████▎  | 4796/6585 [00:01<00:00, 2709.27it/s]Loading:  77%|███████▋  | 5095/6585 [00:01<00:00, 2784.98it/s]Loading:  82%|████████▏ | 5398/6585 [00:01<00:00, 2853.18it/s]Loading:  87%|████████▋ | 5719/6585 [00:02<00:00, 2954.48it/s]Loading:  92%|█████████▏| 6027/6585 [00:02<00:00, 2990.04it/s]Loading:  96%|█████████▋| 6349/6585 [00:02<00:00, 3055.52it/s]Loading: 100%|██████████| 6585/6585 [00:02<00:00, 2800.94it/s]
+0: DDStore add: ('valset/edge_attr', 0, dtype('float32'), (13671208, 1), 58309930.0, 0.05092921853065491)
+0: DDStore add: ('valset/edge_index', 1, dtype('int64'), (13671208, 2), 1328668416, 0.20371687412261963)
+0: DDStore add: ('valset/pos', 0, dtype('float32'), (526425, 3), 17769488.0, 0.005883257836103439)
+0: DDStore add: ('valset/x', 0, dtype('float32'), (526425, 4), 31238396.0, 0.007844343781471252)
+0: DDStore add: ('valset/y', 0, dtype('float32'), (1585860, 1), -42179.387, 0.005907788872718811)
+0: DDStore add: ('valset/y_loc', 0, dtype('int64'), (6585, 3), 1592445, 0.00014718621969223022)
+0: DDStore total (GB): 0.27442866936326027
+Loading:   0%|          | 0/3183 [00:00<?, ?it/s]Loading:  11%|█         | 335/3183 [00:00<00:00, 3348.38it/s]Loading:  21%|██        | 670/3183 [00:00<00:00, 3335.68it/s]Loading:  32%|███▏      | 1004/3183 [00:00<00:00, 3321.86it/s]Loading:  42%|████▏     | 1337/3183 [00:00<00:00, 3321.09it/s]Loading:  52%|█████▏    | 1670/3183 [00:00<00:00, 3321.25it/s]Loading:  63%|██████▎   | 2003/3183 [00:00<00:00, 3211.55it/s]Loading:  73%|███████▎  | 2325/3183 [00:00<00:00, 3182.41it/s]Loading:  83%|████████▎ | 2644/3183 [00:00<00:00, 3178.87it/s]Loading:  93%|█████████▎| 2963/3183 [00:00<00:00, 3169.49it/s]Loading: 100%|██████████| 3183/3183 [00:00<00:00, 3218.56it/s]
+0: DDStore add: ('testset/edge_attr', 0, dtype('float32'), (6685284, 1), 28360668.0, 0.02490462362766266)
+0: DDStore add: ('testset/edge_index', 1, dtype('int64'), (6685284, 2), 557089918, 0.09961849451065063)
+0: DDStore add: ('testset/pos', 0, dtype('float32'), (241919, 3), 7302729.0, 0.0027036555111408234)
+0: DDStore add: ('testset/x', 0, dtype('float32'), (241919, 4), 12574320.0, 0.003604874014854431)
+0: DDStore add: ('testset/y', 0, dtype('float32'), (728940, 1), -19235.979, 0.0027155131101608276)
+0: DDStore add: ('testset/y_loc', 0, dtype('int64'), (3183, 3), 732123, 7.114559412002563e-05)
+0: DDStore total (GB): 0.1336183063685894
+0: trainset,valset,testset size: 7584541 842810 407409
+0: Using GPU
+0: Enabling checkpointing
+0:           graph_convs.0.module_0.edge_mlp.0.weight	          [3000, 10]	     30000
+0:             graph_convs.0.module_0.edge_mlp.0.bias	              [3000]	      3000
+0:           graph_convs.0.module_0.edge_mlp.2.weight	        [3000, 3000]	   9000000
+0:             graph_convs.0.module_0.edge_mlp.2.bias	              [3000]	      3000
+0:           graph_convs.0.module_0.node_mlp.0.weight	        [3000, 3004]	   9012000
+0:             graph_convs.0.module_0.node_mlp.0.bias	              [3000]	      3000
+0:           graph_convs.0.module_0.node_mlp.2.weight	        [3000, 3000]	   9000000
+0:             graph_convs.0.module_0.node_mlp.2.bias	              [3000]	      3000
+0:          graph_convs.0.module_0.coord_mlp.0.weight	        [3000, 3000]	   9000000
+0:            graph_convs.0.module_0.coord_mlp.0.bias	              [3000]	      3000
+0:          graph_convs.0.module_0.coord_mlp.2.weight	           [1, 3000]	      3000
+0:           graph_convs.1.module_0.edge_mlp.0.weight	        [3000, 6002]	  18006000
+0:             graph_convs.1.module_0.edge_mlp.0.bias	              [3000]	      3000
+0:           graph_convs.1.module_0.edge_mlp.2.weight	        [3000, 3000]	   9000000
+0:             graph_convs.1.module_0.edge_mlp.2.bias	              [3000]	      3000
+0:           graph_convs.1.module_0.node_mlp.0.weight	        [3000, 6000]	  18000000
+0:             graph_convs.1.module_0.node_mlp.0.bias	              [3000]	      3000
+0:           graph_convs.1.module_0.node_mlp.2.weight	        [3000, 3000]	   9000000
+0:             graph_convs.1.module_0.node_mlp.2.bias	              [3000]	      3000
+0:          graph_convs.1.module_0.coord_mlp.0.weight	        [3000, 3000]	   9000000
+0:            graph_convs.1.module_0.coord_mlp.0.bias	              [3000]	      3000
+0:          graph_convs.1.module_0.coord_mlp.2.weight	           [1, 3000]	      3000
+0:           graph_convs.2.module_0.edge_mlp.0.weight	        [3000, 6002]	  18006000
+0:             graph_convs.2.module_0.edge_mlp.0.bias	              [3000]	      3000
+0:           graph_convs.2.module_0.edge_mlp.2.weight	        [3000, 3000]	   9000000
+0:             graph_convs.2.module_0.edge_mlp.2.bias	              [3000]	      3000
+0:           graph_convs.2.module_0.node_mlp.0.weight	        [3000, 6000]	  18000000
+0:             graph_convs.2.module_0.node_mlp.0.bias	              [3000]	      3000
+0:           graph_convs.2.module_0.node_mlp.2.weight	        [3000, 3000]	   9000000
+0:             graph_convs.2.module_0.node_mlp.2.bias	              [3000]	      3000
+0:          graph_convs.2.module_0.coord_mlp.0.weight	        [3000, 3000]	   9000000
+0:            graph_convs.2.module_0.coord_mlp.0.bias	              [3000]	      3000
+0:          graph_convs.2.module_0.coord_mlp.2.weight	           [1, 3000]	      3000
+0:           graph_convs.3.module_0.edge_mlp.0.weight	        [3000, 6002]	  18006000
+0:             graph_convs.3.module_0.edge_mlp.0.bias	              [3000]	      3000
+0:           graph_convs.3.module_0.edge_mlp.2.weight	        [3000, 3000]	   9000000
+0:             graph_convs.3.module_0.edge_mlp.2.bias	              [3000]	      3000
+0:           graph_convs.3.module_0.node_mlp.0.weight	        [3000, 6000]	  18000000
+0:             graph_convs.3.module_0.node_mlp.0.bias	              [3000]	      3000
+0:           graph_convs.3.module_0.node_mlp.2.weight	        [3000, 3000]	   9000000
+0:             graph_convs.3.module_0.node_mlp.2.bias	              [3000]	      3000
+0:          graph_convs.3.module_0.coord_mlp.0.weight	        [3000, 3000]	   9000000
+0:            graph_convs.3.module_0.coord_mlp.0.bias	              [3000]	      3000
+0:          graph_convs.3.module_0.coord_mlp.2.weight	           [1, 3000]	      3000
+0:           graph_convs.4.module_0.edge_mlp.0.weight	        [3000, 6002]	  18006000
+0:             graph_convs.4.module_0.edge_mlp.0.bias	              [3000]	      3000
+0:           graph_convs.4.module_0.edge_mlp.2.weight	        [3000, 3000]	   9000000
+0:             graph_convs.4.module_0.edge_mlp.2.bias	              [3000]	      3000
+0:           graph_convs.4.module_0.node_mlp.0.weight	        [3000, 6000]	  18000000
+0:             graph_convs.4.module_0.node_mlp.0.bias	              [3000]	      3000
+0:           graph_convs.4.module_0.node_mlp.2.weight	        [3000, 3000]	   9000000
+0:             graph_convs.4.module_0.node_mlp.2.bias	              [3000]	      3000
+0:          graph_convs.4.module_0.coord_mlp.0.weight	        [3000, 3000]	   9000000
+0:            graph_convs.4.module_0.coord_mlp.0.bias	              [3000]	      3000
+0:          graph_convs.4.module_0.coord_mlp.2.weight	           [1, 3000]	      3000
+0:           graph_convs.5.module_0.edge_mlp.0.weight	        [3000, 6002]	  18006000
+0:             graph_convs.5.module_0.edge_mlp.0.bias	              [3000]	      3000
+0:           graph_convs.5.module_0.edge_mlp.2.weight	        [3000, 3000]	   9000000
+0:             graph_convs.5.module_0.edge_mlp.2.bias	              [3000]	      3000
+0:           graph_convs.5.module_0.node_mlp.0.weight	        [3000, 6000]	  18000000
+0:             graph_convs.5.module_0.node_mlp.0.bias	              [3000]	      3000
+0:           graph_convs.5.module_0.node_mlp.2.weight	        [3000, 3000]	   9000000
+0:             graph_convs.5.module_0.node_mlp.2.bias	              [3000]	      3000
+0:          graph_convs.5.module_0.coord_mlp.0.weight	        [3000, 3000]	   9000000
+0:            graph_convs.5.module_0.coord_mlp.0.bias	              [3000]	      3000
+0:          graph_convs.5.module_0.coord_mlp.2.weight	           [1, 3000]	      3000
+0:           graph_convs.6.module_0.edge_mlp.0.weight	        [3000, 6002]	  18006000
+0:             graph_convs.6.module_0.edge_mlp.0.bias	              [3000]	      3000
+0:           graph_convs.6.module_0.edge_mlp.2.weight	        [3000, 3000]	   9000000
+0:             graph_convs.6.module_0.edge_mlp.2.bias	              [3000]	      3000
+0:           graph_convs.6.module_0.node_mlp.0.weight	        [3000, 6000]	  18000000
+0:             graph_convs.6.module_0.node_mlp.0.bias	              [3000]	      3000
+0:           graph_convs.6.module_0.node_mlp.2.weight	        [3000, 3000]	   9000000
+0:             graph_convs.6.module_0.node_mlp.2.bias	              [3000]	      3000
+0:          graph_convs.6.module_0.coord_mlp.0.weight	        [3000, 3000]	   9000000
+0:            graph_convs.6.module_0.coord_mlp.0.bias	              [3000]	      3000
+0:          graph_convs.6.module_0.coord_mlp.2.weight	           [1, 3000]	      3000
+0:           graph_convs.7.module_0.edge_mlp.0.weight	        [3000, 6002]	  18006000
+0:             graph_convs.7.module_0.edge_mlp.0.bias	              [3000]	      3000
+0:           graph_convs.7.module_0.edge_mlp.2.weight	        [3000, 3000]	   9000000
+0:             graph_convs.7.module_0.edge_mlp.2.bias	              [3000]	      3000
+0:           graph_convs.7.module_0.node_mlp.0.weight	        [3000, 6000]	  18000000
+0:             graph_convs.7.module_0.node_mlp.0.bias	              [3000]	      3000
+0:           graph_convs.7.module_0.node_mlp.2.weight	        [3000, 3000]	   9000000
+0:             graph_convs.7.module_0.node_mlp.2.bias	              [3000]	      3000
+0:          graph_convs.7.module_0.coord_mlp.0.weight	        [3000, 3000]	   9000000
+0:            graph_convs.7.module_0.coord_mlp.0.bias	              [3000]	      3000
+0:          graph_convs.7.module_0.coord_mlp.2.weight	           [1, 3000]	      3000
+0:           graph_convs.8.module_0.edge_mlp.0.weight	        [3000, 6002]	  18006000
+0:             graph_convs.8.module_0.edge_mlp.0.bias	              [3000]	      3000
+0:           graph_convs.8.module_0.edge_mlp.2.weight	        [3000, 3000]	   9000000
+0:             graph_convs.8.module_0.edge_mlp.2.bias	              [3000]	      3000
+0:           graph_convs.8.module_0.node_mlp.0.weight	        [3000, 6000]	  18000000
+0:             graph_convs.8.module_0.node_mlp.0.bias	              [3000]	      3000
+0:           graph_convs.8.module_0.node_mlp.2.weight	        [3000, 3000]	   9000000
+0:             graph_convs.8.module_0.node_mlp.2.bias	              [3000]	      3000
+0:          graph_convs.8.module_0.coord_mlp.0.weight	        [3000, 3000]	   9000000
+0:            graph_convs.8.module_0.coord_mlp.0.bias	              [3000]	      3000
+0:          graph_convs.8.module_0.coord_mlp.2.weight	           [1, 3000]	      3000
+0:           graph_convs.9.module_0.edge_mlp.0.weight	        [3000, 6002]	  18006000
+0:             graph_convs.9.module_0.edge_mlp.0.bias	              [3000]	      3000
+0:           graph_convs.9.module_0.edge_mlp.2.weight	        [3000, 3000]	   9000000
+0:             graph_convs.9.module_0.edge_mlp.2.bias	              [3000]	      3000
+0:           graph_convs.9.module_0.node_mlp.0.weight	        [3000, 6000]	  18000000
+0:             graph_convs.9.module_0.node_mlp.0.bias	              [3000]	      3000
+0:           graph_convs.9.module_0.node_mlp.2.weight	        [3000, 3000]	   9000000
+0:             graph_convs.9.module_0.node_mlp.2.bias	              [3000]	      3000
+0:          graph_convs.9.module_0.coord_mlp.0.weight	        [3000, 3000]	   9000000
+0:            graph_convs.9.module_0.coord_mlp.0.bias	              [3000]	      3000
+0:          graph_convs.9.module_0.coord_mlp.2.weight	           [1, 3000]	      3000
+0:          graph_convs.10.module_0.edge_mlp.0.weight	        [3000, 6002]	  18006000
+0:            graph_convs.10.module_0.edge_mlp.0.bias	              [3000]	      3000
+0:          graph_convs.10.module_0.edge_mlp.2.weight	        [3000, 3000]	   9000000
+0:            graph_convs.10.module_0.edge_mlp.2.bias	              [3000]	      3000
+0:          graph_convs.10.module_0.node_mlp.0.weight	        [3000, 6000]	  18000000
+0:            graph_convs.10.module_0.node_mlp.0.bias	              [3000]	      3000
+0:          graph_convs.10.module_0.node_mlp.2.weight	        [3000, 3000]	   9000000
+0:            graph_convs.10.module_0.node_mlp.2.bias	              [3000]	      3000
+0:         graph_convs.10.module_0.coord_mlp.0.weight	        [3000, 3000]	   9000000
+0:           graph_convs.10.module_0.coord_mlp.0.bias	              [3000]	      3000
+0:         graph_convs.10.module_0.coord_mlp.2.weight	           [1, 3000]	      3000
+0:          graph_convs.11.module_0.edge_mlp.0.weight	        [3000, 6002]	  18006000
+0:            graph_convs.11.module_0.edge_mlp.0.bias	              [3000]	      3000
+0:          graph_convs.11.module_0.edge_mlp.2.weight	        [3000, 3000]	   9000000
+0:            graph_convs.11.module_0.edge_mlp.2.bias	              [3000]	      3000
+0:          graph_convs.11.module_0.node_mlp.0.weight	        [3000, 6000]	  18000000
+0:            graph_convs.11.module_0.node_mlp.0.bias	              [3000]	      3000
+0:          graph_convs.11.module_0.node_mlp.2.weight	        [3000, 3000]	   9000000
+0:            graph_convs.11.module_0.node_mlp.2.bias	              [3000]	      3000
+0:                                heads_NN.0.0.weight	        [1000, 1000]	   1000000
+0:                                  heads_NN.0.0.bias	              [1000]	      1000
+0:                                heads_NN.0.2.weight	        [1000, 1000]	   1000000
+0:                                  heads_NN.0.2.bias	              [1000]	      1000
+0:                                heads_NN.0.4.weight	        [1000, 1000]	   1000000
+0:                                  heads_NN.0.4.bias	              [1000]	      1000
+0:                                heads_NN.0.6.weight	           [1, 1000]	      1000
+0:                                  heads_NN.0.6.bias	                 [1]	         1
+0:                          heads_NN.1.mlp.0.0.weight	        [1000, 3000]	   3000000
+0:                            heads_NN.1.mlp.0.0.bias	              [1000]	      1000
+0:                          heads_NN.1.mlp.0.2.weight	        [1000, 1000]	   1000000
+0:                            heads_NN.1.mlp.0.2.bias	              [1000]	      1000
+0:                          heads_NN.1.mlp.0.4.weight	        [1000, 1000]	   1000000
+0:                            heads_NN.1.mlp.0.4.bias	              [1000]	      1000
+0:                          heads_NN.1.mlp.0.6.weight	           [3, 1000]	      3000
+0:                            heads_NN.1.mlp.0.6.bias	                 [3]	         3
+0:                              graph_shared.0.weight	        [1000, 3000]	   3000000
+0:                                graph_shared.0.bias	              [1000]	      1000
+0:                              graph_shared.2.weight	        [1000, 1000]	   1000000
+0:                                graph_shared.2.bias	              [1000]	      1000
+0:                              graph_shared.4.weight	        [1000, 1000]	   1000000
+0:                                graph_shared.4.bias	              [1000]	      1000
+0: --------------------------------------------------
+0:                                              Total	                    	 733331004
+0: All (total, MB): 733331004 2797.44
+[2024-08-08 18:13:09,259] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.14.4, git-hash=unknown, git-branch=unknown
+[2024-08-08 18:13:09,648] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2024-08-08 18:13:09,652] [INFO] [logging.py:96:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2024-08-08 18:13:09,652] [INFO] [logging.py:96:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2024-08-08 18:13:09,655] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Basic Optimizer = AdamW
+[2024-08-08 18:13:09,655] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Final Optimizer = AdamW
+[2024-08-08 18:13:09,655] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed using client LR scheduler
+[2024-08-08 18:13:09,655] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
+[2024-08-08 18:13:09,655] [INFO] [logging.py:96:log_dist] [Rank 0] step=0, skipped=0, lr=[1e-05], mom=[(0.9, 0.999)]
+[2024-08-08 18:13:09,655] [INFO] [config.py:997:print] DeepSpeedEngine configuration:
+[2024-08-08 18:13:09,656] [INFO] [config.py:1001:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2024-08-08 18:13:09,656] [INFO] [config.py:1001:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2024-08-08 18:13:09,656] [INFO] [config.py:1001:print]   amp_enabled .................. False
+[2024-08-08 18:13:09,656] [INFO] [config.py:1001:print]   amp_params ................... False
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   bfloat16_enabled ............. False
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   bfloat16_immediate_grad_update  False
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   checkpoint_parallel_write_pipeline  False
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   checkpoint_tag_validation_enabled  True
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   checkpoint_tag_validation_fail  False
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7ff532936510>
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   communication_data_type ...... None
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   curriculum_enabled_legacy .... False
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   curriculum_params_legacy ..... False
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   data_efficiency_enabled ...... False
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   dataloader_drop_last ......... False
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   disable_allgather ............ False
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   dump_state ................... False
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   dynamic_loss_scale_args ...... None
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   eigenvalue_enabled ........... False
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   eigenvalue_gas_boundary_resolution  1
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   eigenvalue_layer_num ......... 0
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   eigenvalue_max_iter .......... 100
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   eigenvalue_stability ......... 1e-06
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   eigenvalue_tol ............... 0.01
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   eigenvalue_verbose ........... False
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   elasticity_enabled ........... False
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   fp16_auto_cast ............... None
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   fp16_enabled ................. False
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   fp16_master_weights_and_gradients  False
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   global_rank .................. 0
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   grad_accum_dtype ............. None
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   gradient_accumulation_steps .. 1
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   gradient_clipping ............ 0.0
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   gradient_predivide_factor .... 1.0
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   graph_harvesting ............. False
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   initial_dynamic_scale ........ 65536
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   load_universal_checkpoint .... False
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   loss_scale ................... 0
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   memory_breakdown ............. False
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   mics_hierarchial_params_gather  False
+[2024-08-08 18:13:09,657] [INFO] [config.py:1001:print]   mics_shard_size .............. -1
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=False, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experiment_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') enabled=False
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   optimizer_legacy_fusion ...... False
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   optimizer_name ............... None
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   optimizer_params ............. None
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   pld_enabled .................. False
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   pld_params ................... False
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   prescale_gradients ........... False
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   scheduler_name ............... None
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   scheduler_params ............. None
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   seq_parallel_communication_data_type  torch.float32
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   sparse_attention ............. None
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   sparse_gradients_enabled ..... False
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   steps_per_print .............. 1000000000.0
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   timers_config ................ enabled=True synchronized=True
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   train_batch_size ............. 4096
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   train_micro_batch_size_per_gpu  32
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   use_data_before_expert_parallel_  False
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   use_node_local_storage ....... False
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   wall_clock_breakdown ......... False
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   weight_quantization_config ... None
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   world_size ................... 128
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   zero_allow_untested_optimizer  False
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   zero_config .................. stage=0 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500,000,000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500,000,000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=None offload_optimizer=None sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50,000,000 param_persistence_threshold=100,000 model_persistence_threshold=sys.maxsize max_live_parameters=1,000,000,000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   zero_enabled ................. False
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   zero_force_ds_cpu_optimizer .. True
+[2024-08-08 18:13:09,658] [INFO] [config.py:1001:print]   zero_optimization_stage ...... 0
+[2024-08-08 18:13:09,658] [INFO] [config.py:987:print_user_config]   json = {
+    "train_micro_batch_size_per_gpu": 32, 
+    "gradient_accumulation_steps": 1, 
+    "steps_per_print": 1.000000e+09
+}
+[rank121]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank123]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank124]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank125]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank127]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank120]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank122]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank126]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank112]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank116]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank118]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank113]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank114]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank115]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank117]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank119]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank99]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank100]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank101]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank103]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank96]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank97]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank98]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank102]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank80]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank81]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank85]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank87]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank82]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank83]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank84]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank86]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank107]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank104]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank105]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank106]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank108]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank109]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank110]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank111]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank35]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank32]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank33]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank34]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank36]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank37]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank38]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank39]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank89]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank92]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank93]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank94]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank95]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank88]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank90]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank91]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank8]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank14]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank9]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank10]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank11]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank12]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank13]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank15]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank48]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank49]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank50]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank51]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank54]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank55]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank52]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank53]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank58]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank60]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank56]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank57]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank59]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank61]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank62]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank63]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank67]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank69]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank70]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank64]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank65]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank66]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank68]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank71]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank77]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank78]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank72]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank73]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank74]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank75]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank76]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank79]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank27]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank28]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank30]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank24]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank25]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank26]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank29]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank31]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank3]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank0]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank1]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank2]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank4]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank5]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank6]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank7]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank19]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank20]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank22]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank16]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank17]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank18]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank21]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank23]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank40]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank42]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank45]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank46]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank41]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank43]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank44]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+[rank47]:[W unwind.cpp:201] Warning: Unsupported unwinding pattern: Address not in range (function unwinderFor)
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+WARNNING: ONly training for 2 epochs
+Train:   0%|          | 0/2 [00:00<?, ?it/s]Train:  50%|█████     | 1/2 [00:26<00:26, 26.29s/it]Train: 100%|██████████| 2/2 [00:46<00:00, 22.43s/it]Train: 100%|██████████| 2/2 [00:46<00:00, 23.04s/it]
+0: Peak Memory Usage
+0: 17403.5966796875
+0: Process 0 - Local timer:  load_data  :  116.31
+0: Process 0 - Local timer:  create_model  :  3.81
+0: Process 0 - Local timer:  train_validate_test  :  0.0
+0: Minimum timers: 
+0: load_data  :  116.31
+0: create_model  :  3.79
+0: train_validate_test  :  0.0
+0: Maximum timers: 
+0: load_data  :  195.61
+0: create_model  :  3.9
+0: train_validate_test  :  0.0
+0: Average timers: 
+0: load_data  :  166.66
+0: create_model  :  3.84
+0: train_validate_test  :  0.0
+0: Number of calls to timers: 
+0: {'load_data': 1, 'create_model': 1, 'train_validate_test': 0}
+
+MPICH Slingshot Network Summary: 1 network timeouts
+
+/var/spool/slurmd/job2206948/slurm_script: line 69: syntax error near unexpected token `done'
+/var/spool/slurmd/job2206948/slurm_script: line 69: `done'

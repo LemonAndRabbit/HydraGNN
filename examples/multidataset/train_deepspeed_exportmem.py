@@ -1,43 +1,32 @@
-import os, re, json
+import os, json
 import logging
 import sys
 from mpi4py import MPI
 import argparse
 
-import glob
-
-import random
-import numpy as np
-
 import torch
-from torch import tensor
-from torch_geometric.data import Data
+import numpy as np
 
 import hydragnn
 from hydragnn.utils.time_utils import Timer
-from hydragnn.utils.model import print_model
-from hydragnn.utils.abstractbasedataset import AbstractBaseDataset
+from hydragnn.utils.model import print_master, print_model
 from hydragnn.utils.config_utils import parse_deepspeed_config
 from hydragnn.utils.distdataset import DistDataset
 from hydragnn.utils.distributed import get_deepspeed_init_args
-from hydragnn.utils.pickledataset import SimplePickleWriter, SimplePickleDataset
-from hydragnn.preprocess.utils import gather_deg
-from hydragnn.preprocess.load_data import split_dataset
+from hydragnn.utils.pickledataset import SimplePickleDataset
 
 import hydragnn.utils.tracer as tr
 
-from hydragnn.utils.print_utils import iterate_tqdm, log
-
-from utils.atoms_to_graphs import AtomsToGraphs
-from utils.preprocess import write_images_to_adios
+from hydragnn.utils.print_utils import log, log0, print_distributed
+from hydragnn.utils import nsplit
 
 try:
-    from hydragnn.utils.adiosdataset import AdiosWriter, AdiosDataset
+    from hydragnn.utils.adiosdataset import AdiosDataset
 except ImportError:
     pass
 
-import subprocess
-from hydragnn.utils import nsplit
+from scipy.interpolate import BSpline, make_interp_spline
+import adios2 as ad2
 
 deepspeed_available = True
 try:
@@ -53,118 +42,19 @@ def info(*args, logtype="info", sep=" "):
     getattr(logging, logtype)(sep.join(map(str, args)))
 
 
-class OpenCatalystDataset(AbstractBaseDataset):
-    def __init__(
-        self, dirpath, var_config, data_type, energy_per_atom=True, dist=False
-    ):
-        super().__init__()
-
-        self.var_config = var_config
-        self.data_path = os.path.join(dirpath, data_type)
-        self.energy_per_atom = energy_per_atom
-
-        # Threshold for atomic forces in eV/angstrom
-        self.forces_norm_threshold = 100.0
-
-        self.dist = dist
-        if self.dist:
-            assert torch.distributed.is_initialized()
-            self.world_size = torch.distributed.get_world_size()
-            self.rank = torch.distributed.get_rank()
-
-        mx = None
-        if self.rank == 0:
-            ## Let rank 0 check the number of files and share
-            cmd = f"ls {os.path.join(self.data_path, '*.txt')} | wc -l"
-            print("Check the number of files:", cmd)
-            out = subprocess.run(cmd, shell=True, capture_output=True, text=True)
-            mx = int(out.stdout)
-            print("Total the number of files:", mx)
-        mx = MPI.COMM_WORLD.bcast(mx, root=0)
-        if mx == 0:
-            raise RuntimeError("No *.txt files found. Did you uncompress?")
-
-        ## We assume file names are "%d.txt"
-        rx = list(nsplit(range(mx), self.world_size))[self.rank]
-        chunked_txt_files = list()
-        for n in rx:
-            fname = os.path.join(self.data_path, "%d.txt" % n)
-            chunked_txt_files.append(fname)
-
-        if len(chunked_txt_files) == 0:
-            print(self.rank, "WARN: No files to process. Continue ...")
-
-        # Initialize feature extractor.
-        a2g = AtomsToGraphs(max_neigh=50, radius=6, r_pbc=False)
-
-        list_atomistic_structures = write_images_to_adios(
-            a2g,
-            chunked_txt_files,
-            self.data_path,
-            energy_per_atom=self.energy_per_atom,
-        )
-
-        for item in list_atomistic_structures:
-            if self.check_forces_values(item.force):
-                self.dataset.append(item)
-            else:
-                print(
-                    f"L2-norm of force tensor exceeds threshold {self.forces_norm_threshold} - atomistic structure: {item}",
-                    flush=True,
-                )
-
-    def check_forces_values(self, forces):
-
-        # Calculate the L2 norm for each row
-        norms = torch.norm(forces, p=2, dim=1)
-        # Check if all norms are less than the threshold
-
-        return torch.all(norms < self.forces_norm_threshold).item()
-
-    def len(self):
-        return len(self.dataset)
-
-    def get(self, idx):
-        return self.dataset[idx]
-
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
-    parser.add_argument("--sampling", type=float, help="sampling ratio", default=None)
     parser.add_argument(
-        "--preonly",
-        action="store_true",
-        help="preprocess only (no training)",
-    )
-    parser.add_argument(
-        "--inputfile", help="input file", type=str, default="open_catalyst_energy.json"
-    )
-    parser.add_argument(
-        "--train_path",
-        help="path to training data",
-        type=str,
-        default="s2ef_train_200K_uncompressed",
-    )
-    parser.add_argument(
-        "--test_path",
-        help="path to testing data",
-        type=str,
-        default="s2ef_val_id_uncompressed",
-    )
-    parser.add_argument(
-        "--energy_per_atom",
-        help="option to normalize energy by number of atoms",
-        type=bool,
-        default=True,
+        "--inputfile", help="input file", type=str, default="gfm_multitasking.json"
     )
     parser.add_argument("--ddstore", action="store_true", help="ddstore dataset")
     parser.add_argument("--ddstore_width", type=int, help="ddstore width", default=None)
     parser.add_argument("--shmem", action="store_true", help="shmem")
     parser.add_argument("--log", help="log name")
-    parser.add_argument("--batch_size", type=int, help="batch_size", default=None)
     parser.add_argument("--num_epoch", type=int, help="num_epoch", default=None)
+    parser.add_argument("--batch_size", type=int, help="batch_size", default=None)
     parser.add_argument("--everyone", action="store_true", help="gptimer")
     parser.add_argument("--modelname", help="model name")
     parser.add_argument(
@@ -172,6 +62,21 @@ if __name__ == "__main__":
         help="Use Deepspeed",
         action="store_true",
         dest="use_deepspeed",
+    )
+    parser.add_argument(
+        "--multi_model_list", help="multidataset list", default="OC2020"
+    )
+    parser.add_argument(
+        "--num_samples",
+        type=int,
+        help="set num samples per process for weak-scaling test",
+        default=None,
+    )
+    parser.add_argument(
+        "--num_test_samples",
+        type=int,
+        help="set num test samples per process for weak-scaling test",
+        default=None,
     )
 
     group = parser.add_mutually_exclusive_group()
@@ -188,6 +93,13 @@ if __name__ == "__main__":
         action="store_const",
         dest="format",
         const="pickle",
+    )
+    group.add_argument(
+        "--multi",
+        help="Multi dataset",
+        action="store_const",
+        dest="format",
+        const="multi",
     )
     parser.set_defaults(format="adios")
     args = parser.parse_args()
@@ -231,88 +143,13 @@ if __name__ == "__main__":
         datefmt="%H:%M:%S",
     )
 
-    log_name = "OC2020" if args.log is None else args.log
+    log_name = "GFM" if args.log is None else args.log
     hydragnn.utils.setup_log(log_name)
     writer = hydragnn.utils.get_summary_writer(log_name)
 
     log("Command: {0}\n".format(" ".join([x for x in sys.argv])), rank=0)
 
-    modelname = "OC2020" if args.modelname is None else args.modelname
-    if args.preonly:
-        ## local data
-        trainset = OpenCatalystDataset(
-            os.path.join(datadir),
-            var_config,
-            data_type=args.train_path,
-            energy_per_atom=args.energy_per_atom,
-            dist=True,
-        )
-        ## This is a local split
-        trainset, valset1, valset2 = split_dataset(
-            dataset=trainset,
-            perc_train=0.9,
-            stratify_splitting=False,
-        )
-        valset = [*valset1, *valset2]
-        testset = OpenCatalystDataset(
-            os.path.join(datadir), var_config, data_type=args.test_path, dist=True
-        )
-        ## Need as a list
-        testset = testset[:]
-        print(rank, "Local splitting: ", len(trainset), len(valset), len(testset))
-
-        deg = gather_deg(trainset)
-        config["pna_deg"] = deg
-
-        setnames = ["trainset", "valset", "testset"]
-
-        ## adios
-        if args.format == "adios":
-            fname = os.path.join(
-                os.path.dirname(__file__), "./dataset/%s.bp" % modelname
-            )
-            adwriter = AdiosWriter(fname, comm)
-            adwriter.add("trainset", trainset)
-            adwriter.add("valset", valset)
-            adwriter.add("testset", testset)
-            # adwriter.add_global("minmax_node_feature", total.minmax_node_feature)
-            # adwriter.add_global("minmax_graph_feature", total.minmax_graph_feature)
-            adwriter.add_global("pna_deg", deg)
-            adwriter.save()
-
-        ## pickle
-        elif args.format == "pickle":
-            basedir = os.path.join(
-                os.path.dirname(__file__), "dataset", "%s.pickle" % modelname
-            )
-            attrs = dict()
-            attrs["pna_deg"] = deg
-            SimplePickleWriter(
-                trainset,
-                basedir,
-                "trainset",
-                # minmax_node_feature=total.minmax_node_feature,
-                # minmax_graph_feature=total.minmax_graph_feature,
-                use_subdir=True,
-                attrs=attrs,
-            )
-            SimplePickleWriter(
-                valset,
-                basedir,
-                "valset",
-                # minmax_node_feature=total.minmax_node_feature,
-                # minmax_graph_feature=total.minmax_graph_feature,
-                use_subdir=True,
-            )
-            SimplePickleWriter(
-                testset,
-                basedir,
-                "testset",
-                # minmax_node_feature=total.minmax_node_feature,
-                # minmax_graph_feature=total.minmax_graph_feature,
-                use_subdir=True,
-            )
-        sys.exit(0)
+    modelname = "GFM" if args.modelname is None else args.modelname
 
     tr.initialize()
     tr.disable()
@@ -357,10 +194,151 @@ if __name__ == "__main__":
             # trainset.minmax_node_feature = minmax_node_feature
             # trainset.minmax_graph_feature = minmax_graph_feature
             trainset.pna_deg = pna_deg
+    elif args.format == "multi":
+        ## Reading multiple datasets, which requires the following arguments:
+        ## --multi_model_list: the list datasets/model names
+        modellist = args.multi_model_list.split(",")
+        if rank == 0:
+            ndata_list = list()
+            pna_deg_list = list()
+            for model in modellist:
+                fname = os.path.join(
+                    os.path.dirname(__file__), "./dataset/%s.bp" % model
+                )
+                with ad2.open(fname, "r", MPI.COMM_SELF) as f:
+                    f.__next__()
+                    ndata = f.read_attribute("trainset/ndata").item()
+                    attrs = f.available_attributes()
+                    pna_deg = None
+                    if "pna_deg" in attrs:
+                        pna_deg = f.read_attribute("pna_deg")
+                    ndata_list.append(ndata)
+                    pna_deg_list.append(pna_deg)
+            ndata_list = np.array(ndata_list, dtype=np.float32)
+            process_list = np.ceil(ndata_list / sum(ndata_list) * comm_size).astype(
+                np.int32
+            )
+            imax = np.argmax(process_list)
+            process_list[imax] = process_list[imax] - (np.sum(process_list) - comm_size)
+            process_list = process_list.tolist()
+
+            ## Merge pna_deg using interpolation
+            intp_list = list()
+            mlen = min([len(pna_deg) for pna_deg in pna_deg_list])
+            for pna_deg in pna_deg_list:
+                x = np.linspace(0, 1, num=len(pna_deg))
+                intp = make_interp_spline(x, pna_deg)
+                intp_list.append(intp)
+
+            new_pna_deg_list = list()
+            for intp in intp_list:
+                x = np.linspace(0, 1, num=mlen)
+                y = intp(x)
+                new_pna_deg_list.append(y)
+
+            pna_deg = np.zeros_like(new_pna_deg_list[0])
+            for new_pna_deg in new_pna_deg_list:
+                pna_deg += new_pna_deg
+            pna_deg = pna_deg.astype(np.int64).tolist()
+        else:
+            process_list = None
+            pna_deg = None
+        process_list = comm.bcast(process_list, root=0)
+        pna_deg = comm.bcast(pna_deg, root=0)
+        assert comm_size == sum(process_list)
+
+        colorlist = list()
+        color = 0
+        for n in process_list:
+            for _ in range(n):
+                colorlist.append(color)
+            color += 1
+        mycolor = colorlist[rank]
+        mymodel = modellist[mycolor]
+
+        local_comm = comm.Split(mycolor, rank)
+        local_comm_rank = local_comm.Get_rank()
+        local_comm_size = local_comm.Get_size()
+
+        ## FIXME: Hard-coded for now. Need to find common variable names
+        common_variable_names = [
+            "x",
+            "edge_index",
+            "edge_attr",
+            "pos",
+            "y",
+        ]
+        fname = os.path.join(os.path.dirname(__file__), "./dataset/%s.bp" % mymodel)
+        trainset = AdiosDataset(
+            fname,
+            "trainset",
+            local_comm,
+            var_config=var_config,
+            keys=common_variable_names,
+        )
+        valset = AdiosDataset(
+            fname,
+            "valset",
+            local_comm,
+            var_config=var_config,
+            keys=common_variable_names,
+        )
+        testset = AdiosDataset(
+            fname,
+            "testset",
+            local_comm,
+            var_config=var_config,
+            keys=common_variable_names,
+        )
+
+        ## Set local set
+        for dataset in [trainset, valset]:
+            rx = list(nsplit(range(len(dataset)), local_comm_size))[local_comm_rank]
+            if args.num_samples is not None:
+                if args.num_samples > len(rx):
+                    log(
+                        f"WARN: requested samples are larger than what is available. Use only {len(rx)}: {dataset.label}"
+                    )
+                rx = rx[: args.num_samples]
+
+            dataset.setkeys(common_variable_names)
+            dataset.setsubset(rx[0], rx[-1] + 1, preload=True)
+
+        for dataset in [testset]:
+            rx = list(nsplit(range(len(dataset)), local_comm_size))[local_comm_rank]
+            num_samples = len(rx)
+            if args.num_test_samples is not None:
+                num_samples = args.num_test_samples
+            elif args.num_samples is not None:
+                num_samples = args.num_samples
+            rx = rx[:num_samples]
+
+            dataset.setkeys(common_variable_names)
+            dataset.setsubset(rx[0], rx[-1] + 1, preload=True)
+
+        # print(
+        #     rank,
+        #     "color, moddelname, local size(trainset,valset,testset):",
+        #     mycolor,
+        #     mymodel,
+        #     len(trainset),
+        #     len(valset),
+        #     len(testset),
+        # )
+
+        assert not (args.shmem and args.ddstore), "Cannot use both ddstore and shmem"
+        if args.ddstore:
+            opt = {"ddstore_width": args.ddstore_width, "local": True}
+            trainset = DistDataset(trainset, "trainset", comm, **opt)
+            valset = DistDataset(valset, "valset", comm, **opt)
+            testset = DistDataset(testset, "testset", comm, **opt)
+            trainset.pna_deg = pna_deg
+            valset.pna_deg = pna_deg
+            testset.pna_deg = pna_deg
     else:
         raise NotImplementedError("No supported format: %s" % (args.format))
 
-    info(
+    log0(
         "trainset,valset,testset size: %d %d %d"
         % (len(trainset), len(valset), len(testset))
     )
@@ -370,7 +348,11 @@ if __name__ == "__main__":
         os.environ["HYDRAGNN_USE_ddstore"] = "1"
 
     (train_loader, val_loader, test_loader,) = hydragnn.preprocess.create_dataloaders(
-        trainset, valset, testset, config["NeuralNetwork"]["Training"]["batch_size"]
+        trainset,
+        valset,
+        testset,
+        config["NeuralNetwork"]["Training"]["batch_size"],
+        test_sampler_shuffle=False,
     )
 
     config = hydragnn.utils.update_config(config, train_loader, val_loader, test_loader)
@@ -386,11 +368,12 @@ if __name__ == "__main__":
         verbosity=verbosity,
     )
 
+    print_model(model)
+
     if not args.use_deepspeed:
         model = hydragnn.utils.get_distributed_model(model, verbosity)
 
         # Print details of neural network architecture
-        print_model(model)
 
         learning_rate = config["NeuralNetwork"]["Training"]["Optimizer"]["learning_rate"]
         optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
@@ -401,7 +384,7 @@ if __name__ == "__main__":
         hydragnn.utils.load_existing_model_config(
             model, config["NeuralNetwork"]["Training"], optimizer=optimizer
         )
-    
+
     else:
         assert deepspeed_available, "deepspeed package not installed"
         # first, create optimizer and scheduler for deepspeed initialization
@@ -432,6 +415,9 @@ if __name__ == "__main__":
 
     ##################################################################################################################
 
+    torch.cuda.reset_peak_memory_stats(device='cuda:0')
+    torch.cuda.memory._record_memory_history()
+
     hydragnn.train.train_validate_test(
         model,
         optimizer,
@@ -447,8 +433,14 @@ if __name__ == "__main__":
         use_deepspeed=args.use_deepspeed,
     )
 
+    torch.cuda.memory._dump_snapshot(os.path.join("logs", log_name, f"mem_snapshot_{rank}_{log_name}.pickle"))
+
+    print_master("Peak Memory Usage")
+    print_master(str(torch.cuda.max_memory_allocated(device='cuda:0')/1024./1024.))
+
     hydragnn.utils.save_model(model, optimizer, log_name)
     hydragnn.utils.print_timers(verbosity)
+
 
     if tr.has("GPTLTracer"):
         import gptl4py as gp

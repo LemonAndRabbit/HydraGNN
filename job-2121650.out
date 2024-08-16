@@ -1,0 +1,1862 @@
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+-------------------------------------------------------------------------------
+There are messages associated with the following module(s):
+-------------------------------------------------------------------------------
+
+DefApps:
+   The software stack on Frontier had updates on July 9th & 16th, 2024.
+   Retired modules: https://docs.olcf.ornl.gov/software/software-news.html#frontier-user-environment-changes-july-9-2024
+   New defaults: https://docs.olcf.ornl.gov/software/software-news.html#frontier-system-software-update-july-16-2024
+
+-------------------------------------------------------------------------------
+
+
+Lmod is automatically replacing "cce/17.0.0" with "gcc-native/12.3".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.5.0" with "PrgEnv-gnu/8.5.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/23.12.5     2) cray-mpich/8.1.28     3) darshan-runtime/3.4.0-mpi
+
+
+Lmod is automatically replacing "gcc-native/12.3" with "amd-mixed/5.4.3".
+
+Lmod has detected the following error: The following module(s) are unknown:
+"darshan-runtime" "amd-mixed/5.4.3"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "darshan-runtime" "amd-mixed/5.4.3"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"cray-mpich/8.1.26"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "cray-mpich/8.1.26"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+[2024-07-22 23:16:59,853] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,853] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,853] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,853] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,853] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,853] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,853] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,853] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,854] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,854] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,854] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,854] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,854] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,854] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,854] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,854] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,858] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,858] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,858] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,858] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,858] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,858] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,858] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,858] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,864] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,864] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,864] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,864] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,864] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,864] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,864] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,864] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,865] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,865] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,865] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,865] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,865] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,865] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,865] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:16:59,865] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,018] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,018] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,018] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,018] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,018] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,018] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,018] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,018] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,022] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,022] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,022] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,022] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,022] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,022] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,022] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,022] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,032] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,032] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,032] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,032] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,032] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,032] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,032] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,032] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,080] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,080] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,080] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,080] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,080] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,080] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,080] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,080] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,085] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,085] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,085] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,085] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,085] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,085] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,085] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,085] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,087] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,087] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,087] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,087] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,087] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,087] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,087] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,087] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,134] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,134] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,134] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,134] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,134] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,134] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,134] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,134] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,200] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,200] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,200] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,200] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,200] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,200] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,200] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,200] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,237] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,237] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,237] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,237] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,237] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,237] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,237] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,237] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,594] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,594] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,594] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,599] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,600] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,610] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,611] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,616] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,760] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,760] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,760] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,760] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,760] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,760] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,760] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-07-22 23:17:00,760] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[2024-07-22 23:17:14,638] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,638] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,638] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,638] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,638] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,638] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,638] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,638] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,642] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,642] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,642] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,642] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,642] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,642] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,642] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,642] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-07-22 23:17:14,698] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,698] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,698] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,698] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,698] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,698] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,698] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,698] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-07-22 23:17:14,951] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,951] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,951] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,951] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,951] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,951] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,951] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,951] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,971] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,971] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,971] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,971] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,971] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,971] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,971] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:14,971] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-07-22 23:17:15,439] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,439] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,439] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,439] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,439] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,439] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,439] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,440] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-07-22 23:17:15,691] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,691] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,691] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,691] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,691] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,691] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,691] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,691] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,748] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,748] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,748] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,748] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,748] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,748] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,748] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,749] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-07-22 23:17:15,886] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,886] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,886] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,886] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,886] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,886] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,886] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,886] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,890] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,890] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,890] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,890] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,890] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,890] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,890] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,890] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,895] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,895] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,895] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,895] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,895] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,895] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,895] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:15,895] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-07-22 23:17:16,036] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,036] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,036] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,036] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,036] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,036] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,036] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,036] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,067] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,067] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,067] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,067] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,067] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,067] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,067] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,067] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-07-22 23:17:16,189] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,189] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,189] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,189] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,189] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,189] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,189] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,189] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[2024-07-22 23:17:16,282] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,282] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,282] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,282] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,282] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,282] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,282] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,282] [INFO] [comm.py:637:init_distributed] cdb=None
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+Distributed data parallel: nccl master at frontier07546:8889
+[2024-07-22 23:17:16,326] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,326] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,326] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,326] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,326] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,326] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,326] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,326] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-07-22 23:17:16,327] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[W socket.cpp:426] [c10d] The server socket cannot be initialized on [::]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [frontier07546.frontier.olcf.ornl.gov]:8889 (errno: 97 - Address family not supported by protocol).
+INFO (rank 61): Adios load
+INFO (rank 63): Adios load
+INFO (rank 58): Adios load
+INFO (rank 59): Adios load
+INFO (rank 106): Adios load
+INFO (rank 56): Adios load
+INFO (rank 8): Adios load
+INFO (rank 11): Adios load
+INFO (rank 12): Adios load
+INFO (rank 13): Adios load
+INFO (rank 14): Adios load
+INFO (rank 10): Adios load
+INFO (rank 15): Adios load
+INFO (rank 9): Adios load
+INFO (rank 4): Adios load
+INFO (rank 7): Adios load
+INFO (rank 1): Adios load
+INFO (rank 2): Adios load
+INFO (rank 3): Adios load
+INFO (rank 5): Adios load
+INFO (rank 6): Adios load
+INFO (rank 105): Adios load
+INFO (rank 104): Adios load
+INFO (rank 107): Adios load
+INFO (rank 108): Adios load
+INFO (rank 109): Adios load
+INFO (rank 110): Adios load
+INFO (rank 111): Adios load
+INFO (rank 16): Adios load
+INFO (rank 19): Adios load
+INFO (rank 20): Adios load
+INFO (rank 17): Adios load
+INFO (rank 18): Adios load
+INFO (rank 21): Adios load
+INFO (rank 22): Adios load
+INFO (rank 23): Adios load
+INFO (rank 97): Adios load
+INFO (rank 102): Adios load
+INFO (rank 98): Adios load
+INFO (rank 103): Adios load
+INFO (rank 101): Adios load
+INFO (rank 99): Adios load
+INFO (rank 100): Adios load
+INFO (rank 96): Adios load
+INFO (rank 57): Adios load
+INFO (rank 62): Adios load
+INFO (rank 40): Adios load
+INFO (rank 45): Adios load
+INFO (rank 44): Adios load
+INFO (rank 47): Adios load
+INFO (rank 122): Adios load
+INFO (rank 41): Adios load
+INFO (rank 42): Adios load
+INFO (rank 124): Adios load
+INFO (rank 46): Adios load
+INFO (rank 120): Adios load
+INFO (rank 43): Adios load
+INFO (rank 125): Adios load
+INFO (rank 127): Adios load
+INFO (rank 121): Adios load
+INFO (rank 123): Adios load
+INFO (rank 126): Adios load
+INFO (rank 60): Adios load
+INFO (rank 73): Adios load
+INFO (rank 64): Adios load
+INFO (rank 74): Adios load
+INFO (rank 82): Adios load
+INFO (rank 65): Adios load
+INFO (rank 76): Adios load
+INFO (rank 90): Adios load
+INFO (rank 67): Adios load
+INFO (rank 72): Adios load
+INFO (rank 87): Adios load
+INFO (rank 93): Adios load
+INFO (rank 68): Adios load
+INFO (rank 75): Adios load
+INFO (rank 85): Adios load
+INFO (rank 95): Adios load
+INFO (rank 69): Adios load
+INFO (rank 77): Adios load
+INFO (rank 81): Adios load
+INFO (rank 89): Adios load
+INFO (rank 71): Adios load
+INFO (rank 79): Adios load
+INFO (rank 83): Adios load
+INFO (rank 91): Adios load
+INFO (rank 66): Adios load
+INFO (rank 78): Adios load
+INFO (rank 84): Adios load
+INFO (rank 92): Adios load
+INFO (rank 70): Adios load
+INFO (rank 86): Adios load
+INFO (rank 94): Adios load
+INFO (rank 80): Adios load
+INFO (rank 88): Adios load
+INFO (rank 31): Adios load
+INFO (rank 25): Adios load
+INFO (rank 27): Adios load
+INFO (rank 30): Adios load
+INFO (rank 26): Adios load
+INFO (rank 28): Adios load
+INFO (rank 24): Adios load
+INFO (rank 29): Adios load
+INFO (rank 112): Adios load
+INFO (rank 117): Adios load
+INFO (rank 115): Adios load
+INFO (rank 118): Adios load
+INFO (rank 114): Adios load
+INFO (rank 119): Adios load
+INFO (rank 116): Adios load
+INFO (rank 113): Adios load
+INFO (rank 50): Adios load
+INFO (rank 48): Adios load
+INFO (rank 52): Adios load
+INFO (rank 55): Adios load
+INFO (rank 51): Adios load
+INFO (rank 35): Adios load
+INFO (rank 54): Adios load
+INFO (rank 49): Adios load
+INFO (rank 37): Adios load
+INFO (rank 53): Adios load
+INFO (rank 39): Adios load
+INFO (rank 33): Adios load
+INFO (rank 34): Adios load
+INFO (rank 32): Adios load
+INFO (rank 36): Adios load
+INFO (rank 38): Adios load
+0: Command: ./examples/open_catalyst_2020/train.py --adios --use_deepspeed --modelname OC2020_entire_dataset
+
+INFO (rank 0): Adios load
+0: Adios reading: ./examples/open_catalyst_2020/./dataset/OC2020_entire_dataset.bp
+0: Read attr time (sec):  0.08153867721557617
+0: read and bcast: trainset/energy/variable_count 11.253291130065918
+0: read and bcast: trainset/energy/variable_offset 16.98177409172058
+0: read and bcast: trainset/energy/variable_dim 17.270797729492188
+0: read and bcast: trainset/y/variable_count 33.84543561935425
+0: read and bcast: trainset/y/variable_offset 45.037219762802124
+0: read and bcast: trainset/y/variable_dim 45.32311129570007
+0: read and bcast: trainset/tags/variable_count 80.94965648651123
+0: read and bcast: trainset/tags/variable_offset 89.42904829978943
+0: read and bcast: trainset/tags/variable_dim 89.71822953224182
+0: read and bcast: trainset/pos/variable_count 104.90415787696838
+0: read and bcast: trainset/pos/variable_offset 110.8428099155426
+0: read and bcast: trainset/pos/variable_dim 110.84346103668213
+0: read and bcast: trainset/natoms/variable_count 124.64283657073975
+0: read and bcast: trainset/natoms/variable_offset 131.8346586227417
+0: read and bcast: trainset/natoms/variable_dim 132.12009811401367
+0: read and bcast: trainset/edge_attr/variable_count 207.50578141212463
+0: read and bcast: trainset/edge_attr/variable_offset 217.2363576889038
+0: read and bcast: trainset/edge_attr/variable_dim 217.5230791568756
+0: read and bcast: trainset/fid/variable_count 225.07737255096436
+0: read and bcast: trainset/fid/variable_offset 232.57563829421997
+0: read and bcast: trainset/fid/variable_dim 232.85825562477112
+0: read and bcast: trainset/atomic_numbers/variable_count 247.72230744361877
+0: read and bcast: trainset/atomic_numbers/variable_offset 253.5421109199524
+0: read and bcast: trainset/atomic_numbers/variable_dim 253.8309245109558
+0: read and bcast: trainset/force/variable_count 263.5478768348694
+0: read and bcast: trainset/force/variable_offset 269.0954215526581
+0: read and bcast: trainset/force/variable_dim 269.3843729496002
+0: read and bcast: trainset/edge_index/variable_count 288.05131912231445
+0: read and bcast: trainset/edge_index/variable_offset 293.62248492240906
+0: read and bcast: trainset/edge_index/variable_dim 293.91072249412537
+0: read and bcast: trainset/cell/variable_count 310.99005246162415
+0: read and bcast: trainset/cell/variable_offset 321.4108543395996
+0: read and bcast: trainset/cell/variable_dim 321.411256313324
+0: read and bcast: trainset/x/variable_count 333.9593036174774
+0: read and bcast: trainset/x/variable_offset 339.5109052658081
+0: read and bcast: trainset/x/variable_dim 339.80129075050354
+0: read and bcast: trainset/sid/variable_count 348.2996416091919
+0: read and bcast: trainset/sid/variable_offset 355.8408524990082
+0: read and bcast: trainset/sid/variable_dim 356.1285831928253
+0: Overall time (sec):  356.21035623550415
+0: DDStore adding time (sec):  0.0
+0: Data loading time (sec):  356.45951795578003
+0: Adios reading: ./examples/open_catalyst_2020/./dataset/OC2020_entire_dataset.bp
+0: Read attr time (sec):  0.07550740242004395
+0: read and bcast: valset/energy/variable_count 86.32698369026184
+0: read and bcast: valset/energy/variable_offset 87.93407607078552
+0: read and bcast: valset/energy/variable_dim 87.95700478553772
+0: read and bcast: valset/y/variable_count 128.72112488746643
+0: read and bcast: valset/y/variable_offset 130.03280520439148
+0: read and bcast: valset/y/variable_dim 130.05609226226807
+0: read and bcast: valset/tags/variable_count 206.79302072525024
+0: read and bcast: valset/tags/variable_offset 208.4413356781006
+0: read and bcast: valset/tags/variable_dim 208.4656217098236
+0: read and bcast: valset/pos/variable_count 252.82417011260986
+0: read and bcast: valset/pos/variable_offset 254.01544165611267
+0: read and bcast: valset/pos/variable_dim 254.04203152656555
+0: read and bcast: valset/natoms/variable_count 297.01048493385315
+0: read and bcast: valset/natoms/variable_offset 298.2185854911804
+0: read and bcast: valset/natoms/variable_dim 298.24467253685
+0: read and bcast: valset/edge_attr/variable_count 386.1797318458557
+0: read and bcast: valset/edge_attr/variable_offset 387.6629922389984
+0: read and bcast: valset/edge_attr/variable_dim 387.690092086792
+0: read and bcast: valset/fid/variable_count 388.83478021621704
+0: read and bcast: valset/fid/variable_offset 389.95833015441895
+0: read and bcast: valset/fid/variable_dim 389.9586935043335
+0: read and bcast: valset/atomic_numbers/variable_count 418.53756380081177
+0: read and bcast: valset/atomic_numbers/variable_offset 420.68091106414795
+0: read and bcast: valset/atomic_numbers/variable_dim 420.70814514160156
+0: read and bcast: valset/force/variable_count 421.86647772789
+0: read and bcast: valset/force/variable_offset 423.00067353248596
+0: read and bcast: valset/force/variable_dim 423.0276629924774
+0: read and bcast: valset/edge_index/variable_count 425.9392337799072
+0: read and bcast: valset/edge_index/variable_offset 427.0792713165283
+0: read and bcast: valset/edge_index/variable_dim 427.1055557727814
+0: read and bcast: valset/cell/variable_count 432.0913128852844
+0: read and bcast: valset/cell/variable_offset 433.79947900772095
+0: read and bcast: valset/cell/variable_dim 433.82685565948486
+0: read and bcast: valset/x/variable_count 436.5534873008728
+0: read and bcast: valset/x/variable_offset 437.72037982940674
+0: read and bcast: valset/x/variable_dim 437.74673414230347
+0: read and bcast: valset/sid/variable_count 438.9333453178406
+0: read and bcast: valset/sid/variable_offset 440.07816457748413
+0: read and bcast: valset/sid/variable_dim 440.1028847694397
+0: Overall time (sec):  440.17858386039734
+0: DDStore adding time (sec):  0.0
+0: Data loading time (sec):  440.2741765975952
+0: Adios reading: ./examples/open_catalyst_2020/./dataset/OC2020_entire_dataset.bp
+0: Read attr time (sec):  0.07360458374023438
+0: read and bcast: testset/energy/variable_count 4.27421498298645
+0: read and bcast: testset/energy/variable_offset 4.343923330307007
+0: read and bcast: testset/energy/variable_dim 4.344150543212891
+0: read and bcast: testset/y/variable_count 5.896371603012085
+0: read and bcast: testset/y/variable_offset 5.9852399826049805
+0: read and bcast: testset/y/variable_dim 5.985430955886841
+0: read and bcast: testset/tags/variable_count 10.017140865325928
+0: read and bcast: testset/tags/variable_offset 10.130034446716309
+0: read and bcast: testset/tags/variable_dim 10.130229949951172
+0: read and bcast: testset/pos/variable_count 12.745691776275635
+0: read and bcast: testset/pos/variable_offset 12.807361125946045
+0: read and bcast: testset/pos/variable_dim 12.807549476623535
+0: read and bcast: testset/natoms/variable_count 14.80459451675415
+0: read and bcast: testset/natoms/variable_offset 14.914315938949585
+0: read and bcast: testset/natoms/variable_dim 14.914499998092651
+0: read and bcast: testset/edge_attr/variable_count 19.45221710205078
+0: read and bcast: testset/edge_attr/variable_offset 19.546943426132202
+0: read and bcast: testset/edge_attr/variable_dim 19.547128200531006
+0: read and bcast: testset/fid/variable_count 19.629966735839844
+0: read and bcast: testset/fid/variable_offset 19.724905252456665
+0: read and bcast: testset/fid/variable_dim 19.725064516067505
+0: read and bcast: testset/atomic_numbers/variable_count 20.60770010948181
+0: read and bcast: testset/atomic_numbers/variable_offset 20.712726831436157
+0: read and bcast: testset/atomic_numbers/variable_dim 20.712948322296143
+0: read and bcast: testset/force/variable_count 20.847585201263428
+0: read and bcast: testset/force/variable_offset 20.914315462112427
+0: read and bcast: testset/force/variable_dim 20.914484977722168
+0: read and bcast: testset/edge_index/variable_count 21.06568455696106
+0: read and bcast: testset/edge_index/variable_offset 21.126176357269287
+0: read and bcast: testset/edge_index/variable_dim 21.126351833343506
+0: read and bcast: testset/cell/variable_count 21.318017959594727
+0: read and bcast: testset/cell/variable_offset 21.379745960235596
+0: read and bcast: testset/cell/variable_dim 21.37993359565735
+0: read and bcast: testset/x/variable_count 21.528306484222412
+0: read and bcast: testset/x/variable_offset 21.590389251708984
+0: read and bcast: testset/x/variable_dim 21.590574979782104
+0: read and bcast: testset/sid/variable_count 21.65317702293396
+0: read and bcast: testset/sid/variable_offset 21.71424126625061
+0: read and bcast: testset/sid/variable_dim 21.714412927627563
+0: Overall time (sec):  21.788171529769897
+0: DDStore adding time (sec):  0.0
+0: Data loading time (sec):  21.846673250198364
+INFO (rank 0): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 7): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 1): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 2): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 5): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 6): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 3): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 4): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 33): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 41): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 8): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 39): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 34): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 35): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 36): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 32): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 37): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 38): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 44): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 43): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 40): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 47): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 42): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 45): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 46): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 11): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 14): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 9): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 12): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 15): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 10): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 13): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 70): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 82): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 85): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 86): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 84): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 87): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 71): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 67): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 80): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 68): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 65): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 66): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 69): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 64): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 72): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 63): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 24): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 51): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 81): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 26): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 83): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 28): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 31): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 29): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 30): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 25): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 110): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 27): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 79): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 78): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 73): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 102): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 74): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 76): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 75): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 77): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 52): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 58): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 50): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 61): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 48): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 56): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 55): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 57): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 53): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 60): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 109): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 49): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 59): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 107): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 54): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 62): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 105): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 104): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 106): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 108): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 111): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 96): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 97): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 98): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 99): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 100): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 101): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 103): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 121): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 20): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 89): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 16): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 18): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 21): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 92): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 17): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 93): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 88): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 22): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 95): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 123): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 94): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 125): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 120): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 19): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 122): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 124): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 91): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 126): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 23): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 127): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 90): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 113): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 117): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 112): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 116): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 115): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 118): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 114): trainset,valset,testset size: 120540615 13393402 995000
+INFO (rank 119): trainset,valset,testset size: 120540615 13393402 995000
+0: Using GPU
+INFO (rank 10): Added key: store_based_barrier_key:2 to store for rank: 10
+INFO (rank 19): Added key: store_based_barrier_key:2 to store for rank: 19
+INFO (rank 14): Added key: store_based_barrier_key:2 to store for rank: 14
+INFO (rank 23): Added key: store_based_barrier_key:2 to store for rank: 23
+INFO (rank 11): Added key: store_based_barrier_key:2 to store for rank: 11
+INFO (rank 20): Added key: store_based_barrier_key:2 to store for rank: 20
+INFO (rank 13): Added key: store_based_barrier_key:2 to store for rank: 13
+INFO (rank 17): Added key: store_based_barrier_key:2 to store for rank: 17
+INFO (rank 15): Added key: store_based_barrier_key:2 to store for rank: 15
+INFO (rank 21): Added key: store_based_barrier_key:2 to store for rank: 21
+INFO (rank 12): Added key: store_based_barrier_key:2 to store for rank: 12
+INFO (rank 16): Added key: store_based_barrier_key:2 to store for rank: 16
+INFO (rank 22): Added key: store_based_barrier_key:2 to store for rank: 22
+INFO (rank 8): Added key: store_based_barrier_key:2 to store for rank: 8
+INFO (rank 18): Added key: store_based_barrier_key:2 to store for rank: 18
+INFO (rank 9): Added key: store_based_barrier_key:2 to store for rank: 9
+INFO (rank 2): Added key: store_based_barrier_key:2 to store for rank: 2
+INFO (rank 6): Added key: store_based_barrier_key:2 to store for rank: 6
+INFO (rank 3): Added key: store_based_barrier_key:2 to store for rank: 3
+INFO (rank 5): Added key: store_based_barrier_key:2 to store for rank: 5
+INFO (rank 1): Added key: store_based_barrier_key:2 to store for rank: 1
+INFO (rank 7): Added key: store_based_barrier_key:2 to store for rank: 7
+INFO (rank 4): Added key: store_based_barrier_key:2 to store for rank: 4
+INFO (rank 29): Added key: store_based_barrier_key:2 to store for rank: 29
+INFO (rank 25): Added key: store_based_barrier_key:2 to store for rank: 25
+INFO (rank 26): Added key: store_based_barrier_key:2 to store for rank: 26
+INFO (rank 27): Added key: store_based_barrier_key:2 to store for rank: 27
+INFO (rank 28): Added key: store_based_barrier_key:2 to store for rank: 28
+INFO (rank 30): Added key: store_based_barrier_key:2 to store for rank: 30
+INFO (rank 31): Added key: store_based_barrier_key:2 to store for rank: 31
+INFO (rank 24): Added key: store_based_barrier_key:2 to store for rank: 24
+INFO (rank 38): Added key: store_based_barrier_key:2 to store for rank: 38
+INFO (rank 35): Added key: store_based_barrier_key:2 to store for rank: 35
+INFO (rank 37): Added key: store_based_barrier_key:2 to store for rank: 37
+INFO (rank 32): Added key: store_based_barrier_key:2 to store for rank: 32
+INFO (rank 33): Added key: store_based_barrier_key:2 to store for rank: 33
+INFO (rank 34): Added key: store_based_barrier_key:2 to store for rank: 34
+INFO (rank 36): Added key: store_based_barrier_key:2 to store for rank: 36
+INFO (rank 39): Added key: store_based_barrier_key:2 to store for rank: 39
+INFO (rank 80): Added key: store_based_barrier_key:2 to store for rank: 80
+INFO (rank 84): Added key: store_based_barrier_key:2 to store for rank: 84
+INFO (rank 47): Added key: store_based_barrier_key:2 to store for rank: 47
+INFO (rank 42): Added key: store_based_barrier_key:2 to store for rank: 42
+INFO (rank 45): Added key: store_based_barrier_key:2 to store for rank: 45
+INFO (rank 67): Added key: store_based_barrier_key:2 to store for rank: 67
+INFO (rank 69): Added key: store_based_barrier_key:2 to store for rank: 69
+INFO (rank 71): Added key: store_based_barrier_key:2 to store for rank: 71
+INFO (rank 61): Added key: store_based_barrier_key:2 to store for rank: 61
+INFO (rank 60): Added key: store_based_barrier_key:2 to store for rank: 60
+INFO (rank 57): Added key: store_based_barrier_key:2 to store for rank: 57
+INFO (rank 83): Added key: store_based_barrier_key:2 to store for rank: 83
+INFO (rank 75): Added key: store_based_barrier_key:2 to store for rank: 75
+INFO (rank 49): Added key: store_based_barrier_key:2 to store for rank: 49
+INFO (rank 86): Added key: store_based_barrier_key:2 to store for rank: 86
+INFO (rank 54): Added key: store_based_barrier_key:2 to store for rank: 54
+INFO (rank 48): Added key: store_based_barrier_key:2 to store for rank: 48
+INFO (rank 89): Added key: store_based_barrier_key:2 to store for rank: 89
+INFO (rank 50): Added key: store_based_barrier_key:2 to store for rank: 50
+INFO (rank 55): Added key: store_based_barrier_key:2 to store for rank: 55
+INFO (rank 52): Added key: store_based_barrier_key:2 to store for rank: 52
+INFO (rank 93): Added key: store_based_barrier_key:2 to store for rank: 93
+INFO (rank 73): Added key: store_based_barrier_key:2 to store for rank: 73
+INFO (rank 53): Added key: store_based_barrier_key:2 to store for rank: 53
+INFO (rank 81): Added key: store_based_barrier_key:2 to store for rank: 81
+INFO (rank 78): Added key: store_based_barrier_key:2 to store for rank: 78
+INFO (rank 58): Added key: store_based_barrier_key:2 to store for rank: 58
+INFO (rank 77): Added key: store_based_barrier_key:2 to store for rank: 77
+INFO (rank 63): Added key: store_based_barrier_key:2 to store for rank: 63
+INFO (rank 40): Added key: store_based_barrier_key:2 to store for rank: 40
+INFO (rank 56): Added key: store_based_barrier_key:2 to store for rank: 56
+INFO (rank 59): Added key: store_based_barrier_key:2 to store for rank: 59
+INFO (rank 88): Added key: store_based_barrier_key:2 to store for rank: 88
+INFO (rank 44): Added key: store_based_barrier_key:2 to store for rank: 44
+INFO (rank 51): Added key: store_based_barrier_key:2 to store for rank: 51
+INFO (rank 43): Added key: store_based_barrier_key:2 to store for rank: 43
+INFO (rank 65): Added key: store_based_barrier_key:2 to store for rank: 65
+INFO (rank 41): Added key: store_based_barrier_key:2 to store for rank: 41
+INFO (rank 66): Added key: store_based_barrier_key:2 to store for rank: 66
+INFO (rank 85): Added key: store_based_barrier_key:2 to store for rank: 85
+INFO (rank 91): Added key: store_based_barrier_key:2 to store for rank: 91
+INFO (rank 79): Added key: store_based_barrier_key:2 to store for rank: 79
+INFO (rank 70): Added key: store_based_barrier_key:2 to store for rank: 70
+INFO (rank 102): Added key: store_based_barrier_key:2 to store for rank: 102
+INFO (rank 64): Added key: store_based_barrier_key:2 to store for rank: 64
+INFO (rank 87): Added key: store_based_barrier_key:2 to store for rank: 87
+INFO (rank 103): Added key: store_based_barrier_key:2 to store for rank: 103
+INFO (rank 96): Added key: store_based_barrier_key:2 to store for rank: 96
+INFO (rank 100): Added key: store_based_barrier_key:2 to store for rank: 100
+INFO (rank 101): Added key: store_based_barrier_key:2 to store for rank: 101
+INFO (rank 94): Added key: store_based_barrier_key:2 to store for rank: 94
+INFO (rank 82): Added key: store_based_barrier_key:2 to store for rank: 82
+INFO (rank 97): Added key: store_based_barrier_key:2 to store for rank: 97
+INFO (rank 98): Added key: store_based_barrier_key:2 to store for rank: 98
+INFO (rank 99): Added key: store_based_barrier_key:2 to store for rank: 99
+INFO (rank 46): Added key: store_based_barrier_key:2 to store for rank: 46
+INFO (rank 92): Added key: store_based_barrier_key:2 to store for rank: 92
+INFO (rank 76): Added key: store_based_barrier_key:2 to store for rank: 76
+INFO (rank 90): Added key: store_based_barrier_key:2 to store for rank: 90
+INFO (rank 72): Added key: store_based_barrier_key:2 to store for rank: 72
+INFO (rank 62): Added key: store_based_barrier_key:2 to store for rank: 62
+INFO (rank 95): Added key: store_based_barrier_key:2 to store for rank: 95
+INFO (rank 68): Added key: store_based_barrier_key:2 to store for rank: 68
+INFO (rank 74): Added key: store_based_barrier_key:2 to store for rank: 74
+[2024-07-22 23:30:59,841] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.14.4, git-hash=unknown, git-branch=unknown
+INFO (rank 0): Added key: store_based_barrier_key:2 to store for rank: 0
+INFO (rank 104): Added key: store_based_barrier_key:2 to store for rank: 104
+INFO (rank 105): Added key: store_based_barrier_key:2 to store for rank: 105
+INFO (rank 106): Added key: store_based_barrier_key:2 to store for rank: 106
+INFO (rank 110): Added key: store_based_barrier_key:2 to store for rank: 110
+INFO (rank 107): Added key: store_based_barrier_key:2 to store for rank: 107
+INFO (rank 108): Added key: store_based_barrier_key:2 to store for rank: 108
+INFO (rank 109): Added key: store_based_barrier_key:2 to store for rank: 109
+INFO (rank 111): Added key: store_based_barrier_key:2 to store for rank: 111
+INFO (rank 112): Added key: store_based_barrier_key:2 to store for rank: 112
+INFO (rank 119): Added key: store_based_barrier_key:2 to store for rank: 119
+INFO (rank 114): Added key: store_based_barrier_key:2 to store for rank: 114
+INFO (rank 115): Added key: store_based_barrier_key:2 to store for rank: 115
+INFO (rank 117): Added key: store_based_barrier_key:2 to store for rank: 117
+INFO (rank 116): Added key: store_based_barrier_key:2 to store for rank: 116
+INFO (rank 113): Added key: store_based_barrier_key:2 to store for rank: 113
+INFO (rank 124): Added key: store_based_barrier_key:2 to store for rank: 124
+INFO (rank 118): Added key: store_based_barrier_key:2 to store for rank: 118
+INFO (rank 115): Rank 115: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 120): Added key: store_based_barrier_key:2 to store for rank: 120
+INFO (rank 117): Rank 117: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 127): Added key: store_based_barrier_key:2 to store for rank: 127
+INFO (rank 122): Added key: store_based_barrier_key:2 to store for rank: 122
+INFO (rank 114): Rank 114: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 125): Added key: store_based_barrier_key:2 to store for rank: 125
+INFO (rank 116): Rank 116: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 121): Added key: store_based_barrier_key:2 to store for rank: 121
+INFO (rank 126): Added key: store_based_barrier_key:2 to store for rank: 126
+INFO (rank 123): Added key: store_based_barrier_key:2 to store for rank: 123
+INFO (rank 113): Rank 113: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 124): Rank 124: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 118): Rank 118: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 127): Rank 127: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 120): Rank 120: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 122): Rank 122: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 125): Rank 125: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 126): Rank 126: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 121): Rank 121: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 123): Rank 123: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 2): Rank 2: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 6): Rank 6: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 3): Rank 3: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 5): Rank 5: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 4): Rank 4: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 7): Rank 7: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 1): Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 26): Rank 26: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 11): Rank 11: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 27): Rank 27: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 12): Rank 12: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 14): Rank 14: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 8): Rank 8: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 29): Rank 29: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 9): Rank 9: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 10): Rank 10: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 25): Rank 25: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 15): Rank 15: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 30): Rank 30: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 24): Rank 24: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 28): Rank 28: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 13): Rank 13: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 31): Rank 31: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 22): Rank 22: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 23): Rank 23: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 16): Rank 16: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 17): Rank 17: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 21): Rank 21: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 19): Rank 19: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 20): Rank 20: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 18): Rank 18: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 0): Rank 0: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 84): Rank 84: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 80): Rank 80: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 36): Rank 36: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 37): Rank 37: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 32): Rank 32: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 38): Rank 38: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 34): Rank 34: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 35): Rank 35: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 33): Rank 33: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 39): Rank 39: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 42): Rank 42: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 67): Rank 67: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 45): Rank 45: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 47): Rank 47: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 69): Rank 69: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 71): Rank 71: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 83): Rank 83: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 57): Rank 57: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 60): Rank 60: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 61): Rank 61: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 86): Rank 86: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 55): Rank 55: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 49): Rank 49: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 54): Rank 54: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 48): Rank 48: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 50): Rank 50: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 52): Rank 52: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 53): Rank 53: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 81): Rank 81: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 89): Rank 89: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 93): Rank 93: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 58): Rank 58: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 73): Rank 73: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 75): Rank 75: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 78): Rank 78: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 77): Rank 77: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 40): Rank 40: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 63): Rank 63: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 56): Rank 56: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 59): Rank 59: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 44): Rank 44: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 88): Rank 88: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 51): Rank 51: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 43): Rank 43: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 65): Rank 65: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 41): Rank 41: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 66): Rank 66: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 79): Rank 79: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 91): Rank 91: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 70): Rank 70: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 94): Rank 94: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 82): Rank 82: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 92): Rank 92: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 87): Rank 87: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 64): Rank 64: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 76): Rank 76: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 85): Rank 85: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 90): Rank 90: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 72): Rank 72: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 46): Rank 46: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 74): Rank 74: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 95): Rank 95: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 68): Rank 68: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 62): Rank 62: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 97): Rank 97: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 98): Rank 98: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 102): Rank 102: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 103): Rank 103: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 96): Rank 96: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 99): Rank 99: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 100): Rank 100: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 101): Rank 101: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 104): Rank 104: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 105): Rank 105: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 108): Rank 108: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 109): Rank 109: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 106): Rank 106: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 107): Rank 107: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 110): Rank 110: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 111): Rank 111: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 112): Rank 112: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+INFO (rank 119): Rank 119: Completed store-based barrier for key:store_based_barrier_key:2 with 128 nodes.
+[2024-07-22 23:31:00,158] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2024-07-22 23:31:00,159] [INFO] [logging.py:96:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2024-07-22 23:31:00,159] [INFO] [logging.py:96:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2024-07-22 23:31:00,159] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Basic Optimizer = AdamW
+[2024-07-22 23:31:00,159] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Final Optimizer = AdamW
+[2024-07-22 23:31:00,159] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed using client LR scheduler
+[2024-07-22 23:31:00,159] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
+[2024-07-22 23:31:00,159] [INFO] [logging.py:96:log_dist] [Rank 0] step=0, skipped=0, lr=[0.001], mom=[(0.9, 0.999)]
+[2024-07-22 23:31:00,160] [INFO] [config.py:997:print] DeepSpeedEngine configuration:
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   amp_enabled .................. False
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   amp_params ................... False
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   bfloat16_enabled ............. False
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   bfloat16_immediate_grad_update  False
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   checkpoint_parallel_write_pipeline  False
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   checkpoint_tag_validation_enabled  True
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   checkpoint_tag_validation_fail  False
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7ffcbc2523a0>
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   communication_data_type ...... None
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   curriculum_enabled_legacy .... False
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   curriculum_params_legacy ..... False
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   data_efficiency_enabled ...... False
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   dataloader_drop_last ......... False
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   disable_allgather ............ False
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   dump_state ................... False
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   dynamic_loss_scale_args ...... None
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   eigenvalue_enabled ........... False
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   eigenvalue_gas_boundary_resolution  1
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   eigenvalue_layer_num ......... 0
+[2024-07-22 23:31:00,160] [INFO] [config.py:1001:print]   eigenvalue_max_iter .......... 100
+[2024-07-22 23:31:00,161] [INFO] [config.py:1001:print]   eigenvalue_stability ......... 1e-06
+[2024-07-22 23:31:00,161] [INFO] [config.py:1001:print]   eigenvalue_tol ............... 0.01
+[2024-07-22 23:31:00,161] [INFO] [config.py:1001:print]   eigenvalue_verbose ........... False
+[2024-07-22 23:31:00,161] [INFO] [config.py:1001:print]   elasticity_enabled ........... False
+[2024-07-22 23:31:00,161] [INFO] [config.py:1001:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2024-07-22 23:31:00,161] [INFO] [config.py:1001:print]   fp16_auto_cast ............... None
+[2024-07-22 23:31:00,161] [INFO] [config.py:1001:print]   fp16_enabled ................. False
+[2024-07-22 23:31:00,161] [INFO] [config.py:1001:print]   fp16_master_weights_and_gradients  False
+[2024-07-22 23:31:00,161] [INFO] [config.py:1001:print]   global_rank .................. 0
+[2024-07-22 23:31:00,161] [INFO] [config.py:1001:print]   grad_accum_dtype ............. None
+[2024-07-22 23:31:00,161] [INFO] [config.py:1001:print]   gradient_accumulation_steps .. 1
+[2024-07-22 23:31:00,161] [INFO] [config.py:1001:print]   gradient_clipping ............ 0.0
+[2024-07-22 23:31:00,161] [INFO] [config.py:1001:print]   gradient_predivide_factor .... 1.0
+[2024-07-22 23:31:00,161] [INFO] [config.py:1001:print]   graph_harvesting ............. False
+[2024-07-22 23:31:00,162] [INFO] [config.py:1001:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2024-07-22 23:31:00,162] [INFO] [config.py:1001:print]   initial_dynamic_scale ........ 65536
+[2024-07-22 23:31:00,162] [INFO] [config.py:1001:print]   load_universal_checkpoint .... False
+[2024-07-22 23:31:00,162] [INFO] [config.py:1001:print]   loss_scale ................... 0
+[2024-07-22 23:31:00,162] [INFO] [config.py:1001:print]   memory_breakdown ............. False
+[2024-07-22 23:31:00,162] [INFO] [config.py:1001:print]   mics_hierarchial_params_gather  False
+[2024-07-22 23:31:00,162] [INFO] [config.py:1001:print]   mics_shard_size .............. -1
+[2024-07-22 23:31:00,162] [INFO] [config.py:1001:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=False, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experiment_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') enabled=False
+[2024-07-22 23:31:00,162] [INFO] [config.py:1001:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2024-07-22 23:31:00,162] [INFO] [config.py:1001:print]   optimizer_legacy_fusion ...... False
+[2024-07-22 23:31:00,162] [INFO] [config.py:1001:print]   optimizer_name ............... None
+[2024-07-22 23:31:00,162] [INFO] [config.py:1001:print]   optimizer_params ............. None
+[2024-07-22 23:31:00,162] [INFO] [config.py:1001:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2024-07-22 23:31:00,162] [INFO] [config.py:1001:print]   pld_enabled .................. False
+[2024-07-22 23:31:00,162] [INFO] [config.py:1001:print]   pld_params ................... False
+[2024-07-22 23:31:00,162] [INFO] [config.py:1001:print]   prescale_gradients ........... False
+[2024-07-22 23:31:00,162] [INFO] [config.py:1001:print]   scheduler_name ............... None
+[2024-07-22 23:31:00,162] [INFO] [config.py:1001:print]   scheduler_params ............. None
+[2024-07-22 23:31:00,163] [INFO] [config.py:1001:print]   seq_parallel_communication_data_type  torch.float32
+[2024-07-22 23:31:00,163] [INFO] [config.py:1001:print]   sparse_attention ............. None
+[2024-07-22 23:31:00,163] [INFO] [config.py:1001:print]   sparse_gradients_enabled ..... False
+[2024-07-22 23:31:00,163] [INFO] [config.py:1001:print]   steps_per_print .............. 1000000000.0
+[2024-07-22 23:31:00,163] [INFO] [config.py:1001:print]   timers_config ................ enabled=True synchronized=True
+[2024-07-22 23:31:00,163] [INFO] [config.py:1001:print]   train_batch_size ............. 16384
+[2024-07-22 23:31:00,163] [INFO] [config.py:1001:print]   train_micro_batch_size_per_gpu  128
+[2024-07-22 23:31:00,163] [INFO] [config.py:1001:print]   use_data_before_expert_parallel_  False
+[2024-07-22 23:31:00,163] [INFO] [config.py:1001:print]   use_node_local_storage ....... False
+[2024-07-22 23:31:00,163] [INFO] [config.py:1001:print]   wall_clock_breakdown ......... False
+[2024-07-22 23:31:00,163] [INFO] [config.py:1001:print]   weight_quantization_config ... None
+[2024-07-22 23:31:00,163] [INFO] [config.py:1001:print]   world_size ................... 128
+[2024-07-22 23:31:00,163] [INFO] [config.py:1001:print]   zero_allow_untested_optimizer  False
+[2024-07-22 23:31:00,163] [INFO] [config.py:1001:print]   zero_config .................. stage=0 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500,000,000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500,000,000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=None offload_optimizer=None sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50,000,000 param_persistence_threshold=100,000 model_persistence_threshold=sys.maxsize max_live_parameters=1,000,000,000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True
+[2024-07-22 23:31:00,163] [INFO] [config.py:1001:print]   zero_enabled ................. False
+[2024-07-22 23:31:00,163] [INFO] [config.py:1001:print]   zero_force_ds_cpu_optimizer .. True
+[2024-07-22 23:31:00,163] [INFO] [config.py:1001:print]   zero_optimization_stage ...... 0
+[2024-07-22 23:31:00,163] [INFO] [config.py:987:print_user_config]   json = {
+    "train_micro_batch_size_per_gpu": 128, 
+    "gradient_accumulation_steps": 1, 
+    "steps_per_print": 1.000000e+09
+}
+Train:   0%|          | 0/7358 [00:00<?, ?it/s]Train:   0%|          | 1/7358 [01:18<159:31:24, 78.06s/it]Train:   0%|          | 2/7358 [02:24<145:06:37, 71.02s/it]Train:   0%|          | 3/7358 [03:45<154:55:12, 75.83s/it]Train:   0%|          | 4/7358 [04:59<152:54:52, 74.86s/it]Train:   0%|          | 5/7358 [06:11<151:16:26, 74.06s/it]Train:   0%|          | 6/7358 [07:26<152:03:56, 74.46s/it]Train:   0%|          | 7/7358 [08:41<151:52:45, 74.38s/it]Train:   0%|          | 8/7358 [09:53<150:20:40, 73.64s/it]Train:   0%|          | 9/7358 [11:06<149:52:00, 73.41s/it]Train:   0%|          | 10/7358 [12:20<150:08:51, 73.56s/it]Train:   0%|          | 11/7358 [13:33<150:19:00, 73.65s/it]Train:   0%|          | 12/7358 [14:50<152:03:47, 74.52s/it]Train:   0%|          | 13/7358 [16:04<151:59:58, 74.50s/it]Train:   0%|          | 14/7358 [17:18<151:14:54, 74.14s/it]Train:   0%|          | 15/7358 [18:32<151:16:57, 74.17s/it]Train:   0%|          | 16/7358 [19:47<151:59:51, 74.53s/it]Train:   0%|          | 17/7358 [21:02<151:58:47, 74.53s/it]Train:   0%|          | 18/7358 [22:19<153:42:42, 75.39s/it]Train:   0%|          | 19/7358 [23:33<152:41:36, 74.90s/it]Train:   0%|          | 20/7358 [24:49<153:36:33, 75.36s/it]Train:   0%|          | 21/7358 [26:06<154:18:16, 75.71s/it]Train:   0%|          | 22/7358 [27:21<154:05:13, 75.62s/it]Train:   0%|          | 23/7358 [28:36<153:37:48, 75.40s/it]Train:   0%|          | 24/7358 [29:52<153:56:46, 75.57s/it]Train:   0%|          | 25/7358 [31:07<153:28:39, 75.35s/it]Train:   0%|          | 26/7358 [32:23<153:44:36, 75.49s/it]Train:   0%|          | 27/7358 [33:37<153:11:27, 75.23s/it]Train:   0%|          | 28/7358 [34:53<153:05:54, 75.19s/it]Train:   0%|          | 29/7358 [36:09<153:34:08, 75.43s/it]Train:   0%|          | 30/7358 [37:22<152:27:39, 74.90s/it]Train:   0%|          | 31/7358 [38:35<151:15:09, 74.32s/it]Train:   0%|          | 32/7358 [39:51<151:52:54, 74.63s/it]Train:   0%|          | 33/7358 [41:09<154:14:16, 75.80s/it]Train:   0%|          | 34/7358 [42:24<153:30:50, 75.46s/it]Train:   0%|          | 35/7358 [43:35<150:58:41, 74.22s/it]Train:   0%|          | 36/7358 [44:48<150:11:34, 73.85s/it]Train:   1%|          | 37/7358 [46:01<149:27:24, 73.49s/it]Train:   1%|          | 38/7358 [47:16<150:21:41, 73.95s/it]Train:   1%|          | 39/7358 [48:29<149:39:23, 73.61s/it]Train:   1%|          | 40/7358 [49:44<150:51:04, 74.21s/it]Train:   1%|          | 41/7358 [51:02<153:18:02, 75.42s/it]Train:   1%|          | 42/7358 [52:19<153:49:30, 75.69s/it]Train:   1%|          | 43/7358 [53:35<154:15:12, 75.91s/it]Train:   1%|          | 44/7358 [54:51<154:16:00, 75.93s/it]Train:   1%|          | 45/7358 [56:08<154:52:53, 76.24s/it]Train:   1%|          | 46/7358 [57:23<153:55:10, 75.78s/it]Train:   1%|          | 47/7358 [58:38<153:16:07, 75.47s/it]Train:   1%|          | 48/7358 [59:53<153:09:31, 75.43s/it]Train:   1%|          | 49/7358 [1:01:07<152:09:31, 74.94s/it]Train:   1%|          | 50/7358 [1:02:22<152:13:46, 74.99s/it]Train:   1%|          | 51/7358 [1:03:38<153:05:26, 75.42s/it]Train:   1%|          | 52/7358 [1:04:53<152:58:27, 75.38s/it]Train:   1%|          | 53/7358 [1:06:09<153:01:28, 75.41s/it]Train:   1%|          | 54/7358 [1:07:25<153:37:34, 75.72s/it]Train:   1%|          | 55/7358 [1:08:41<153:31:50, 75.68s/it]Train:   1%|          | 56/7358 [1:09:55<152:22:48, 75.13s/it]Train:   1%|          | 57/7358 [1:11:10<152:10:07, 75.03s/it]Train:   1%|          | 58/7358 [1:12:26<152:45:50, 75.34s/it]Train:   1%|          | 59/7358 [1:13:40<152:02:32, 74.99s/it]Train:   1%|          | 60/7358 [1:15:14<163:27:11, 80.63s/it]Train:   1%|          | 61/7358 [1:17:44<205:59:12, 101.62s/it]Train:   1%|          | 62/7358 [1:19:26<205:52:50, 101.59s/it]Train:   1%|          | 63/7358 [1:20:51<195:47:05, 96.62s/it] Train:   1%|          | 64/7358 [1:22:08<183:50:02, 90.73s/it]Train:   1%|          | 65/7358 [1:23:21<173:26:32, 85.62s/it]Train:   1%|          | 66/7358 [1:24:36<166:28:03, 82srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+.18s/it]Train:   1%|          | 67/7358 [1:25:50<161:26:35, 79.71s/it]Train:   1%|          | 68/7358 [1:27:07<160:04:16, 79.05s/it]Train:   1%|          | 69/7358 [1:28:22<157:36:05, 77.84s/it]Train:   1%|          | 70/7358 [1:29:40<157:22:04, 77.73s/it]Train:   1%|          | 71/7358 [1:30:56<156:27:22, 77.29s/it]Train:   1%|          | 72/7358 [1:32:12<155:53:30, 77.03s/it]Train:   1%|          | 73/7358 [1:33:28<154:53:21, 76.54s/it]Train:   1%|          | 74/7358 [1:34:43<154:05:15, 76.16s/it]Train:   1%|          | 75/7358 [1:35:57<153:02:26, 75.65s/it]Train:   1%|          | 76/7358 [1:37:13<153:02:38, 75.66s/it]Train:   1%|          | 77/7358 [1:38:30<154:01:06, 76.15s/it]Train:   1%|          | 78/7358 [1:39:43<151:59:49, 75.16s/it]Train:   1%|          | 79/7358 [1:41:00<153:09:08, 75.75s/it]Train:   1%|          | 80/7358 [1:42:17<153:25:01, 75.89s/it]Train:   1%|          | 81/7358 [1:43:34<154:10:45, 76.27s/it]Train:   1%|          | 82/7358 [1:44:48<152:54:49, 75.66s/it]slurmsteslurmstepd: error: *** JOB 2121650 ON frontier07546 CANCELLED AT 2024-07-23T01:16:38 DUE TO TIME LIMIT ***
+pd: error: *** STEP 2121650.0 ON frontier07546 CANCELLED AT 2024-07-23T01:16:38 DUE TO TIME LIMIT ***

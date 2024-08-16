@@ -1,0 +1,1330 @@
+MINICOM=-c on
+MIOPEN_DISABLE_CACHE=1
+MPICH_ENV_DISPLAY=0
+MPICH_OFI_NIC_POLICY=NUMA
+MPICH_VERSION_DISPLAY=0
+MPICH_DIR=/opt/cray/pe/mpich/8.1.28/ofi/crayclang/17.0
+HYDRA_LAUNCHER_EXTRA_ARGS=--external-launcher
+HYDRAGNN_VALTEST=0
+HYDRAGNN_AGGR_BACKEND=mpi
+HYDRAGNN_NUM_WORKERS=0
+HYDRA_BOOTSTRAP=slurm
+HYDRAGNN_USE_VARIABLE_GRAPH_SIZE=1
+NCCL_P2P_LEVEL=NVL
+NCCL_PROTO=Simple
+NCCL_P2P_DISABLE=1
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+
+Lmod is automatically replacing "cce/17.0.0" with "gcc-native/12.3".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.5.0" with "PrgEnv-gnu/8.5.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/23.12.5     2) cray-mpich/8.1.28     3) darshan-runtime/3.4.0-mpi
+
++ export HYDRAGNN_TRACE_LEVEL=2
++ HYDRAGNN_TRACE_LEVEL=2
++ for MS in LARGE_H4000_12
++ for NN in 16
++ srun -N16 -n128 -c7 --gres=gpu:8 python -u ./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py --multi_model_list=OC2022 --multi --num_epoch=1 --everyone --ddstore --log=exp-strongfull-LARGE_H4000_12-2204659-NN16-CHECKPOINT --inputfile=LARGE_H4000_12_MTL.json --use_deepspeed --conv_checkpoint
+[2024-08-08 09:19:37,422] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,422] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,422] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,422] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,422] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,422] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,422] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,422] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,588] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,588] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,588] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,588] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,588] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,588] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,588] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,588] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,628] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,628] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,628] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,628] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,628] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,628] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,628] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,628] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,670] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,670] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,670] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,670] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,670] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,670] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,670] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,670] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,692] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,692] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,692] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,692] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,692] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,696] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,697] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,697] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,724] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,724] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,724] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,724] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,724] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,724] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,724] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,724] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,827] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,827] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,827] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,827] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,827] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,827] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,827] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,827] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,844] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,844] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,844] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,844] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,844] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,844] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,844] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,844] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,985] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,985] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,985] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,985] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,985] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,985] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,985] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,985] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,990] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,990] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,990] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,990] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,990] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,990] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,990] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,990] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,991] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,991] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,991] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,991] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,991] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,991] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,991] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:37,991] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,041] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,041] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,041] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,041] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,041] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,041] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,041] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,041] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,325] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,325] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,325] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,325] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,325] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,325] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,325] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,325] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,326] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,326] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,326] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,326] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,326] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,326] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,326] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,326] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,691] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,691] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,691] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,691] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,691] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,691] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,691] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,691] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,693] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,693] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,693] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,693] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,693] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,693] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,693] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-08-08 09:19:38,693] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+[93m [WARNING] [0m sparse_attn is not compatible with ROCM
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+    with open(input_filename, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+    with open(input_filename, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+    with open(input_filename, "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+Traceback (most recent call last):
+  File "/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/./examples/multidataset/train_deepspeed_exportmem_allowcheckpoint_zs.py", line 119, in <module>
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+    with open(input_filename, "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/lustre/orion/lrn031/scratch/zye327/HydraGNN_ds/examples/multidataset/LARGE_H4000_12_MTL.json'
+srun: error: frontier00635: tasks 0-7: Exited with exit code 1
+srun: Terminating StepId=2204659.0
+srun: error: frontier01780: tasks 112-119: Exited with exit code 1
+srun: error: frontier01915: tasks 120-127: Exited with exit code 1
+srun: error: frontier01530: tasks 72-79: Exited with exit code 1
+srun: error: frontier00891: tasks 16-23: Exited with exit code 1
+srun: error: frontier01403: tasks 64-71: Exited with exit code 1
+srun: error: frontier01280: tasks 48-55: Exited with exit code 1
+srun: error: frontier01531: tasks 80-87: Exited with exit code 1
+srun: error: frontier01402: tasks 56-63: Exited with exit code 1
+srun: error: frontier01779: tasks 104-111: Exited with exit code 1
+srun: error: frontier01657: tasks 88-95: Exited with exit code 1
+srun: error: frontier01276: tasks 40-47: Exited with exit code 1
+srun: error: frontier01152: tasks 32-39: Exited with exit code 1
+srun: error: frontier01658: tasks 96-103: Exited with exit code 1
+srun: error: frontier01019: tasks 24-31: Exited with exit code 1
+srun: error: frontier00763: tasks 8-15: Exited with exit code 1
+/var/spool/slurmd/job2204659/slurm_script: line 69: syntax error near unexpected token `done'
+/var/spool/slurmd/job2204659/slurm_script: line 69: `done'

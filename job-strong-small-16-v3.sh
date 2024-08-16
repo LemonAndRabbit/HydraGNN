@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH -A LRN031
-#SBATCH -J HydraGNN
+#SBATCH -J HydraGNN-DebugRun
 #SBATCH -o job-%j.out
 #SBATCH -e job-%j.out
-#SBATCH -t 01:00:00
+#SBATCH -t 02:00:00
 #SBATCH -p batch
 #SBATCH -q debug
-#SBATCH -N 8
+#SBATCH -N 16
 #SBATCH -S 1
 
 ulimit -n 65536
@@ -24,10 +24,12 @@ export HYDRAGNN_VALTEST=0
 export NCCL_P2P_LEVEL=NVL
 export NCCL_P2P_DISABLE=1
 
-export MPICH_GPU_SUPPORT_ENABLED=1
-export MPICH_GPU_MANAGED_MEMORY_SUPPORT_ENABLED=1
-export MPICH_OFI_NIC_POLICY=GPU
-
+## Checking
+env | grep ROCM
+env | grep ^MI
+env | grep ^MPICH
+env | grep ^HYDRA
+env | grep ^NCCL
 
 source /lustre/orion/cph161/world-shared/mlupopa/module-to-load-frontier.sh
 
@@ -38,9 +40,17 @@ export PYTHONPATH=/lustre/orion/cph161/world-shared/mlupopa/ADIOS_frontier/insta
 
 export PYTHONPATH=$PWD:$PYTHONPATH
 
+set -x
 
-# both commands should work
-# srun -N$SLURM_JOB_NUM_NODES -n$((SLURM_JOB_NUM_NODES*8)) -c7 --gres=gpu:8 \
-#    python -u ./examples/ogb/train_gap.py gap --adios --use_deepspeed
-srun -N$SLURM_JOB_NUM_NODES -n$((SLURM_JOB_NUM_NODES*8)) -c7 --gpus-per-task=1 --gpu-bind=closest \
-    python -u ./examples/ogb/train_gap.py gap --adios --use_deepspeed
+export HYDRAGNN_TRACE_LEVEL=2
+
+for MS in SMALL; do
+for NN in 16; do
+	srun -N$NN -n$((NN*8)) -c7 --gpus-per-task=1 --gpu-bind=closest \
+		python -u ./examples/multidataset/train_deepspeed.py --multi_model_list="OC2020" --multi --num_epoch=1 \
+		--everyone --ddstore --log=exp-strongfull-$MS-$SLURM_JOB_ID-NN$NN --inputfile=${MS}_MTL.json \
+		--num_samples 10000 --use_deepspeed
+    sleep 5
+done
+done
+echo "Done."
